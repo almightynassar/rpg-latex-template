@@ -1,0 +1,63 @@
+% Spell environment sty file
+
+%spells
+\newtcolorbox{spellbox}[2][]{
+    enhanced,
+    arc=15pt,
+    colframe=titlered,
+    colback=monstertan,
+    fonttitle=\scshape\bfseries\color{white}\Large,
+    title=#2,
+    rounded corners,
+    boxrule=3mm,
+    %frame hidden,
+    before skip=8pt plus2pt,
+    breakable,
+    boxsep=0.25ex,
+    left=2.5mm,
+    right=2.5mm,
+    fontupper=\fontfamily{lmss}\selectfont,
+    after={\vspace{7pt plus 1pt}\noindent},
+    #1
+}
+
+% Define Spell subsection header style
+\newcommand{\spellsection}[1]{
+    {\par
+    \color{titlered}\normalfont\scshape\Large #1 \vspace{3pt}
+    \titleline{\color{titlered}\titlerule[0.6pt]}
+    \par\medskip}
+    }
+
+\newenvironment{spellaction}[1][\unskip]{\emph{\textbf{#1.}}}{\vspace{0.5em}}
+
+% Spell Environment
+\newenvironment{spelltable}{
+	\par\vspace*{2pt}
+    \noindent
+    \fontfamily{lmss}\selectfont %Select font
+    \rowcolors{1}{monstertan}{monstertandark} % Alternate colors
+    \tabularx{\linewidth}{XX}
+	}
+	{\vspace{2pt plus 1pt}\noindent\endtabularx}
+
+%
+% Macros for use within the spell environment
+%
+\newkeycommand\spelldetails[level=Cantrip,
+                    school=Abjuration,
+                    restrict=All,
+                    time=1 action,
+                    range=Touch,
+                    duration=Instant,
+                    components={V, S, M},
+                    ritual=No]{%
+    \textit{\commandkey{level} level \commandkey{school} (\commandkey{restrict})}\\
+    \begin{spelltable}
+    \textbf{Time}  & \commandkey{time}\\
+    \textbf{Range}  & \commandkey{range}\\
+    \textbf{Duration}  & \commandkey{duration}\\
+    \textbf{Components}  & \commandkey{components}\\
+    \textbf{Ritual?}  & \commandkey{ritual}
+    \end{spelltable}
+}

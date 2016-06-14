@@ -3,7 +3,7 @@
 % Modified by Christopher Liu December 2015
 % Modified by Yannic Meyer Feb 2016
 
-\ProvidesPackage{dnd}[2016/03/13]
+\ProvidesPackage{dnd}[2016/05/14]
 
 %
 % Prerequisite Packages
@@ -21,9 +21,11 @@
 \RequirePackage{keycommand}
 \RequirePackage{fancyhdr} 			  % Adaptation of the footers
 \RequirePackage[most]{tcolorbox}  % used for some boxes
+\RequirePackage{graphicx}
 
 % Load other modules of this package
 \usepackage{lib/dndmonster}
+\usepackage{lib/dndspell}
 \usepackage{lib/dndsections}
 \usepackage{lib/dndcomment}
 \usepackage{lib/dnditemtable}
@@ -140,3 +142,33 @@
         \kcmd@nbk \commandkey {#1}//{first}{second}//oftwo\endcsname
       }
    }
+
+% D&D title page
+\newcommand*{\subtitle}[1]{\gdef\@subtitle{#1}%
+}
+\newcommand*{\@subtitle}{\texttt{\string\subtitle} is not set.}
+\newcommand*{\byline}[1]{\gdef\@byline{#1}%
+}
+\newcommand*{\@byline}{\texttt{\string\byline} is not set.}
+\renewcommand*{\maketitle}{%
+\begin{titlepage}
+\centering
+% Icon from https://commons.wikimedia.org/wiki/File:Fantasy_icon.svg
+\includegraphics[width=3cm]{img/Fantasy_icon.png}\par
+\vfill
+{\color{titlered}\normalfont\scshape\Huge\@title\unskip\strut\par}
+\vspace{2cm}
+{\normalfont\scshape\Large\bfseries\@subtitle\unskip\strut\par}
+\vspace{2cm}
+{\normalfont\scshape\Large Written by \par}
+\vspace{1cm}
+{\normalfont\scshape\Large\@author\unskip\strut\par}
+\vspace{1cm}
+{\normalfont\scshape\Large On \par}
+\vspace{1cm}
+{\normalfont\scshape\Large\@date\par}
+\vfill
+{\normalfont\scshape\Large\itshape\@byline\par}
+\end{titlepage}
+}
+\endinput

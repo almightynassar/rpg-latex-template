@@ -1,74 +1,136 @@
 \documentclass[10pt,twoside,twocolumn]{article}
-\usepackage[bg-letter]{dnd} % Options: bg-a4, bg-letter, bg-full, bg-print, bg-none.
-\usepackage[ngerman]{babel} % Trennungsregeln und autom. Überschriften in n. dt. RS
+% Options: bg-a4, bg-letter, bg-full, bg-print, bg-none.
+\usepackage[bg-a4]{dnd}
 \usepackage[utf8]{inputenc}
+% Clickable table of content links
+\usepackage[hidelinks]{hyperref}
 
 % Start document
 \begin{document}
 \fontfamily{ppl}\selectfont % Set text font
+\title{D\&D 5E Homebrew}
+\subtitle{A Generic Template}
+\author{Elminster Aumar}
+\date{Kythorn 1, 1491 DR}
+\byline{Approved for release by the Harpers}
+\maketitle
+\tableofcontents
+\newpage
 
+% =================
 % Your content goes here
+% =================
 
 \section{Main Section}
-\lipsum[1] % filler text
+\lipsum[2] % filler text
 
-\subsection{Fun with boxes}
-\subsubsection{Even more fun!}
+\subsection{Elements}
+\subsubsection{Boxes}
 
 \begin{commentbox}{Neat Green Box!}
-	\lipsum[1]
+    \lipsum[2]
 \end{commentbox}
 
 \begin{quotebox}
-	As you approach this template you get a sense that the blood and tears of many generations went into its making. A warm feeling welcomes you as you type your first words.
+    As you approach this template you get a sense that the blood and tears of many generations went into its making. A warm feeling welcomes you as you type your first words.
 \end{quotebox}
 
-\newpage % Acts as columbreak because of twocolumn option; for pagebreak use \clearpage
-
-\begin{dndtable}
-   	\textbf{Table head}  & \textbf{Table head} \\
-   	Some value  & Some value \\
-   	Some value  & Some value \\
-   	Some value  & Some value
-\end{dndtable}
-
 \begin{paperbox}{Do the Players need direction?}
-	\lipsum[1]
+    \lipsum[2]
 \end{paperbox}
 
-\begin{monsterbox}{Monster Foo}
-	\textit{Small metasyntatic variable (golbinoid), neutral evil}\\
-	\hline
-	\basics[%
-	armorclass = 12,
-	hitpoints  = 16 (3d8 + 3),
-	speed      = 50 ft
-	]
-	\hline
-	\stats[
-	STR = 12 (+1),
-	DEX = 14 (+2)
-	]
-	\hline
-	\details[%
-	% If you want to use commas in these sections, enclose the
-	% description in braces.
-	% I'm so sorry.
-	languages = {Common Lisp, Erlang},
-	]
-	\hline \\[1mm]
-	\begin{monsteraction}[Monster-super-powers]
-		This Monster has some serious superpowers!
-	\end{monsteraction}
-	\monstersection{Actions}
-	\begin{monsteraction}[Generate text]
-		This one can generate tremendous amounts of text! Though only when it wants to.
-	\end{monsteraction}
+\subsubsection{Tables}
 
-	\begin{monsteraction}[More actions]
+\begin{dndtable}
+       \textbf{Roll}  & \textbf{Result} \\
+       1-10  & Bad things \\
+       10-50  & Good things \\
+       50-100  & Excellent things
+\end{dndtable}
+
+\begin{dnditemtable}
+       \textbf{Item}  & \textbf{Price} \\
+       Basic stuff  & 10 GP \\
+       Decent stuff  & 20 GP \\
+       Best Stuff  & 30 GP
+\end{dnditemtable}
+
+\subsubsection{Images}
+
+\begin{center}
+\includegraphics[width=3cm]{img/Fantasy_icon.png}\par
+\end{center}
+
+\subsubsection{Monster}
+
+\begin{monsterbox}{Monster Foo}
+    \textit{Small metasyntatic variable (golbinoid), neutral evil}\\
+    \hline
+    \basics[%
+    armorclass = 12,
+    hitpoints  = 16 (3d8 + 3),
+    speed      = 50 ft
+    ]
+    \hline
+    \stats[
+    STR = 12 (+1),
+    DEX = 14 (+2)
+    ]
+    \hline
+    \details[%
+    % If you want to use commas in these sections, enclose the
+    % description in braces.
+    % I'm so sorry.
+    languages = {Common Lisp, Erlang},
+    ]
+    \hline \\[1mm]
+    \begin{monsteraction}[Monster-super-powers]
+        This Monster has some serious superpowers!
+    \end{monsteraction}
+    \monstersection{Actions}
+    \begin{monsteraction}[Generate text]
+        This one can generate tremendous amounts of text! Though only when it wants to.
+    \end{monsteraction}
+
+    \begin{monsteraction}[More actions]
     See, here he goes again! Yet more text.
-	\end{monsteraction}
+    \end{monsteraction}
 \end{monsterbox}
+
+\subsubsection{Spell}
+
+\begin{spellbox}{Spell Generic}
+    \spelldetails[]
+    \spellsection{Decription}
+    \begin{spellaction}[Materials]
+    This spell doesn't really require much.
+    \end{spellaction}
+
+    \begin{spellaction}[Effect]
+    Touch things and get dissaproving looks.
+    \end{spellaction}
+\end{spellbox}
+
+\begin{spellbox}{Spell Druid}
+    \spelldetails[%
+    level   = 9,
+    school  = Transmutation,
+    time    = 1 action,
+    range   = Touch,
+    duration = Instant,
+    components = {S,M},
+    restrict = Druid,
+    ritual = Yes
+    ]
+    \spellsection{Description}
+    \begin{spellaction}[Materials]
+    Requires tree-bark and fresh leaves.
+    \end{spellaction}
+
+    \begin{spellaction}[Effect]
+    Trees will grow.
+    \end{spellaction}
+\end{spellbox}
 
 % End document
 \end{document}
