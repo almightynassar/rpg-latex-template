@@ -1,33 +1,21 @@
-% Spell environment sty file
+% D&D 4E style spells
 
 %spells
 \newtcolorbox{spellbox}[2][]{
     enhanced,
     arc=15pt,
-    colframe=titlered,
+    colbacktitle=titlered,
     colback=monstertan,
-    fonttitle=\scshape\bfseries\color{white}\Large,
+    fonttitle=\bfseries\color{white}\Large,
     title=#2,
-    rounded corners,
-    boxrule=3mm,
-    %frame hidden,
+    sharp corners,
+    frame hidden,
     before skip=8pt plus2pt,
     breakable,
-    boxsep=0.25ex,
-    left=2.5mm,
-    right=2.5mm,
     fontupper=\fontfamily{lmss}\selectfont,
     after={\vspace{7pt plus 1pt}\noindent},
     #1
 }
-
-% Define Spell subsection header style
-\newcommand{\spellsection}[1]{
-    {\par
-    \color{titlered}\normalfont\scshape\Large #1 \vspace{3pt}
-    \titleline{\color{titlered}\titlerule[0.6pt]}
-    \par\medskip}
-    }
 
 \newenvironment{spellaction}[1][\unskip]{\emph{\textbf{#1.}}}{\vspace{0.5em}}
 
@@ -52,12 +40,12 @@
                     duration=Instant,
                     components={V, S, M},
                     ritual=No]{%
-    \textit{\commandkey{level} level \commandkey{school} (\commandkey{restrict})}\\
+    \textit{\commandkey{level} level \commandkey{school}  \ifthenelse{\equal{\commandkey{ritual}}{yes}{(ritual)}}}\\
     \begin{spelltable}
     \textbf{Time}  & \commandkey{time}\\
     \textbf{Range}  & \commandkey{range}\\
     \textbf{Duration}  & \commandkey{duration}\\
     \textbf{Components}  & \commandkey{components}\\
-    \textbf{Ritual?}  & \commandkey{ritual}
+    \textbf{Restricted}  & \commandkey{restrict}
     \end{spelltable}
 }
