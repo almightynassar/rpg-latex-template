@@ -1,47 +1,19 @@
 # D&D 5e LaTeX Template
 
-This is cloned attempt of Anodery's attempt at creating a D&D 5e LaTeX template.
+This is cloned attempt of Evan Bergeron's attempt at creating a D&D 5e LaTeX template.
 
-The template compiles with pdflatex.
+The template compiles with pdflatex and [Overleaf](https://www.overleaf.com/).
 
 [Original Version by Anoderay](https://github.com/anoderay/DND-5e-LaTeX-Template/)
 
 
-### Installation
+### Usage
 
-This assumes you have already installed a LaTeX environment with the pdflatex executable.
+If you do not know how to install and set-up LaTeX, we highly recommend you use
+[Overleaf](https://www.overleaf.com/) or other online Latex editing tool. Then all
+you need to do is copy and paste dnd.sty and example.tex into the online editor.
 
-Just clone the repo. From terminal:
-
-```sh
-$ git clone https://github.com/almightynassar/rpg-latex-template.git 5e-template
-$ cd 5e-template
-$ pdflatex example.tex
-```
-
-If you don't have LaTeX installed, the following should help you out:
-#### Ubuntu
-```sh
-sudo apt-get install texlive-full
-```
-#### Arch
-```sh
-sudo pacman -S texlive-bin texlive-core texlive-latexextra
-```
-It's a bit unclear exactly what subset of features this module needs. As a general rule, we'd recommend installing one of larger ones.
-
-### Package Options
-- bg-letter: Loads a letter-sized background-image
-- bg-a4: Loads an A4-sized background-image
-- bg-print: Loads a printer-friendly background-image (only decal at the bottom)
-- bg-full: Loads the full background-image
-
-Per default "bg-letter" and "bg-full" are loaded.
-
-### Image Credit
-
- - Credit for the background image goes to http://lostandtaken.com/
- - Credit for the fantasy icon goes to https://commons.wikimedia.org/wiki/File:Fantasy_icon.svg
+If you don't have LaTeX installed and wish to compile this on your machine, then please ensure you install the FULL version of LaTeX. If you do not wish to install the full version of LaTeX, please ensure you install all of the requisite packages that are given in dnd.sty.
 
 ### License
 The MIT License (MIT)
