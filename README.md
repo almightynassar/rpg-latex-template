@@ -9,9 +9,7 @@ The template compiles with pdflatex and [Overleaf](https://www.overleaf.com/).
 
 ### Usage
 
-If you do not know how to install and set-up LaTeX, we highly recommend you use
-[Overleaf](https://www.overleaf.com/) or other online Latex editing tool. Then all
-you need to do is copy and paste dnd.sty and example.tex into the online editor.
+If you do not know how to install and set-up LaTeX, we highly recommend you use [Overleaf](https://www.overleaf.com/) or other online Latex editing tool. Then all you need to do is copy and paste dnd.sty and example.tex into the online editor.
 
 If you don't have LaTeX installed and wish to compile this on your machine, then please ensure you install the FULL version of LaTeX. If you do not wish to install the full version of LaTeX, please ensure you install all of the requisite packages that are given in dnd.sty.
 
