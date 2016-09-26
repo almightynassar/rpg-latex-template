@@ -2,7 +2,10 @@
 \usepackage{dnd}
 \usepackage[utf8]{inputenc}
 \usepackage{multicol}
+% Page Settings
 \raggedcolumns
+\setlength{\parindent}{0em}
+\setlength{\parskip}{0.5em}
 % Clickable table of content links
 \usepackage[hidelinks]{hyperref}
 
@@ -18,11 +21,13 @@ These rules are an adaption of \textit{Traveller} character generation for use i
 We try to stick to original and open content where possible; if you believe we have infringed on someone's copyright please contact us through the details at the end of this document!
 
 \begin{multicols}{2}
+
 \tableofcontents
-\columnbreak
+
+\newpage
 
 % =================
-% Your content goes here
+% Basic Concepts
 % =================
 
 \section{Basic Concepts}
@@ -30,30 +35,41 @@ We try to stick to original and open content where possible; if you believe we h
 These rules completely rewrites the underlying character creation concepts in D\&D 5E, so some terminology will be different to what you are used to. Here is a quick summary of those changes:
 
 \begin{itemize}
+
 \item \textbf{Races} now only refer to the inherent genetic and physiological traits of your character. The standard Races you can find in the official Player's Handbook have been stripped of any learned cultural traits or skills.
+
 \item \textbf{Upbringing} refers to the environment and culture that your character experienced during their childhood. Some Upbringings will contain the cultural traits and skills that have been stripped from the official Races in the Player's Handbook, while others are inspired from the official Backgrounds.
+
 \item \textbf{Careers} is the direction that your character took once they reached adulthood for their race. This is where we will discover who your character is and what they achieved before they became an adventurer.
+
 \item \textbf{Term} is the standard length of time for a career period. This varies between the different races, as stated under the Aging entry listed for your race. Longer-lived races have longer term lengths because they do not live at the frantic pace of humans, and will take their time exploring and perfecting their skills.
+
 \item \textbf{Connections} are your character's links to this world. These links can be a \textit{Place}, \textit{Rival} or a \textit{Contact}. While character generation will prompt you to make (or advance) Connections, you can create your own Connections at any time with your Game Master's approval.
+
 \item \textbf{Events} are significant moments in your character’s history. During your career you may be required to roll on a variety of different event tables, including:
+
 \begin{itemize}
+
 \item \textit{Life} These are general life events that involve your character such as marriages, births, funerals and friendships.
+
 \item \textit{Career} These events significantly alter your working life, and could either harm or progress your career.
+
 \item \textit{Aging} When your character reaches old age for their race, they are required to make a roll to see if they avoid any negative effects. When your character reaches the Advanced Aging limit your character has a significant risk of dying!
+
 \item \textit{Mishaps} Life is never easy, and Mishaps represent the low points of your character's life.
 \end{itemize}
+
 \end{itemize}
 
 Please keep in mind that everything is totally and utterly at the discretion of your Game Master. These rules have the potential to make game-breaking or otherwise unsuitable characters. The intention of these rules is to create a fun little mini-game out of character creation.
 
 \textbf{And remember to Have fun!}
 
-\section{Getting Started}
+% =================
+% Getting Started
+% =================
 
-\begin{paperbox}{Skill Checks and Character Creation}
-Your character starts their journey without any levels, and definitely without any proficiency. All Skill Checks that are requested during character creation (such as career, event, aging and mishap rolls) do not gain the proficiency bonus or any class traits that affect Skill Checks.
-Any Race, Upbringing or Career traits that affect Skill Checks can be used during character creation.
-\end{paperbox}
+\section{Getting Started}
 
 These rules completely modifies the Character Generation process given in the Player's Handbook, including the Race and Background entries. These rules will generate a character that is fully prepared to take their first level in a class.
 
@@ -115,35 +131,57 @@ These rules completely modifies the Character Generation process given in the Pl
 \item Your character may now take their first level in a Class. Follow the rules for your Class as stated in the Players Handbook.
 \end{enumerate}
 
-\columnbreak
+\begin{commentbox}{Skill Checks and Character Creation}
+Your character starts their journey without any levels, and definitely without any proficiency. All Skill Checks that are requested during character creation (such as career, event, aging and mishap rolls) do not gain the proficiency bonus or any class traits that affect Skill Checks.
+Any Race, Upbringing or Career traits that affect Skill Checks can be used during character creation.
+\end{commentbox}
+
+\end{multicols}
+
+\newpage
+
+% =================
+% Races
+% =================
 
 \section{Races}
 
 \subsection{Dwarf}
 
-You are a short, stout and extremely hardy humanoid. Many dwarves make their homes under the earth and dig deep into mountainsides.
+Dwarves are short, stout and extremely tough natural humanoids. Dwarves share many qualities with the rocky earth, probably lending to the mythology that dwarves were carved from the world's stone. Many Dwarves consider this myth a source of pride and will go out of their way to display the stubborness, tenaciousness and dependability of stone.
 
+Like humans, dwarves comes in a wide variety of skin, eye and hair colours. The most common traits are tanned skin, hazel eyes and dark hair. Males are often bald and grow thick facial hair (which is often braided and adorned to show social status). Females may also grow beards, but tend to shave them to distinguish them from the opposite sex.
+
+Dwarves are a long-lived race, reaching adulthood around 50. They age much like humans but over a longer period, with many living to see their bicentennial. Few dwarves ever live to be over 400.
+
+If you are a dwarf, add the traits below to your character sheet.
+
+
+\begin{multicols}{2}
 \subsubsection*{Size}
-You are 4-5 feet tall (1.2-1.5 metres) and weigh an average of 150 pounds (70 kg). Your size is medium.
+A dwarf is about 4-5 feet tall (1.2-1.5 metres) and weighs an average of 150 pounds (70 kg).
+
+Your size is \textbf{Medium}.
 
 \subsubsection*{Age}
-\begin{tabular}{ l r }
+You will use this table to determine how old your character will be when they start their adventuring career. The final age is just an approximation; your Game Master may allow you to adjust your age.
+\begin{dndtable}
   Term Length & 20 \\
   Starting Age & 50 \\
   Aging Starts & 130 \\
   Advanced Aging & 310 \\
-\end{tabular}
+\end{dndtable}
 
 \subsubsection*{Speed}
 Your base walking speed is \textbf{25 ft} (7.5 metres). Your speed is not reduced by wearing heavy armour.
 
 \subsubsection*{Ability Score Increase}
 Constitution score increases by 2.
+
 Wisdom score increases by 1.
 
 \subsubsection*{Darkvision}
-You have Darkvision.
-\textit{You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can’t dicern color in darkness, only shades of gray.}
+You have Darkvision. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can’t dicern color in darkness, only shades of gray.
 
 \subsubsection*{Dwarven Resilience}
 You have advantage to saving throws against poison, and you have resistance against poison damage.
@@ -151,56 +189,108 @@ You have advantage to saving throws against poison, and you have resistance agai
 \subsubsection*{Dwarven Toughness}
 Your hit point maximum increases by 1, and it increases by 1 every time you gain a level.
 
+\begin{commentbox}{Dwarves in Fantasy}
+The Dwarves described in these rules are a loose intepretation of the dwarves that appear in Tolkien's \textit{Lord of the Rings} books. Your Game Master may use an alternate depiction.
+
+\begin{itemize}
+
+\item \textbf{Pratchett's \textit{Discworld} } have males and females indistinguishable from one another, are literal-minded and have no sense of metaphors or allusion, and can interbreed with humans
+
+\item \textbf{Warhammer} dwarves grow stronger as they get older (like Orcs), but have a breaking point where their general health rapidly declines. Female dwarves are rarely seen (leading to various rumours) and do not grow beards.
+
+\item In \textbf{Norse Mythology} dwarves are equated with dark elves, whereas Tolkien made dwarves and elves as distinct races. They are usually described as old men with beards, with only later sagas describing them as "small and ugly". They were usually associated with metalsmithing, healing, death and gatekeeping.
+
+\end{itemize}
+
+\end{commentbox}
+
+\end{multicols}
+
+\newpage
+
+
 \subsection{Elf}
 
-You are a lithe, graceful and extraordinarily beautiful humanoid. You also have intimate ties with magical and fey forces. Many elves make their homes in wild forested areas.
+Elves are lithe, graceful and extraordinarily beautiful humanoids. All elves have an inherent magical nature, and many mythical creation stories have ancestral elves immigrating from the lands of the Faerie and Fey. These creation stories have led many an elf to claim affinity with other Fey and Faerie creatures, and many seek to find their roots by exploring ancient arcane secrets.
 
+Like humans, elves comes in a wide variety of skin, eye and hair colours. The most common traits are fair skin, blue or green eyes and brown or black hair. All elves tend to be of slender build (exceptionally strong elves look more athletic than muscular) and have no body hair except for eyebrows, eyelashes and hair (typically worn long). The key defining trait of elves are their prominent pointed ears.
+
+Elves are one of the longest-lived races, reaching adulthood around 100. An elf's appearence does not change dramatically as their lifespan comes to a close, with an exception being a change in hair colour (alternatively graying or darkening). Few elves ever live to be over 700, with a few rare individuals living to reach 900.
+
+If you are an elf, add the traits below to your character sheet.
+
+\begin{multicols}{2}
 \subsubsection*{Size}
 You are 5-6 feet tall (1.5-1.8 metres) and have a slender build. Your size is medium.
 
 \subsubsection*{Age}
-\begin{tabular}{ l r }
+\begin{dndtable}
   Term Length & 45 \\
   Starting Age & 100 \\
   Aging Starts & 280 \\
   Advanced Aging & 685 \\
-\end{tabular}
+\end{dndtable}
 
 \subsubsection*{Speed}
 Your base walking speed is \textbf{30 ft} (9 metres).
 
 \subsubsection*{Ability Score Increase}
 Dexterity score increases by 2.
+
 Intelligence score increases by 1.
 
 \subsubsection*{Darkvision}
-You have Darkvision.
-\textit{You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can’t dicern color in darkness, only shades of gray.}
+You have Darkvision. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can’t dicern color in darkness, only shades of gray.
 
 \subsubsection*{Fey Ancestry}
 You have advantage to saving throws against being charmed, and magic cannot put you to sleep.
 
 \subsubsection*{Cantrip}
-You know one cantrip of your choice from the wizard spell list. Intelligence is your spellcasting ability for it.
+You know one cantrip of your choice from the wizard spell list.
+
+Intelligence is your spellcasting ability for it.
 
 \subsubsection*{Trance}
-You don’t need to sleep. Instead, you meditate deeply, remaining semiconscious, for 4 hours a day. While meditating, you can dream after a fashion; such dreams are actually mental exercises that have become reflexive through years of practice. After resting in this way, you gain the same benefit that a human does from 8 hours of sleep.
+You don’t need to sleep. Instead, you meditate deeply, remaining semiconscious, for 4 hours a day.
+
+While meditating, you can dream after a fashion; such dreams are actually mental exercises that have become reflexive through years of practice. After resting in this way, you gain the same benefit that a human does from 8 hours of sleep.
+
+\begin{commentbox}{Elves\, Faerie and Myth}
+The exact origin and nature of the Elves largely depends on your setting (and your Game Master). Tolkien's \textit{Lord of the Rings} has greatly influenced the modern depiction of elves but there are some deviations such as Prachett's \textit{Discworld} where elves have copper-based blood, are vulnerable to iron and possess a illusion-creating glamour that makes everything they do seem more beautiful.
+
+Old Norse mythology depict "good/light" and "evil/dark" elves, in a pagan version of angels and demons. Germanic mythology depicted elves as otherworldly beings that tempted mortals to join them in the Elf-home. Later mythologies used "Elf" interchangeably with "Faerie", and could refer to wide range of benevolent and malevolent enchanted creatures such as goblins, gnomes, nymphs and sprites.
+
+Despite the vastly different depictions in folklore and modern fantasy many elves share a general theme; they were generally human-sized, are magical and possessed an enticing sexual allure.
+
+\end{commentbox}
+
+\end{multicols}
+
+\newpage
 
 
 \subsection{Halfling}
 
-You are a small, practical and extraordinarily plucky humanoid.
+Halflings are small, practical and extraordinarily plucky humanoids. In many ways halflings are simply smaller versions of humans and usually have the same proportions as the typical human adult. They are not inherently magical and yet possess what can only be described as an ongoing lucky streak. Many consider this supernatural luck as the sole reason the species have survived the dangers of a world filled with magic and monsters.
+
+Halflings commonly have dark-coloured eyes and hair regardless of their skin complexion. It is rare for a halfling to grow a beard, and even rarer to grow a mustache, but sideburns are common. Halflings are generally quick and dexterous, and will usually try to quickly put themselves into situations where there short stature becomes an advantage.
+
+Halflings are longed-lived, even though they reach adulthood at 20. Some halflings live long enough to see their second century.
+
+If you are a halfling, add the traits below to your character sheet.
+
+\begin{multicols}{2}
 
 \subsubsection*{Size}
 You are 3 feet tall (0.9 metres) and weigh 40 pounds (18 kg). Your size is small.
 
 \subsubsection*{Age}
-\begin{tabular}{ l r }
+\begin{dndtable}
   Term Length & 15 \\
   Starting Age & 20 \\
   Aging Starts & 80 \\
   Advanced Aging & 230 \\
-\end{tabular}
+\end{dndtable}
 
 \subsubsection*{Speed}
 Your base walking speed is \textbf{25 ft} (7.5 metres).
@@ -218,21 +308,44 @@ You can move through the space of any creature that is of a size larger than you
 \subsubsection*{Naturally Stealthy}
 You can attempt to hide even when you are obscured only by a creature that is at least one size larger than you.
 
+\begin{commentbox}{In a hole in the ground...}
+Halflings are indisputably inspired by Tolkien's \textit{The Hobbit}, and yet have evolved over editions to become something unique to the game of D\&D. Instead of just being the pudgy homebodies content with the comforts of home as depicted in the books, they are now also troublesome opportunists and affable wanderers.
+
+Since your size is Small, you will need to be aware of the following:
+
+\begin{itemize}
+\item You have disadvantage on attack rolls using heavy weapons
+
+\item Even though \textit{Halfling Nimbleness} allows you to move through the space of a creature that is Medium or larger, it still counts as difficult terrain
+
+\item You can block creatures that are Tiny
+
+\item You can use Medium sized (or larger) creatures as mounts
+\end{itemize}
+
+\end{commentbox}
+
+\end{multicols}
+
+\newpage
+
 
 \subsection{Human}
 
 You are a standard humanoid.
 
+\begin{multicols}{2}
+
 \subsubsection*{Size}
 You are 5-6 feet tall (1.2-1.5 metres). Your size is ,edium.
 
 \subsubsection*{Age}
-\begin{tabular}{ l r }
+\begin{dndtable}
   Term Length & 4 \\
   Starting Age & 18 \\
   Aging Starts & 34 \\
   Advanced Aging & 82 \\
-\end{tabular}
+\end{dndtable}
 
 \subsubsection*{Speed}
 Your base walking speed is \textbf{30 ft} (9 metres).
@@ -240,21 +353,27 @@ Your base walking speed is \textbf{30 ft} (9 metres).
 \subsubsection*{Ability Score Increase}
 Each of your ability scores increases by 1.
 
+\end{multicols}
+
+\newpage
+
 
 \subsection{Dragonborn}
 
 You are a humanoid with a draconic heritage. Whether your ancestors were created or born from dragons, you nevertheless share common traits with the fearsome creatures.
 
+\begin{multicols}{2}
+
 \subsubsection*{Size}
 You are over 6 feet tall (1.5 metres) and average almost 250 pounds (110 kg). Your size is medium.
 
 \subsubsection*{Age}
-\begin{tabular}{ l r }
+\begin{dndtable}
   Term Length & 4 \\
   Starting Age & 15 \\
   Aging Starts & 31 \\
   Advanced Aging & 75 \\
-\end{tabular}
+\end{dndtable}
 
 \subsubsection*{Speed}
 Your base walking speed is \textbf{30 ft} (9 metres).
@@ -274,21 +393,27 @@ After you use your breath weapon, you can't use it again until you complete a sh
 \subsubsection*{Damage Resistance}
 You have resistance to the damage type associated with your draconic ancestry.
 
+\end{multicols}
+
+\newpage
+
 
 \subsection{Gnome}
 
 You are a small, vibrant and extraoridinarily playful humanoid.
 
+\begin{multicols}{2}
+
 \subsubsection*{Size}
 You are 3-4 feet tall (0.9-1.2 metres) and average 40 pounds (18 kg). Your size is small.
 
 \subsubsection*{Age}
-\begin{tabular}{ l r }
+\begin{dndtable}
   Term Length & 26 \\
   Starting Age & 40 \\
   Aging Starts & 144 \\
   Advanced Aging & 390 \\
-\end{tabular}
+\end{dndtable}
 
 \subsubsection*{Speed}
 Your base walking speed is \textbf{25 ft} (7.5 metres).
@@ -304,21 +429,27 @@ You have Darkvision.
 \subsubsection*{Gnome Cunning}
 You have advantage on all Intelligence, Wisdom, and Charisma saving throws against magic.
 
+\end{multicols}
+
+\newpage
+
 
 \subsection{Half-Elf}
 
 You are a half-breed, caught between the worlds of elves and men.
 
+\begin{multicols}{2}
+
 \subsubsection*{Size}
 You are the same size as humans. Your size is medium.
 
 \subsubsection*{Age}
-\begin{tabular}{ l r }
+\begin{dndtable}
   Term Length & 10 \\
   Starting Age & 20 \\
   Aging Starts & 60 \\
   Advanced Aging & 160 \\
-\end{tabular}
+\end{dndtable}
 
 \subsubsection*{Speed}
 Your base walking speed is \textbf{30 ft} (9 metres).
@@ -334,21 +465,27 @@ You have Darkvision.
 \subsubsection*{Fey Ancestry}
 You have advantage against being charmed, and magic can't put you to sleep.
 
+\end{multicols}
+
+\newpage
+
 
 \subsection{Half-Orc}
 
 You are a half-breed, caught between the worlds of orcs and men.
 
+\begin{multicols}{2}
+
 \subsubsection*{Size}
 Half-Orcs tend to be taller and bulkier than humans. Your size is medium.
 
 \subsubsection*{Age}
-\begin{tabular}{ l r }
+\begin{dndtable}
   Term Length & 4 \\
   Starting Age & 14 \\
   Aging Starts & 30 \\
   Advanced Aging & 60 \\
-\end{tabular}
+\end{dndtable}
 
 \subsubsection*{Speed}
 Your base walking speed is \textbf{30 ft} (9 metres).
@@ -367,21 +504,27 @@ When you are reduced to 0 hit points but not killed outright, you can drop to 1 
 \subsubsection*{Savage Attacks}
 When you score a critical hit with a melee weapon attack, you can roll one of the weapon's damage dice one additional time and add it to the extra damage of the critical hit.
 
+\end{multicols}
+
+\newpage
+
 
 \subsection{Tiefling}
 
 You are the end result of generations of fiend blood mixing with humanoids.
 
+\begin{multicols}{2}
+
 \subsubsection*{Size}
 Tieflings tend to be similar in size to humans. Your size is medium.
 
 \subsubsection*{Age}
-\begin{tabular}{ l r }
+\begin{dndtable}
   Term Length & 4 \\
   Starting Age & 18 \\
   Aging Starts & 34 \\
   Advanced Aging & 82 \\
-\end{tabular}
+\end{dndtable}
 
 \subsubsection*{Speed}
 Your base walking speed is \textbf{30 ft} (9 metres).
@@ -401,119 +544,70 @@ You have resistance to fire damage.
 You know the thaumaturgy cantrip. When you reach 3rd level, you can cast the hellish rebuke spell as a 2nd level spell once with this trait and regain the ability to do so when you finish a long rest. When you reach 5th level, you can cast the darknessspell once with this trait and regain the ability to do so when you finish a long rest. Charisma is your spellcasting ability for these spells..
 
 
-\columnbreak
-
-\begin{commentbox}{Neat Green Box!}
-    \lipsum[2]
-\end{commentbox}
-
-\begin{quotebox}
-    As you approach this template you get a sense that the blood and tears of many generations went into its making. A warm feeling welcomes you as you type your first words.
-\end{quotebox}
-
-\subsubsection*{Tables}
-
-\begin{dndtable}
-       \textbf{Roll}  & \textbf{Result} \\
-       1-10  & Bad things \\
-       10-50  & Good things \\
-       50-100  & Excellent things
-\end{dndtable}
-
-\begin{dnditemtable}
-       \textbf{Item}  & \textbf{Price} \\
-       Basic stuff  & 10 GP \\
-       Decent stuff  & 20 GP \\
-       Best Stuff  & 30 GP
-\end{dnditemtable}
-
-\subsubsection*{Monster}
-
-\begin{monsterbox}{Monster Foo}
-    \textit{Small metasyntatic variable (golbinoid), neutral evil}\\
-    \hline
-    \basics[%
-    armorclass = 12,
-    hitpoints  = 16 (3d8 + 3),
-    speed      = 50 ft
-    ]
-    \hline
-    \stats[
-    STR = 12 (+1),
-    DEX = 14 (+2)
-    ]
-    \hline
-    \details[%
-    % If you want to use commas in these sections, enclose the
-    % description in braces.
-    % I'm so sorry.
-    languages = {Common Lisp, Erlang},
-    ]
-    \hline \\[1mm]
-    \begin{monsteraction}[Monster-super-powers]
-        This Monster has some serious superpowers!
-    \end{monsteraction}
-    \monstersection{Actions}
-    \begin{monsteraction}[Generate text]
-        This one can generate tremendous amounts of text! Though only when it wants to.
-    \end{monsteraction}
-
-    \begin{monsteraction}[More actions]
-    See, here he goes again! Yet more text.
-    \end{monsteraction}
-\end{monsterbox}
-
-\subsubsection*{Spell}
-
-\begin{spellbox}{Spell Generic}
-    \spelldetails[]
-    \begin{spellaction}[Materials]
-    This spell doesn't really require much.
-    \end{spellaction}
-
-    \begin{spellaction}[Effect]
-    Touch things and get dissaproving looks.
-    \end{spellaction}
-\end{spellbox}
-
-\begin{spellbox}{Spell Druid}
-    \spelldetails[%
-    level   = 9,
-    school  = Transmutation,
-    time    = 1 action,
-    range   = Touch,
-    duration = Instant,
-    components = {S,M},
-    restrict = Druid,
-    ritual = yes
-    ]
-    \begin{spellaction}[Materials]
-    Requires tree-bark and fresh leaves.
-    \end{spellaction}
-
-    \begin{spellaction}[Effect]
-    Trees will grow.
-    \end{spellaction}
-\end{spellbox}
-
-\subsubsection*{Item}
-
-\begin{itembox}{Item Generic}
-    \itemdetails[]
-    \begin{itemaction}[Materials]
-    This item doesn't really require much.
-    \end{itemaction}
-
-    \begin{itemaction}[Effect]
-    Touch things and get dissaproving looks.
-    \end{itemaction}
-\end{itembox}
-
-\section{Legal \& Contact}
-These rules are released under the Open Gaming License (OGL), and conform to the limirations imposed by the System Reference Document (SRD).
-
-
-Following these rules will generate the life-story of your character (and their skills, proficiencies and connections) from birth right up to the point that they begin to take levels in their chosen class.
-% End document
 \end{multicols}
+
+\newpage
+
+
+% =================
+% Upbringings
+% =================
+
+
+
+\section{Legal, References \& Contact}
+
+Copyright (c) 2016 Nassar Zeitoune
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this document and associated files (the "Document"), to deal in the Document without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Document, and to permit persons to whom the Document is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Document.
+
+THE DOCUMENT IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE DOCUMENT OR THE USE OR OTHER DEALINGS IN THE DOCUMENT.
+
+\begin{multicols}{2}
+
+\begin{enumerate}
+
+\item Wizards of the Coast's \textit{D\&D 5th Edition System Reference Document} [\url{http://media.wizards.com/2016/downloads/DND/SRD-OGL_V5.1.pdf}]
+
+\item Wizards of the Coast's \textit{Player's Basic Rules} [\url{http://dnd.wizards.com/products/tabletop/players-basic-rules}]
+
+\item Wizards of the Coast's \textit{Dungeon Master's Basic Rules} [\url{http://dnd.wizards.com/products/tabletop/dm-basic-rules}]
+
+\item Wizards of the Coast's \textit{Unearthed Arcana} [\url{http://dnd.wizards.com/articles-tags/unearthed-arcana}]
+
+\item Roll20's \textit{5th Edition SRD Compendium} [\url{https://roll20.net/compendium/dnd5e/BookIndex}]
+
+\item 5th Edition SRD (Unofficial) [\url{http://www.5thsrd.org/}]
+
+\item 5eSRD (Unofficial) [\url{http://www.5esrd.com/}]
+
+\item The Hypertext d20 SRD [\url{http://www.d20srd.org/}]
+
+\item Forgotten Realms Wiki [\url{http://forgottenrealms.wikia.com/}]
+
+\item D\&D Wiki [\url{http://www.dandwiki.com/}]
+
+\item Reddit - DND [\url{https://www.reddit.com/r/DnD/}]
+
+\item Reddit - DNDBehindTheScreen [\url{https://www.reddit.com/r/dndbehindthescreen}]
+
+\item Reddit - UnearthedArcana [\url{https://www.reddit.com/r/UnearthedArcana/}]
+
+\item Reddit - DnDHomebrew [\url{https://www.reddit.com/r/DnDHomebrew}]
+
+\item Reddit - Best of Homebrew: 5th Edition [\url{https://www.reddit.com/r/boh5e}]
+
+\item Munsondev Traveller Character Generation [\url{http://www.munsondev.com/chargen/}]
+
+\item MegaTraveller Basic Character Generation [\url{http://traveller.chromeblack.com/files/mtpcgen.html}]
+
+
+\end{enumerate}
+
+\end{multicols}
+
+% End document
+
 \end{document}
