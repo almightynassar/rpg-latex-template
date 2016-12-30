@@ -75,17 +75,16 @@
   \newpage
 
   % =================
-  % Character Creation
+  % The Rules
   % =================
-
-  \section{Character Creation}
   
-  Character creation mostly follows the rules set out in the \textbf{Savage Worlds} rulebook with a few setting specific alterations. We will provide a brief reference here but we urge you to consult the rulebook if you wish to clarify a rule or two.
-        
+  \section{The Rules}
+
+  \subsection{Character Creation}
+  
   \begin{enumerate}
 
     \item \textbf{Species}: The default species is human, although you can choose to play one of the many alien species.
-    \noindent
     \begin{standardtable}{\linewidth}{sb}
       \textbf{Species} & \textbf{Description}\\
       Ay-Matak & Avian alien species that love to travel and experience life.\\
@@ -99,10 +98,11 @@
     \end{standardtable}
 
     \item \textbf{Attributes}: You start with a d4 in each attribute and have 5 points with which to raise them. Raising an attribute by one die type costs 1 point (but you cannot raise an attribute above a d12).
+    
     \begin{standardtable}{\linewidth}{sb}
       \textbf{Attribute} & \textbf{Description}\\
       Strength & Raw physical power and general fitness.\\
-      Agility & Nimbleness, quickness and dexterity..\\
+      Agility & Nimbleness, quickness and dexterity.\\
       Smarts & Mental agility and your knowledge about the worlds that inhabit the Black.\\
       Spirit & Inner wisdom and willpower.\\
       Vigor & Endurance and a measure of how much pain and physical damage you can shake off.\\
@@ -111,25 +111,28 @@
     \item \textbf{Skills}: You have 15 points for skills. Each die type in a skill costs 1 point up to the linked attribute. Going over the linked attribute costs 2 points per level. A seperate list of skills is provided in it's own section.
 
     \item \textbf{Derived Traits}: Calculate your derived traits according using your attributes and skills.
+    
     \begin{standardtable}{\linewidth}{sb}
       \textbf{Trait} & \textbf{Description}\\
-      Charisma & Calculated as: (Spirit / 2) - 4. General likeability and manners, and is added to all persuasion and streetwise rolls.\\
-      Pace & Calculated as: (Strength / 2) + 2. How many squares of movement you can take during your turn.\\
-      Parry & Calculated as: (Fighting / 2) + 2. Target number for melee combat or against ranged weapons within melee range.\\
-      Toughness & Calculated as: (Vigor / 2) + 2. Add armour on top of toughness.\\
+      Charisma & Calculated as: \textbf{(Spirit / 2) - 4}. General likeability and manners, and is added to all persuasion and streetwise rolls.\\
+      Pace & Calculated as: \textbf{(Strength / 2) + 2}. How many squares of movement you can take during your turn.\\
+      Parry & Calculated as: \textbf{(Fighting / 2) + 2}. Target number for melee combat or against ranged weapons within melee range.\\
+      Toughness & Calculated as: \textbf{(Vigor / 2) + 2}. Add armour on top of toughness.\\
     \end{standardtable}
 
-    \item \textbf{Hindrances}: You can choose to gain additional character creation points by taking up to \textbf{one} Major Hindrace (2 points) and up to \textbf{two} Minor Hindrances (1 point each). 
+    \item \textbf{Hindrances}: You can choose to gain additional character creation points by taking up to \textbf{one} Major Hindrace (2 points) and up to \textbf{two} Minor Hindrances (1 point each).
+    
     \begin{itemize}
         \item For 2 points you can gain another attribute point or choose an \textbf{Edge}. 
         \item For 1 point you can gain another skill point or increase starting funds by 100%.
     \end{itemize}
             
-    \item \textbf{Edges}: Edges are what sets your character apart from everyone else. There are 3 main paths to choose from:    
+    \item \textbf{Edges}: Edges are what sets your character apart from everyone else. There are 3 main paths to choose from:
+    
     \begin{itemize}
         \item \textbf{Standard}: Just use the normal Edge list. 
         \item \textbf{Psionic}: Take the \textit{Psionic Background} edge and manipulate Space-Time.
-        \item \textbf{Cyberware}: Take the \textit{Warez Background} edge and meld flesh with machine.
+        \item \textbf{Cyberware}: Take the \textit{Cyberware Install} edge and meld flesh with machine.
     \end{itemize}
 
     \item \textbf{Gear}: All characters start with 750 Credits to buy their equipment with.
@@ -138,7 +141,67 @@
 
   \end{enumerate}
         
-  \columnbreak        
+  \columnbreak
+  
+  \subsection{Advancement}
+  
+  Experience points are gained by completing a game session (of around 4-6 hours of gaming). Each game session is worth around 1-3 points. Unlike other role-playing games, instead of levels your character has a "\textbf{Rank}". Characters that have earned a higher rank are able to access the better Edges.
+  
+  \begin{standardtable}{\linewidth}{sb}
+      \textbf{XP} & \textbf{Rank}\\
+      0-19 & Novice\\
+      20-39 & Seasoned\\
+      40-59 & Veteran\\
+      60-79 & Heroic\\
+      80+ & Legendary\\
+    \end{standardtable}
+  
+  Every 5 points accumulated grants the character an Advance (or 4 Advances per Rank). One Advance allows you to do the following:
+  
+  \begin{itemize}
+    \item Gain a new Edge
+    \item Increase one skill that is equal to or greater than its linked attribute
+    \item Increase two skills that are lower than its linked attribute
+    \item Buy a new skill at d4
+    \item Increase one attribute (only choose this once per Rank, and no Trait can be raised above a d12)
+  \end{itemize}
+  
+  \subsection{Game Concepts}
+  
+  \begin{itemize}
+    \item \textbf{Aces:} If you roll the highest number on any die, player rolls that die again and adds that to total
+    \item \textbf{Basic test:} Roll die over Target Number
+    \item \textbf{Bennies:} Players get 3 Bennies at start of the game. They’re for re-rolls and other things
+    \item \textbf{Bleeding Out:} Make a Vigor roll every round until they are Stabilized. This happens before cards are dealt.
+      \begin{itemize}
+        \item \textbf{Success:} Roll again every round until Stabilized
+        \item \textbf{Raise:} Stabilized. No more rolls
+        \item \textbf{Fail:} Character dies
+        \item If other characters make Healing rolls, character stabilizes – no more rolls
+      \end{itemize}
+    \item \textbf{Incapacitated:} After suffering 3 wounds make a Vigor roll:
+      \begin{itemize}
+        \item 1 or Less = Character dies
+        \item Fail = Roll on Injury Table and effect is permanent. You are Bleeding Out
+        \item Success = Roll on Injury Table. Injury gone when healed
+        \item Raise = Roll on Injury Table. Injury gone in 24 hours
+      \end{itemize}
+    \item \textbf{Initiative:} Players get one card per turn and act according to the deck order, going from the Ace to Deuce (in case of ties the suit order is Spade, Heart, Diamond, Club). If the player gets a Joker they can act when they wants, and the Joker gives the PC +2 on all Tests and +2 to Damage
+    \item \textbf{Opposed Rolls:} Defending player rolls. Their roll becomes other player’s Target Number
+    \item \textbf{Raise:} Every 4 points over Target Number is a Raise and can give additional benefits
+    \item \textbf{Shaken:} Characters are Shaken when they first take damage. On their next turn, make an immediate Spirit roll (\textit{May use Bennies to remove Shaken without a roll}) 
+      \begin{itemize}
+        \item \textbf{Success} = Not Shaken but may only do Free Actions
+        \item \textbf{Raise} = Not Shaken and may act normally
+        \item \textbf{Failure} = Still Shaken, may only do Free Actions.
+      \end{itemize}
+    \item \textbf{Soak Roll:} Spend a Benny on a Soak Roll (Vigor check) to regain 1 Wound. Raises take away +1 Wound per Raise. If all the wounds are Soaked it removes any Shaken condition
+    \item \textbf{Unskilled:} If you are unskilled then your roll is a d4 with a –2 penalty
+    \item \textbf{Wild Die:} A d6 rolled along with normal die. Player chooses highest result (but Snakeyes is a critical fail). Can Ace and Raise on the Wild Die
+    \item \textbf{Wounded:} All characters have 3 Wounds until they are Incapacitated (Extras have 1 Wound). Damage and Raises when Shaken makes 1 Wound each. Each wound is –1 to Pace and all Trait Tests. (\textit{May use Bennies to make a Soak Roll})
+  \end{itemize}
+  
+  \columnbreak
 
   % =================
   % Species
@@ -150,7 +213,7 @@
   
   \begin{redtable}{\linewidth}{sb}
     \textbf{Height} & 135-170cm\\
-    \textbf{Weight} & 35-50kg\\
+    \textbf{Weight} & 45-65kg\\
     \textbf{Gender Ratio} & 40\% Male / 60\% Female\\
     \textbf{Reproduction} & Oviparity (Eggs)\\
     \textbf{Diet} & Omnivore\\
@@ -192,7 +255,7 @@
   \begin{standardtable}{\linewidth}{sb}
     \textbf{Construct} & Add +2 to recover from being Shaken, do not suffer wound modifiers, and are immune to poison and disease. They cannot Heal naturally, and require the Repair skill to remove wounds (use like the Healing skill).\\
     \textbf{Artificial} & Organic races often mistrust and misunderstand Bots and Shells. -2 to Charisma when dealing with races other than their own.\\
-    \textbf{Programming} & Start with one free d6 in one skill, representing their original programmed role of your chassis.\\
+    \textbf{Programming} & Start with one free d6 in one skill, representing their original programmed role.\\
     \textbf{Recharge} & If you cannot access a power source at least once a day, suffer one point of Fatigue each day until incapacitated. The day after that, you go "off-line" and must be revivied with a Repair roll and a four-hour charge. This replaces the need for food and water, unless food and water is selected as the power source.\\
   \end{standardtable}
   
@@ -212,7 +275,7 @@
   
   \begin{redtable}{\linewidth}{sb}
     \textbf{Height} & 135-170cm\\
-    \textbf{Weight} & 50-80kg\\
+    \textbf{Weight} & 55-90kg\\
     \textbf{Gender Ratio} & 90\% Genderless / 9\% Male / 1\% Female\\
     \textbf{Reproduction} & Ovuliparity (External egg fetilisation egg)\\
     \textbf{Diet} & Herbivore\\
@@ -228,24 +291,48 @@
   Ghantakian characters have the following traits:
   \begin{standardtable}{\linewidth}{sb}
     \textbf{Carapace} & You have an armoured carapace that protects you from harm. +2 Armour.\\
-    \textbf{Caste-based} & Start with one free d6 in one skill, representing your designated role in Ghantakian society.\\
     \textbf{Reputable} & Your species is seen as dependable, loyal and predictable. +2 charisma when dealing with characters who have heard of the Ghantak before.\\
+    \textbf{Restricted senses} & Your unsual head restricts your field of vision and hearing. -2 to Notice rolls requiring vision and hearing\\
   \end{standardtable}
+  
+  \textbf{Ghantakian Names}: Akiesuh, Bazoh, Bolbih, Choxu, Etix, Farqae, Gaknu, Graux, Greex, Havzal, Leksur, Mamobah, Mezuat, Semunu, Sydesih, Thonox, Vexoh, Zimla, Zouh, Ziuzoch
+  
+  \textbf{Secondary Names}: Ghantak do not take secondary names. Ghantakian first names are generally unique enough for a specific region. If pressed, the Ghantak will choose the next available incremental number for the region and their name. 
+  
+  \textbf{Males and Females}: Females are especially reverred in Ghantakian culture, and are fanatically protected by all Ghantakians. They are rarely seen by non-Ghantakians, but can be differentiated by their large birthing pouch located just above their rectum. Males are also important to Ghantakian society, and usually are kept close to females to help breed the new generation. Males are allowed to travel the Black, and are almost indistinguishable from the genderless Ghantak (their genitalia is usually sheathed and protected by their carapace).
     
   \columnbreak
 
   \subsection{Ghoa}
       
   \includegraphics[width=\linewidth]{alien_reptile_concept_by_xjager513-d3ba4g7.jpg}
-    
-  You are an alien that has evolved from reptiles native to your planet. Your species are typically tribal, putting tribe ahead of all other social groups (including the species as a whole). Their chief mode of expression is anger, and are prone to acts of wanton violence. Disputes are traditionally resolved through force (though rarely to the death). The prospect of death rarely intimidates the Ghoa, and some actively embrace it. Their political system is based on the tribe that the Ghoa is a part of. 
+  
+  \begin{redtable}{\linewidth}{sb}
+    \textbf{Height} & 170-220cm\\
+    \textbf{Weight} & 70-130kg\\
+    \textbf{Gender Ratio} & 100\% Hermaphrodite\\
+    \textbf{Reproduction} & Viviparity (Live birth)\\
+    \textbf{Diet} & Omnivore (meat preference)\\
+    \textbf{Homeworld} & (\textit{Unknown})\\
+  \end{redtable}
+        
+  The Ghoa (\textit{plural: Ghoan}) are an alien species evolved from an unusual mammal-reptile hybrid native to their homeworld. Their homeworld has been lost to time as the Ghoa place little value on sentimental ties and recorded histories. They are larger and heavier than humans, with sharp ridged scales covering their back. They also have sharp claws and teeth, and have been known to use their tail as a weapon.
+  
+  The Ghoa are typically tribal, putting their tribe ahead of all other social groups (including the species as a whole). Their chief mode of expression is anger, and the Ghoa are prone to acts of wanton violence. Disputes are traditionally resolved through force, but rarely to the death. Some Ghoa actively embrace the honour and glory of death in battle, and actively seek out combat as mercenaries and pirates.
+  
+  All Ghoa are hermaphrodites, meaning they have both male and female genitals. Pregnancy is an undesirable period for any Ghoa (as it makes you weaker and more vulnerable during combat), so "females" are usually the Ghoa who are incapable of fighting and have been forced to be subservient to other Ghoa (usually the whole tribe). "Females", or "Breeders", are constantly pregnant in order to produce many warriors for the tribe.
     
   Ghoan characters have the following traits:
   \begin{standardtable}{\linewidth}{sb}
+    \textbf{Bigger \& Heavier} & Ghoa are larger than other races. Start with a d6 in Strength instead of a d4.S\\
     \textbf{Bloodthirsty} & Ghoa are cruel to their foes, rarely take prisoners, and feel little compunction about punishing captured enemies. This causes a -4 Charisma penalty when dealing with "civilised" worlds that know of the Ghoa.\\
     \textbf{Natural Weapons} & The Ghoa use their tails, claws and teeth as weapons, dealing Str+d6 damage.\\
     \textbf{Tribal Warriors} & Their willingness to use violence to solve all problems mean that the Ghoa start with a d6 instead of a d4 in the Fighting skill.\\
   \end{standardtable}
+  
+  \textbf{Ghoan Names}: Bonmok, Chardo, Drothax, Druthak, Dunmom, Garuga, Grintaz, Krudrar, Lakuq, Lugrub, Mugarod, Okrih, Pok, Rok, Roslarb, Sabub, Shak, Shopurd, Trougha, Zugorim
+  
+  \textbf{Secondary Names}: Ghoa use their tribe as a secondary name. Tribal names are usually descriptive, grandiose, or violent. Tribes are extremely fluid, as new ones are created all the time and do not need to be limited to the Ghoa only (some Ghoa see their teammates as part of their "tribe" and will take on the spacecraft name). 
     
   \columnbreak
 
@@ -253,14 +340,21 @@
   
   \includegraphics[width=\linewidth]{TCP-Pirate-2}
   
+  \begin{redtable}{\linewidth}{sb}
+    \textbf{Height} & 150-200cm\\
+    \textbf{Weight} & 55-115kg\\
+    \textbf{Gender Ratio} & 50\% Male / 50\% Female\\
+    \textbf{Reproduction} & Viviparity (Live birth)\\
+    \textbf{Diet} & Omnivore\\
+    \textbf{Homeworld} & Earth\\
+  \end{redtable}
+  
   You are a standard human, with a genetic lineage tracing all the way back to Sol.
   
   Humans have the following traits:
   \begin{standardtable}{\linewidth}{sb}
     \textbf{Free Edge} & Start with one free Novice Edge of their choice, regardless of requirements (except those that require other Edges).\\
   \end{standardtable}
-  
-  \includegraphics[width=\linewidth]{TCP-Steampunk-4}
     
   \columnbreak
       
@@ -293,65 +387,37 @@
 
   \section{Skills}
   
-  \subsection{Agility}
-  
-  Agility skills focus on hand-eye coordination and general dexterity.
-  
-  \begin{powertable}{ p{.25\textwidth} p{.65\textwidth} }
-    \textbf{Skill} & \textbf{Examples}\\
-    Driving & Control any type of ground or water vehicle (including riding animals)\\
-    Fighting & Covers all hand-to-hand (melee) attacks and thrown weapons (from grenades to spears)\\
-    Piloting & Control any type of air or space craft\\
-    Shooting & Covers all ranged attacks. Short range = 4, Medium range = 6 and Long range = 8\\
-    Stealth & Hide and move quietly, as well as palm objects and pick pockets\\
-   \end{powertable}
-  
-  \subsection{Smarts}
-  
-  Smarts skills are anything that require knowledge or learned abilities.
-  
   \begin{powertable}{ p{.25\textwidth} p{.65\textwidth} }
     \textbf{Skill} & \textbf{Examples}\\
     Astrogation & Navigating safe FTL travel through the Black\\
     Astronautics & Designing and building a spacecraft (only need Repair to fix spacecraft)\\
+    Athletics & Swimming, climbing, running, pushing, pulling, and weight-lifting\\
     Battle & Military strategy and tactics. Useful for running large combat operations\\
     Computers & Computers, Cyberware, Electrical, Electronics, Robotics and other computer theory\\
+    Driving & Control any type of ground or water vehicle (including riding animals)\\
+    Fighting & Covers all hand-to-hand (melee) attacks and thrown weapons (from grenades to spears)\\
     Healing & First Aid andtreating existing injuries (Success and raise eliminates 1 wound). Must subtract patients wounds in addition to own wounds when making a Healing roll\\
     Insight & Understand the motives or thoughts of someone, and scrutinizing people to see if they are lying\\
+    Intimidation & Frightening enemies and making threats\\
+    Knowledge (-) & Other area of expertise outside of "common knowledge" (which includes local history, etiquette, and operating common machinery and technology for their native tech-level\\
     Language (-) & One Non-native language. (\textit{d4 = common phrases, d6 = halting conversation, d8 = fluent, d10 = mimic dialects, d12 = recite important literary works})\\
     Life Sciences & Biology, Botany, Ecology, Exobiology, Genetics, Xenobiology, and Zoology\\
     Medicine & Latest medical theories on surgery, disease diagnosis, and epidemic containment\\
     Notice & General alertness, searching for items, and detecting ambushes\\
     Operations & Operate sensors, shields, communications and other spacecraft systems\\
+    Persuasion & Convincing others. Five personality states are Hostile, Uncooperative, Neutral, Friendly and Helpful\\
+    Piloting & Control any type of air or space craft\\
     Planetary Sciences & Geology, Hydrology, and Meteorology\\
     Psionics & Required for psionic characters to use their powers. For non-psionic characters, this skill represents their understanding of how psionics work\\
     Repair & Fix gadgets, vehicles, weapons and other machines. Apply -2 penalty if you do no have the required tools\\
     Science & Chemistry, Mathematics, Mechanics, and Physics\\
     Security  & Hacking, disarming traps, bypassing alarms, cyptography, and opening locks. Use this skill to protect against intruders\\
+    Shooting & Covers all ranged attacks. Short range = 4, Medium range = 6 and Long range = 8\\
     Social Sciences & Archeology, Economics, Law, and Political Science\\
+    Stealth & Hide and move quietly, as well as palm objects and pick pockets\\
     Streetwise & Gather information from people (to gather information from media use investigation). Includes tracking people in urban environments\\
     Survival & Find food, water and shelter in hostile environments. Includes tracking people in natural environments\\
-    - & Other area of expertise outside of "common knowledge" (which includes local history, etiquette, and operating common machinery and technology for their native tech-level\\
     Taunt & Test of will attack against an opponent\\
-  \end{powertable}
-  
-  \subsection{Spirit}
-  
-  Spirit skills are anything that uses the charisma and wisdom of the character.
-  
-  \begin{powertable}{ p{.25\textwidth} p{.65\textwidth} }
-    \textbf{Skill} & \textbf{Examples}\\
-    Intimidation & Frightening enemies and making threats\\
-    Persuasion & Convincing others. Five personality states are Hostile, Uncooperative, Neutral, Friendly and Helpful\\
-  \end{powertable}
-  
-  \subsection{Strength}
-  
-  Strength skills are anything that require raw physical strength or athletic ability.
-  
-  \begin{powertable}{ p{.25\textwidth} p{.65\textwidth} }
-    \textbf{Skill} & \textbf{Examples}\\
-    Athletics & Swimming, climbing, running, pushing, pulling, and weight-lifting\\
   \end{powertable}
 
   \newpage
@@ -362,9 +428,26 @@
 
   \section{Hindrances}
   
-  \begin{powertable}{ p{.15\textwidth} p{.10\textwidth} p{.65\textwidth} }
+  \begin{powertable}{ p{.20\textwidth} p{.10\textwidth} p{.60\textwidth} }
     \textbf{Name} & \textbf{Type} & \textbf{Description}\\
+    All Thumbs & Minor & -2 penalty to Repair, and a natural 1 on the skill die (regardless of wild die) causes a malfunction\\
+    Anemic & Minor & Prone to sickness, disease, and fatigue. -2 from all Fatigue checks (including those to resist poison and disease)\\
+    Arrogant & Major & Must humiliate an opponent (i.e. disarm then hand weapon back), and will always challenge the "leader"\\
+    Bad Eyes & Minor & -2 to attack or notice more than 5 squares away (unless wearing glasses)\\
+    Bad Luck & Major & One less Benny per session\\
+    Big Mouth & Minor & Unable to keep a secret, and blabs at the worst time\\
+    Blind & Major & -6 to all tasks that require vision, and -2 to social tasks (as you cannot 'read' the person). Gain a free Edge\\
+    Cautious & Minor & You are overly careful\\
+    Clueless & Major & -2 to most Common Knowledge rolls\\
+    Code of Honour & Major & You keep your word and act like a gentleman at all times\\
+    Curious & Major & You must know everything, and wants to know what is behind a potential mystery\\
     Cyberware Intolerance & Minor & (Organic only) Your body cannot adapt to cyberware. Cannot install any cyberware, including simple AR and Cortical Stacks\\
+    Death Wish & Minor & You want to die after completing a certain task or goal\\
+    Delusional & Minor / Major & Suffer from grave delusions that is considered strange by everyone else. Minor delusions are harmless, while Major are ones that you express frequently and could lead to danger\\
+    Elderly & Major & -1 to Pace, and -1 Strength and Vigor die types. +5 skill points for any Smarts skills\\
+    Enemy & Minor / Major & You have a recurring Nemisis. Minor is a lone gunslinger, while Major is someone with serious resources\\
+    Greedy & Minor / Major & Obsessed with wealth. Minor when you argue blithely over loot, while Major is fighting over anything considered unfair\\
+    Habit & Minor / Major & -1 Charisma, and Fatigue roll is required when deprived of Major habit\\
     Xenophobe & Minor / Major & You have an intolerance of other races. As a Minor Hindrance you suffer a -2 Charisma modifier when dealing with other races, or if your intolerance is known by others. The penalty is -4 as a Major Hindrance\\
   \end{powertable}
   
@@ -394,7 +477,7 @@
     Killer Instinct & Herioc & - & You don’t like to lose. On ties for any opposed roll of any sort, you win. In addition, if your skill die on an opposed skill roll is a 1, you can reroll it (but must keep the second result, even if it’s another 1)\\
     Luck & Novice & - & Lady Luck often smiles on you. Whenever you spend a benny, roll a d6. On a 6, you get the benny back immediately (it may even be spent on the same roll they spent the first one on).\\
     Navigator & Novice & Smarts d6+, Astrogation d8+ & +2 on Astrogation for FTL Travel, +1 for all other Navigation rolls. Saves d6 traveltime (in base unit of time)\\
-    Psionic Powers & Novice & Psionics 6+ & (Organic only) Allows the use of psionic abilities (see \textit{Psionics})\\
+    Psionic Background & Novice & Psionics 6+ & (Organic only) Allows the use of psionic abilities (see \textit{Psionics})\\
     Psionic (New) & Novice & Psionic Powers & (Organic only) Learn a new psionic ability\\
     Reclaimer & Novice & Smarts d6+, Repair d6+ & +2 on Common Knowledge rolls to identify or value a find. +1 to any repair rolls on scavanged objects\\
     Smuggler & Novice & Piloting d6+, Persuasion d6+ & +2 to persuasion rolls when speaking to Law Enforcement officials, +2 on piloting when trying to stay undetected\\
