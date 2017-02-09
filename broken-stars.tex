@@ -215,11 +215,11 @@
     \item \textbf{Injury table}: Roll 2d6.
       \begin{redtable}{\linewidth}{sb}
         \textbf{Roll} & \textbf{Result}\\
-        2 - (Irreplaceable) & The GM determines the worst possible outcome, including genitalia\\
+        2 - (Irreplaceable) & The GM determines the worst possible outcome\\
         3-4 (Arm) & Roll left or right arm randomly; it’s unusable like the One Arm Hindrance\\
-        5-9 (Guts) & Somewhere between the crotch and the chin. Roll 1d6; 1-2 reduce Agility, 3-4 reduce Vigor, 5-6 reduce Strength (minimum d4)\\
-        10 (Leg) & Gain the Lame Hindrance (or the One Leg Hindrance if already Lame)\\
-        11-12 (Head) & A grievous injury to the head. Roll 1d6; 1-2 you have a scar and Ugly Hindrance, 3-4 you have the One Eye Hindrance (or Blind if you only had one eye), 5-6 reduce Smarts (minimum d4).
+        5-9 (Guts) & Roll 1d6; 1-2 reduce Agility, 3-4 reduce Vigor, 5-6 reduce Strength (minimum d4)\\
+        10 (Leg) & Gain the Lame Hindrance (or the One Leg Hindrance)\\
+        11-12 (Head) & Roll 1d6; 1-2 you have a scar and Ugly Hindrance, 3-4 you have the One Eye Hindrance (or Blind), 5-6 reduce Smarts (minimum d4).
       \end{redtable}
     \item \textbf{Initiative:} Players get one card per turn and act according to the deck order, going from the Ace to Deuce (in case of ties the suit order is Spade, Heart, Diamond, Club). If the player gets a Joker they can act when they wants, and the Joker gives the PC +2 on all Tests and +2 to Damage
     \item \textbf{Minimum Strength:} Using gear without equally it's Min. Strength will incur a few penalties. Melee weapons damage die are downgraded to your Strength die, and you do not gain any of the weapon's bonuses (but you do incur their penalties). Ranged weapons incur a -1 penalty to each attack roll for every step of difference between their Strength and the Min. Strength (it is ignored if the weapon is braced on a support or bipod)
@@ -267,6 +267,23 @@
         Success & Not Shaken but may only do Free Actions\\
         Raise & Not Shaken and may act normally\\
         Fail & Still Shaken, may only do Free Actions\\
+      \end{redtable}
+    \item \textbf{Size:} Most humanoids (except for the Ghoa and some Uplifted) start at the default size 0. Adjustments to this value directly affects toughness (add or subtract your size from your toughness). When attacking a creature 2 or more levels smaller than you will incur a -2 attack penalty; attacking a creature 4 or more levels larger than you will gain a +2 bonus; attacking a creature 8 or more levels larger than you will gain a +4 bonus.
+      \begin{redtable}{\linewidth}{sb}
+        \textbf{Size} & \textbf{Example}\\
+        -2 & Cat, large rat, small dog\\
+        -1 & Large dog, bobcat, small humanid\\
+        0 & Humanoid, Aliens\\
+        +1 & Bear Uplifted\\
+        +2 & Bull, Gorilla, Horse\\
+        +3 & Bear\\
+        +4 & Rhino, Great White Shark\\
+        +5 & Small Elephant\\
+        +6 & Elephant\\
+        +7 & T-Rex, Orca\\
+        +8 & Dragon\\
+        +9 & Blue Whale\\
+        +10 & Kraken, Leviathan\\
       \end{redtable}
     \item \textbf{Snapfire:} Gear with the snapfire property are inaccurate when shot from the hip. If you move at any time during the round, you take a -2 penalty
     \item \textbf{Soak Roll:} Spend a Benny on a Soak Roll (Vigor check) to regain 1 Wound. Raises take away +1 Wound per Raise. If all the wounds are Soaked it removes any Shaken condition
@@ -383,15 +400,15 @@
 
   The Ay-Matak (\textit{plural: Ay-Matakian}) are an alien species that have evolved from the birds native to their homeworld of Matak. They typically shorter and lighter than humans, have two pairs of wings, are bi-pedal, and have two arms with opposable thumbs on each of their hands. The beak is solid and sharp along the sides, with the tip made out of softer material that is flexible enough to produce a variety of sounds. The plumage of a male Ay-Matak is always more colourful than the female (who are limited to whites, greys and blacks).
 
-  Their homeworld of Matak has been lost, leaving many Ay-Matak have been stranded across the black. Legend has it that Matak was reknowned for its tall trees that almost touched the edges of the atmosphere. It also had a rich ecosystem that meant the Ay-Matak enjoyed an overabundance of food and had little need to compete for limited resources. Because of this the Ay-Matak were able to fully indulge in the pleasures of life. The Ay-Matak place a high social value on the arts (especially those that use an abundance of colour or visual stimuli), travel, and new ideas.
+  Their homeworld of Matak has been lost, leaving many Ay-Matak stranded across the black. Legend has it that Matak was reknowned for its tall trees that almost touched the edges of the atmosphere. It also had a rich ecosystem that meant the Ay-Matak enjoyed an overabundance of food and had little need to compete for limited resources. Because of this the Ay-Matak were able to fully indulge in the pleasures of life. The Ay-Matak place a high social value on the arts (especially those that use an abundance of colour or visual stimuli), travel, and new ideas.
 
   Planets with a majority of Ay-Matak are usually formed under an Oligarchic government. The members of the government are generally influential elders who have contributed greatly to the culture of the planet, or have travelled far and wide in search of new ideas.
 
   Ay-Matakian characters have the following traits:
   \begin{standardtable}{\linewidth}{sb}
-    \textbf{Flight} & Can fly at their basic Pace and even "run" while flying. It cost 2 squares of Pace to gain 1 square of height.\\
-    \textbf{Hollow-boned} & -1 toughness.\\
-    \textbf{Free Edge} & Start with one free Novice Edge of their choice, regardless of requirements (except those that require other Edges).\\
+    \textbf{Flight} & Can fly at their basic Pace and even "run" while flying. It cost 2 squares of Pace to gain 1 square of height\\
+    \textbf{Hollow-boned} & -1 toughness\\
+    \textbf{Free Edge} & (Wild cards only) Start with one free Novice Edge\\
   \end{standardtable}
 
   \includegraphics[width=\linewidth]{bird_race_f_concept_by_luigiix-d52w3as}
@@ -412,20 +429,40 @@
 
   On the other end of the spectrum are individuals who have made the transition from organic to mechanical. These individuals, known as Ghosts, have chosen to digitise their conciousness and memory and upload themselves into artificial bodies known as Shells. Many in society believe that these digitised conciousnesses have lost their basic "humanity", and are indistinguishable from normal AI.
 
-  Bot and Shell characters have the following traits:
+  All Bot and Shell characters have the following traits:
   \begin{standardtable}{\linewidth}{sb}
+    \textbf{Artificial} & Organic races often mistrust and misunderstand Bots and Shells. -2 to Charisma when dealing with races other than their own. Organics will generally prefer to deal with an organic "master", and are wary of any machine that claims it is operating independently\\
     \textbf{Construct} & Add +2 to recover from being Shaken, do not suffer wound modifiers, and are immune to poison and disease. They cannot Heal naturally, and require the Repair skill to remove wounds (use like the Healing skill).\\
-    \textbf{Artificial} & Organic races often mistrust and misunderstand Bots and Shells. -2 to Charisma when dealing with races other than their own.\\
-    \textbf{Programming} & Start with one free d6 in one skill, representing their original programmed role.\\
-    \textbf{Recharge} & If you cannot access a power source at least once a day, suffer one point of Fatigue each day until incapacitated. The day after that, you go "off-line" and must be revivied with a Repair roll and a four-hour charge. This replaces the need for food and water, unless food and water is selected as the power source.\\
+    \textbf{Recharge} & If you cannot access a power source at least once a day, suffer one point of Fatigue each day until incapacitated. The day after that, you go "off-line" and must be revivied with a Repair roll and a four-hour charge. This replaces the need for food and water.\\
   \end{standardtable}
-
-  \begin{commentbox}{Playing as a Bot}
-  \textit{Swapping Bodies}: Since you are a digital conciousness (Ghost or AGI), you may decide to change your form-factor for a chassis more suited to the task at hand (after acquiring it, of course). You will experience disorientation as you get used to your new chassis. The settling period usually occurs over a few days (at the GM's discretion), after which you will be totally fluent in the capabilities of your new body. Once you have changed bodies, replace your original "\textit{Programming}" ability with another one more suited to your new chassis. You may also have a new power source.
-
-  \textit{Hacking}: Hacking and reprogramming a Bot is a very complex task. It will generally require the Hacker to access a physical IO port (most computer and electronic systems guard against remote entry), which is best accessed if the Bot is incapacitated. Then the Hacker needs to open the IO port (Hacker's Repair vs Bot's Toughness), and then break the software Firewalls (Hacker's Security opposed by the Bot's Spirit).
-
-  \textit{Artificial}: Most organic beings have an inherent distrust of AGI and see the machines as a threat. Machines are depicted (rightly or wrongly) as unfeeling, ruthlessly efficient, and simply cannot "get it". Characters will generally prefer to deal with an organic "master", and are wary of any machine that claims it is operating independently.
+  
+  In addition, as a digital conciousness you are able to swap your physical "body" to suit the task at hand. However, purchasing new bodies is extremely expensive and your chassis model will only be able to improve a little bit before it hits it's technological limits. Please note that while playing a Bot or Ghost character offers lots of flexibility, your progress may stall when you hit your chassis' experience limit and you cannot afford an upgrade.
+  
+  All of your characters Attributes, Skills and Edges are linked to a particular chassis you own. You cannot carry over any attributes, skills or edges across to a new chassis. Your character retains all of their memories and personality, and your Cortical Stack may be recoverable from the wreckage of your chassis (although all attributes, skills and edges will be lost to the chassis). If the Cortical Stack is damaged or lost, you can recover from a back-up (without all of the new memories).
+  
+  It also should be noted that it is highly illegal to run multiple copies of yourself throughout United Systems space and most Independent systems.
+  
+  The following applies to each chassis you own:
+  \begin{standardtable}{\linewidth}{sb}
+    \textbf{All Shiny} & Your chassis has it's own rank (Novice, Seasoned, Veteran, Heroic, Legendary). Your character must be of the same rank to pilot the chassis. The chassis can never improve it's rank. When creating the chassis, purchase advancements up till the rank of the chassis\\
+    \textbf{Bugs} & All chassis have some sort of manufactoring or programming problem. Select one Major OR two Minor hindrances that make sense for your chassis. Do not gain any character creation points\\
+    \textbf{Deus Ex Machina} & Your chassis gains experience points seperately to your character. It gains experience while you are operating the chassis (it also gains experience if someone else operates the chassis). Gained experience points can be used to buy advancements, up until the chassis reaches the next rank (max. 4 advancements)\\
+    \textbf{Disorientation} & You will experience disorientation as you get used to your new chassis. The settling period usually occurs over a few days (4d4 OR at the GM's discretion), after which you will be totally fluent in the capabilities of your new body. If you attempt to do any task during the disorientation period, apply a -2 penalty
+  \end{standardtable}
+  
+  \begin{paperbox}{Hacking} 
+  Hacking and reprogramming a Bot is a very complex task. It will generally require the Hacker to access a physical IO port (most computer and electronic systems guard against remote entry), which is best accessed if the Bot is incapacitated. Then the Hacker needs to open the IO port (Hacker's Repair vs Bot's Toughness), and then break the software Firewalls (Hacker's Security opposed by the Bot's Spirit).
+  \end{paperbox}
+  
+  \begin{commentbox}{Becoming the System} 
+  Since you are a digital consciousness, there is nothing stopping you from inhabiting other computer or cybernetic systems. There are just a few cavaets:
+    \begin{itemize}
+      \item \textbf{Hardware}: Not all computer systems have enough memory, processing power or disk storage to hold and operate a digital conciousness. In these cases it is better to interact with the system through a standard interface port instead\\
+      \item \textbf{Firewalls}: Unless you have been allowed to inhabit the computer system, there is likely to be multiple security systems in place to lock out and destroy intruders. Use the Hacking rules to determine if you can bypass the Firewalls\\
+      \item \textbf{Limited Sensors}: Most computer system do not even bother with audio visual input, relying on a user to type in commands through a terminal or keyboard. You could lose sense of the outside world while inhabiting the computer system\\
+      \item \textbf{Illegal}: Across most jurisdictions it is illegal for an AI or Ghost to co-inhabit on a single computer with other AIs or programs. This is because most co-habited computers ended up with one AI "murdering" all other programs and AI so that they could have uncontested access to the system hardware. For this reason, all computer hardware (including Bots) must be blank before uploading an AI or program, and (in the case of swapping) the hardware left behind must be blanked upon exiting\\
+      \item \textbf{Disorientation}: It is always a disorientating experience when being uploaded to a new environment. Follow the rules outlined in Disorientation section for the chassis
+    \end{itemize}
   \end{commentbox}
 
   \columnbreak
@@ -452,8 +489,8 @@
   Ghantakian characters have the following traits:
   \begin{standardtable}{\linewidth}{sb}
     \textbf{Carapace} & You have an armoured carapace that protects you from harm. +2 Armour.\\
-    \textbf{Reputable} & Your species is seen as dependable, loyal and predictable. +2 charisma when dealing with characters who have heard of the Ghantak before.\\
     \textbf{Restricted senses} & Your unsual head restricts your field of vision and hearing. -2 to Notice rolls requiring vision and hearing\\
+    \textbf{Free Edge} & (Wild cards only) Start with one free Novice Edge\\
   \end{standardtable}
 
   \textbf{Ghantakian Names}: Akiesuh, Bazoh, Bolbih, Choxu, Etix, Farqae, Gaknu, Graux, Greex, Havzal, Leksur, Mamobah, Mezuat, Semunu, Sydesih, Thonox, Vexoh, Zimla, Zouh, Ziuzoch
@@ -485,10 +522,11 @@
 
   Ghoan characters have the following traits:
   \begin{standardtable}{\linewidth}{sb}
-    \textbf{Bigger \& Heavier} & Ghoa are larger than other races. Start with a d6 in Strength instead of a d4.\\
     \textbf{Bloodthirsty} & Ghoa are cruel to their foes, rarely take prisoners, and feel little compunction about punishing captured enemies. This causes a -4 Charisma penalty when dealing with "civilised" worlds that know of the Ghoa.\\
     \textbf{Natural Weapons} & The Ghoa use their tails, claws and teeth as weapons, dealing Str+d6 damage.\\
-    \textbf{Tribal Warriors} & Their willingness to use violence to solve all problems mean that the Ghoa start with a d6 instead of a d4 in the Fighting skill.\\
+    \textbf{Reptile Blood} & Your prefer warm environments. -4 penalty to resist negative Cold environmental effects\\
+    \textbf{Stronger} & Ghoa are stronger than other races. Start with a d6 in Strength instead of a d4.\\
+    \textbf{Free Edge} & (Wild cards only) Start with one free Novice Edge\\
   \end{standardtable}
 
   \textbf{Ghoan Names}: Bonmok, Chardo, Drothax, Druthak, Dunmom, Garuga, Grintaz, Krudrar, Lakuq, Lugrub, Mugarod, Okrih, Pok, Rok, Roslarb, Sabub, Shak, Shopurd, Trougha, Zugorim
@@ -518,7 +556,9 @@
 
   Kaj characters have the following traits:
   \begin{standardtable}{\linewidth}{sb}
+    \textbf{Artificial environments} & -4 penalty to resist all negative environmental effects (such as heat, cold, pressure)\\
     \textbf{Genetically enhanced} & Kaj start with a d6 in Smarts instead of a d4.\\
+    \textbf{Free Edge} & (Wild cards only) Start with one free Novice Edge\\
   \end{standardtable}
 
   \textbf{Kaj Names}: Abupikal, Brohekano, Debimaum, Fawaroum, Frukasoiro, Gatuxund, Hanepim, Ibaxi, Nothano, Osoluga, Qitandok, Romazirash, Rumduvish, Schapruga, Strikzan, Tirwein, Xintegi, Zefinag, Zosdash, Zulaum
@@ -549,6 +589,8 @@
     \textbf{One Eye} & -2 to Trait rolls that require depth perception such as Shooting.\\
     \textbf{Extra Left Arm} & One non-movement action per turn, which does not incur the multi-action penalty.\\
     \textbf{Extra Right Arm} & One non-movement action per turn, which does not incur the multi-action penalty.\\
+    \textbf{Ungainly} & You are tall and top-heavy. Agility requries two-steps per raise during character creation\\
+    \textbf{Free Edge} & (Wild cards only) Start with one free Novice Edge\\
   \end{standardtable}
 
   \textbf{Pluvmian Male Names}: Abbagan, Buckia, Bundamerrie, Chiridie, Coolanyarra, Doontah, Coombooloo, Jiwabiddy, Kagageerra, Mongah, Moolyal, Morangoril, Nangerow, Narga, Painbiddy, Tumbunna, Unjung, Wobbing, Yabongona, Yulla
@@ -576,7 +618,9 @@
 
   Humans have the following traits:
   \begin{standardtable}{\linewidth}{sb}
-    \textbf{Free Edge} & Start with one free Novice Edge of their choice, regardless of requirements (except those that require other Edges).\\
+    \textbf{Flawed} & Start with a Minor Hindrance of your choice. Do not gain character creation points for this Hindrance\\
+    \textbf{Flexible} & Start with a d6 in a skill of your choice\\
+    \textbf{Free Edge} & (Wild Card only) Start with one free Novice Edge of their choice.\\
   \end{standardtable}
 
   \columnbreak
@@ -588,19 +632,19 @@
   All Uplifted have the following traits:
   \begin{standardtable}{\linewidth}{sb}
     \textbf{Inferior} & Many see the Uplifted as inferior to other species that have evolved naturally. -2 Charisma when other characters deal with the Uplifted.\\
-    \textbf{Primal Strength} & You start with a d6 instead of a d4 in Strength\\
     \textbf{Primal Weapons} & You still have the claws, teeth, horns or other leftovers from your primitive animal state. These natural weapons do Str+d6 damage.\\
     \textbf{Primitive Intellect} & You must spend 2 points per step to raise your Smarts during character creation\\
+    \textbf{Free Edge} & (Wild Card only) Start with one free Novice Edge of their choice.\\
   \end{standardtable}
 
   In addition, Uplifted have additional abilities due to their animal ancestry. Choose one of the following:
 
   \begin{standardtable}{\linewidth}{sb}
-    \textbf{Bear} & Descended from Bears, you are as big (if not bigger) than most Ghoa. Usually police and military support. +1 Size, and +1 Toughness\\
-    \textbf{Bovine} & Descended from Cows, Bulls, and Buffalo. Usually farmers and labourers. You start with a d6 in Vigor instead of a d4\\
-    \textbf{Canine} & Descended from Wolves and Dogs. Usually police and military grunts. +2 to Notice when using smell or hearing\\
-    \textbf{Feline} & Descended from Lions, Tigers and Panthers. Usually solitary military agents. Low-light vision (ignore penalities for dim and dark lighting), and +2 to Athletics climbing checks\\
-    \textbf{Rodent} & Descended from Rats, Racoons, and Rabbits. Usually couriers (and, some speculate, spies). +4 Pace\\
+    \textbf{Bear} & Descended from Bears, you are as big (if not bigger) than most Ghoa. +1 Size, and +1 Toughness\\
+    \textbf{Bovine} & Descended from Cows, Bulls, and Buffalo. You start with a d6 in Vigor instead of a d4\\
+    \textbf{Canine} & Descended from Wolves and Dogs. +2 to Notice when using smell or hearing\\
+    \textbf{Feline} & Descended from Lions, Tigers and Panthers. Low-light vision (ignore penalities for dim and dark lighting), and +2 to Athletics climbing checks\\
+    \textbf{Rodent} & Descended from Rats, Racoons, and Rabbits. +4 Pace\\
   \end{standardtable}
 
   \columnbreak
@@ -979,6 +1023,199 @@
   % =================
 
   \section{Spacecraft}
+  
+  \begin{multicols}{2}
+  
+  \subsection{Spacecraft Creation}
+
+  \begin{enumerate}
+  
+    \item \textbf{Hull}: Select a Hull type. This will give your spacecraft some defaults and base values such as crew size, storage space and available power.
+    
+    \item \textbf{Rank}: All spacecraft have a rank to help designate it's quality. These ranks are Novice, Seasoned, Veteran, Heroic and Legendary. New crews will always start with a Novice spacecraft, although the GM may allow for better craft. Each rank above Novice gains your spacecraft 4 advancement points, to be spent as would with Hindrances.
+
+    \item \textbf{Attributes}: You start with a d4 in each attribute and have 5 points with which to raise them. Raising an attribute by one die type costs 1 point (but you cannot raise an attribute above a d12).
+
+    \begin{standardtable}{\linewidth}{sb}
+      \textbf{Attribute} & \textbf{Description}\\
+      Armour  & Represents Hull integrity and ability to take damage\\
+      Engines & Determines acceleration, number of IDD jumps, and maximum impulse velocity\\
+      Power   & How much power is available to power all of the systems.\\
+      Size    & The size of the ship, relative to others in it's class\\
+      Systems & Determines the effectiveness of spacecraft systems, and how many new ones you can install\\
+    \end{standardtable}
+
+    \item \textbf{Systems}: You have 5 points for systems. Each die type in a system costs 1 point up to the Systems attribute. Going over the Systems attribute costs 2 points per level. Each system has a linked Skill; when a character uses a system, they first roll their linked Skill to see if they can confer a bonus to the system roll (see Cooperation rules).
+    \begin{standardtable}{\linewidth}{sb}
+      \textbf{System} & \textbf{Linked Skill}\\
+      Manuever    & Piloting\\
+      Navigation  & Astrogation\\
+      Operations  & Smarts\\
+      Repair      & Repair\\
+      Sensors     & Notice\\
+      Weapons     & Shooting\\
+    \end{standardtable}
+
+    \item \textbf{Derived Traits}: Calculate your derived traits according using your attributes and skills.
+
+    \begin{standardtable}{\linewidth}{sb}
+      \textbf{Trait} & \textbf{Description}\\
+      Pace      & Calculated as: \textbf{(Engines / 2) + 2}. How many squares of movement you can take during your turn.\\
+      Evade     & Calculated as: \textbf{(Manuever / 2) + 2}. Target number for combat.\\
+      Toughness & Calculated as: \textbf{(Armour / 2) + 2}. Add any additional armour upgrades on top of toughness.\\
+    \end{standardtable}
+
+    \item \textbf{Hindrances}: You can choose to gain additional character creation points by taking up to \textbf{one} Major Hindrace (2 points) and up to \textbf{two} Minor Hindrances (1 point each).
+
+    \begin{itemize}
+        \item For 2 points you can gain another attribute point or choose an \textbf{Edge}.
+        \item For 1 point you can gain another systems point\%.
+    \end{itemize}
+
+    \item \textbf{Edges}: Edges are what sets your ship apart from everyone else.
+
+    \item \textbf{Gear}: New crews are given a budget of up to 350k to equip their spacecraft. You can ignore this budget if you are purchasing with your own hard-earned credits.
+
+    \item \textbf{Background Detail}: Fill in any other details of your spacecraft's background such as manufactorer, model, past crews and any other detail you like.
+    
+    \item \textbf{Calculate Value}: Calculate your spacecraft's final value. This is the purchase price for the spacecraft, and is usually the size of the debt owed by new crews.
+    
+    \item \textbf{Play}: Spacecraft are considered Wild Cards, which means they get 3 Bennies at the start of a session. They can also take 3 Wounds before becoming immobilised.
+
+  \end{enumerate}
+  
+  \end{multicols}
+  
+  \newpage
+  
+  \begin{standardtable}{\linewidth}{ssssssss}
+    \textbf{Hull} & \textbf{Base Cost} & \textbf{Base Crew} & \textbf{Storage} & \textbf{Base Power} & \textbf{Size} & \textbf{Pace Mod} & \textbf{Class}\\
+    Fighter     & 200k  & 1   & 2   & 3   & -1  & +5  & Fighter\\
+    Shuttle     & 500k  & 1   & 5   & 3   & 0   & +2  & Small\\
+    Patrol      & 1.5m  & 5   & 10  & 10  & 0   & +2  & Small\\
+    Corvette    & 2.5m  & 10  & 15  & 10  & +1  & +2  & Small\\
+    Frigate     & 4.5m  & 30  & 15  & 30  & +4  & 0   & Medium\\
+    Cruiser     & 8m    & 50  & 30  & 50  & +5  & 0   & Medium\\
+    Battleship  & 13m   & 100 & 50  & 75  & +8  & -2  & Large\\
+    Capital     & 20m   & 200 & 100 & 75  & +10 & -2  & Large\\
+  \end{standardtable}
+  
+  \begin{multicols}{2}
+  
+  \subsection{Hulls}
+  These are the default statistics for your spacecraft. These values will be modified by your spacecraft's attributes to give your vessel a feel of it's own.
+  
+  The Size modifier works like the Size modifier for normal characters. Add the modifier to your spacecraft's toughness, and when attacking a spacecraft 2 or more levels smaller than you will incur a -2 attack penalty; attacking a spacecraft 4 or more levels larger than you will gain a +2 bonus; attacking a spacecraft 8 or more levels larger than you will gain a +4 bonus.
+    
+  \subsection{Attributes}
+  
+  \subsubsection{Armour}
+  
+  Armour generally represents your hull integrity and ability to take damage. Taken with the "Size" value of your hull, it will calculate the Toughness value for your spacecraft.
+  
+  \begin{standardtable}{\linewidth}{sb}
+    \textbf{Die} & \textbf{Cost}\\
+    d4  & x0.5 of Base\\
+    d6  & x0.75 of Base\\
+    d8  & x1 of Base\\
+    d10 & x1.25 of Base\\
+    d12 & x1.5 of Base\\
+  \end{standardtable}
+  
+  \subsubsection{Engines}
+  
+  Engines represent the how fast your spacecraft can go, and give some engines give you the ability to make an IDD jump. Normal impulse uses neglible fuel (and can be supplemented by your Power core), but IDD jumps require fuel to operate. After the spacecraft completes the number of jumps as indicated by their Engine they need to be refueled. That happens in any space dock or port and costs the \# of jumps x 1000 x local market cost factor in credits.
+  
+  Travel within a region in a sector (planetary body or space station and it's moons, asteriods, and immediate objects) will take on average 6 hours.
+  Travel to another region in a sector (another planet or space station within a sector) will take on average 48 hours.
+  Travel using the IDD will take on average 6 days per hex.
+  
+  \begin{standardtable}{\linewidth}{ssb}
+    \textbf{Die} & \textbf{Jumps} & \textbf{Cost}\\
+    d4  & - & x0.5 of Base\\
+    d6  & 1 & x0.75 of Base\\
+    d8  & 2 & x1 of Base\\
+    d10 & 3 & x1.25 of Base\\
+    d12 & 4 & x1.5 of Base\\
+  \end{standardtable}
+  
+  \subsubsection{Power}
+  
+  Power cores run all of the computer system on the spacecraft (with the exception of the Engine). Larger power cores allow you to operate more systems at once, but there is nothing stopping the cost-saavy captain from using a smaller power core and diverting power to systems only when they need to.
+  
+  \begin{standardtable}{\linewidth}{sbb}
+    \textbf{Die} & \textbf{Power} & \textbf{Cost}\\
+    d4  & x0.5 of Base & x0.5 of Base\\
+    d6  & x1 of Base   & x0.75 of Base\\
+    d8  & x1.5 of Base & x1 of Base\\
+    d10 & x2 of Base   & x1.25 of Base\\
+    d12 & x2.5 of Base & x1.5 of Base\\
+  \end{standardtable}
+  
+  \subsubsection{Size}
+  
+  Equipment and extra crew require space, and a larger spacecraft allows you to hold more. Storage space allows you to install new equipment, hold cargo, and create new quarters for extra crew. A single unit of storage is equivalent to a 2m cube. The Base Crew value for your hull type shows you the minimum viable crew to operate your spacecraft, and extra crew require 1 unit of Storage as living quarters.
+  
+  \begin{standardtable}{\linewidth}{sbb}
+    \textbf{Die} & \textbf{Storage} & \textbf{Cost}\\
+    d4  & x1 of Base      & x0.5 of Base\\
+    d6  & x1.25 of Base   & x0.75 of Base\\
+    d8  & x1.5 of Base    & x1 of Base\\
+    d10 & x1.75 of Base   & x1.25 of Base\\
+    d12 & x2 of Base      & x1.5 of Base\\
+  \end{standardtable}
+  
+  \subsubsection{Systems}
+  
+  Systems govern the effectiveness of your onboard sensors, weapons, and computers. Better systems means more effective ship operations.
+  
+  \begin{standardtable}{\linewidth}{sbb}
+    \textbf{Die} & \textbf{Cost}\\
+    d4  & x0.5 of Base\\
+    d6  & x0.75 of Base\\
+    d8  & x1 of Base\\
+    d10 & x1.25 of Base\\
+    d12 & x1.5 of Base\\
+  \end{standardtable}
+  
+  \subsection{Systems}
+  
+  Every spacecraft comes with an onboard computer that handles the operation of different ship functions. While an operator is required to use these systems (and can give a bonus to the system roll), the Spacecraft uses it's own system die with wild die to determine the outcome. 
+  
+  \subsubsection{Manuever}
+  
+  Every spacecraft has little thrusters set around the hull to give the vessel better manueverability. These thrusters are independant of the main Engine (which simply gives us thrust), and are responsible for steering the ship. These manuever systems are also useful in evading enemy weapon systems by juking and diving in random patterns (however these are not a replacement for dedicated evasive systems)
+  
+  \subsubsection{Navigation}
+  
+  Navigating the Black can be a treacherous thing, and a up-to-date and accurate navigation system can be the most important system for any crew. Longer IDD jumps are risky as you can never guarantee that you are going to precisely place your spacecraft where you want it. When processing your Jump exit, the target number will be 2 times the number of sectors you wish to jump over.
+  
+  Navigation systems can also be used to safely plot a course through treacherous territory, such as asteroid belts or solar flares.
+  
+  \subsubsection{Operations}
+  
+  Operations are a catch-all term to refer to any other type of system that does not fall into one of the other categories. This includes Medical bays, Hydroponic bays, Manufactories, and Cortical Stack back-up arrays. Some of these systems may require a dedicated skill, other when roll a Smarts check when using an operations system.
+  
+  \subsubsection{Repair}
+  
+  When operating in the vacuum of space it is of extreme importance to keep your spacecraft running. Repair systems allow you to seal any hull breaches, diagnose systems failures, and automatically repair damaged systems.
+  
+  \subsubsection{Sensors}
+  
+  Sensors give your spacecraft information about environment outside the spacecraft. Depending on the complexity of your sensor you can information such as:
+  
+  \begin{itemize}
+    \item Atmospheric information of an undiscovered planet
+    \item Make and model of a spacecraft, as well as it's weapons systems
+    \item Set proximity alerts of dangerous objects such as debris, meteors and asteroids
+    \item Provide a weapons lock on an enemy spacecraft (confers a +2 bonus on next round)
+  \end{itemize}
+  
+  \subsubsection{Weapons}
+  
+  Weapons are all about launching your deadly armada against the enemy. Bonuses to your attack can be gained by providing a targeting lock via your Sensors or Piloting your spacecraft so that your manuever your enemy just where you want them.
+  
+  \end{multicols}
 
   \newpage
 
@@ -1038,9 +1275,12 @@
     Xihuan & 05-02 & Independent\\
     Yafiah & 01-03 & Core\\
     Yongheng & 07-05 & Independent\\
+    Zena & 03-04 & Core\\
   \end{standardtable}
 
   \subsection{Tech-Levels}
+  
+  Tech-Levels are a standard way to catergorise the differing manufacturing capabilities of a planet. Some worlds are purposely kept at low tech-levels as they provide primary trade resources for high tech-level worlds (such as agriculture). 
 
   \begin{standardtable}{\linewidth}{ssb}
     \textbf{Level} & \textbf{Description} & \textbf{Example}\\
@@ -1052,86 +1292,293 @@
     5 & Advanced & Specialized knowledge in a technological field\\
     6 & Pre-Surge & Psionic tech, TDD, exotic tech\\
   \end{standardtable}
+  
+  \subsection{ATB classification}
+  
+  The \textbf{Atmospheric - Temperature - Biosphere} (ATB) rating is the standard classification system for worlds, planets and other naturally occuring stellar bodies. An ATB gives a general overview about the suitability for habitation, or at the very least an idea of what risks there are in colonising the world. The classification uses 3 letters, one for each of the categories of Atmosphere, Temperature and Biosphere.
+  
+  \subsubsection{Atmosphere}
+  
+  \begin{standardtable}{\linewidth}{sb}
+    \textbf{Rating} & \textbf{Description} \\
+    A (Airless) & Has no to little atmosphere to speak of\\
+    B (Breatheable) & A mix of gases that is within the breatheable range for organic beings. Since each planet has different mixtures, foriegners are always aware of the "new world stink"\\
+    C (Corrosive) & Dangerously hostile, even with conventional suits and other protective gear. The atmosphere is extremely toxic, and actively corrodes non-native materials\\
+    G (Inert Gas) & Atmosphere consists of gases that are not breatheable by organic beings. The atmosphere is otherwise not hostile or poisonous, but requires a constant source of oxygen\\
+    T (Thick) & Can be breathed with the aid of a filtration mask. Usually toxic if an organic decides to breathe the air straight over long periods of time\\
+    X (Toxic) & These worlds are much more aggressively hostile than corrosive worlds. These worlds have toxic molecules that are able to bypass suit seals during the corrosion process, meaning that they must be purified at regular intervals, reducing the oxygen supply substantially\\
+  \end{standardtable}
+  
+  \subsubsection{Temperature}
+  
+  \begin{standardtable}{\linewidth}{sb}
+    \textbf{Rating} & \textbf{Description} \\
+    F (Frozen) & Average temperature that is close to absolute zero. Some are so cold that the gases have solidified\\
+    C (Cold) & These worlds are uncomfortably cold, but are survivable with suitable heavy clothing\\
+    T (Temperate) & These worlds have temperature ranges that are similar to Earth\\
+    W (Warm) & These worlds are uncomfortably warm, but are survivable. They are either desert worlds, or have thick, humid jungles\\
+    B (Burning) & Average temperatures that is close to boiling. Some are so hot that metals exist in molten form \\
+    V (Varied) & These worlds have a wide range of temperatures, either due to unique geological features or varying orbits around their star\\
+  \end{standardtable}
+  
+  \subsubsection{Biosphere}
+  
+  \begin{standardtable}{\linewidth}{sb}
+    \textbf{Rating} & \textbf{Description} \\
+    R (Remnants) & The wreckage and ruins of a dead ecology\\
+    M (Microbial) & Non-sentient micro-organisms that can exist in almost all types of environments (such as slimes, bacteria, fungus). They may or may not be dangerous \\
+    Z (None) & For some reason or other, life did not evolve on this world\\
+    C (Compatible) & Substantial portion of native life is biologically compatible with human nutritional needs\\
+    I (Incompatible) & None of the native life is biologically compatible with human nutritional needs. Microbial life could potentially be highly allergenic to humans\\
+    H (Hybrid) & The native flora and fauna have been intermixed with imported species from Earth. They may or may not be compatible, but are not otherwise hostile\\
+    E (Engineered) & Are either paradise planets that have been carefully sculpted, or living forges that produce foodstuffs and minerals for trade\\
+  \end{standardtable}
+  
+  \subsection{PEM classification}
+  
+  The \textbf{Politics - Economics - Migration} (PEM) rating is the standard classification system for political entities. An ATB gives a general overview about the political leanings of the organization without resorting to simplified, one-word labels. The classification uses 3 letters, one for each of the categories of Politics, Economics and Migration.
+  
+  \subsubsection{Politics}
+  
+  \begin{standardtable}{\linewidth}{sb}
+    \textbf{Rating} & \textbf{Description} \\
+    O (Outcast) & Targets the outcasts who have been marginalised by society\\
+    W (Working) & Targets the working class (both agricultural and industrial)\\
+    M (Middle) & Targets the middle class\\
+    E (Elite) & Targets the rich and successful, and those aspiring to join it's ranks\\
+    T (Traditional) & Targets those who prefer to do things the traditional way (whether culturally, religiously or socially)\\
+    P (Progressive) & Targets those who prefer to improve the way things are, regardless of class\\
+  \end{standardtable}
+  
+  \subsubsection{Economic}
+  
+  \begin{standardtable}{\linewidth}{sb}
+    \textbf{Rating} & \textbf{Description} \\
+    F (Free Market) & Minimal or no government intervention in the market\\
+    I (State industry) & The government should own or support important industries\\
+    P (Protectionist) & The government should tax imports that threaten to displace local products\\
+    S (Socialist) & The market should be harnessed to ensure a state-determined minimal standard of living for all\\
+    C (Communist) & The state should control the economy, disbursing its products according to need and determined efficiency\\
+    A (Autarky) & The government should ensure that the world can provide all of its own goods and services and forbid the import of foreign goods\\
+  \end{standardtable}
+  
+  \subsubsection{Migration}
+  
+  \begin{standardtable}{\linewidth}{sb}
+    \textbf{Rating} & \textbf{Description} \\
+    X (Xenophobic) & Immigration is to be restricted to protect native jobs and culture\\
+    P (Xenophilia) & More immigrants the better\\
+    H (Hybrid) & Some immigrants are to be encouraged, others are forbidden. This list is determined by the government\\
+  \end{standardtable}
+  
+  \subsection{Military Ranks}
+  
+  There will always be a need for a standing military service, and in the Pre-Surge days the powers that be decided on a single rank system for all servicemen (whether army or navy). This standard has been carried on after the Surge, and even warring factions on Independant worlds are known to use the system.
+  
+  \subsubsection{Enlisted}
+  
+  Enlisted men provide the manpower for the military services. They serve as the marines, infantry, pilots, engineers, and any other role that is required of them. They can advanced through the ranks in either leadership roles or as specialised experts in their field.
+  
+  \begin{standardtable}{\linewidth}{sb}
+    \textbf{Rank} & \textbf{Duties} \\
+    Private (PVT) & The lowest rank\\
+    Specialist (SPC) & Used to designate an individual with special skills\\
+    Corporal (CPL) & Leader of a team (4 servicemen), or Senior specialists or administrative staff\\
+    Sergeant (SGT) & Leader of a section (2-3 teams, 8-15 servicemen), or Senior staff for command-level officers\\
+    Master Sergeant (MSG) & Highest rank for non-commissioned officers. Senior staff or supervisors of the enlisted men\\
+  \end{standardtable}
+  
+  \subsubsection{Officers}
+  
+  Officers provide leadership for the men under their command. They command large numbers of men or military spacecraft, and only rise up the ranks through exemplary service.
+  
+  \begin{standardtable}{\linewidth}{sb}
+    \textbf{Rank} & \textbf{Duties} \\
+    Ensign (ENS) & Entry-level rank for officers. Generally put in charge of a secion with the aide of a Sergeant\\
+    Lietenant (LT) & Leader of a platoon (2-3 sections, 16-45 servicemen), or subordinate for command-level officers\\
+    Major (MAJ) & Leader of a company (3-4 platoons, 50-180 servicemen), or commands a small spacecraft\\
+    Commander (CDR) & Leader of a battalion (3-4 companies, 200-700), or commands a medium spacecraft\\
+    Captain (CPT) & Leader of a brigade (3-4 battalions, 1000-3000), or commands a large spacecraft\\
+    Colonel (COL) & Leader of a division (4-5 brigades, 4000-15000), or commands a flotilla (2+ spacecraft)\\
+    Vice Admiral (VADM) & Leader of a corps (2-3 divisions, 15000-45000), or commands a group (2+ flotilla). Some infantry forces prefer the older "Lietenant General"\\
+    Admiral (ADM) & Leader of an army (2-3 corps, 80000+), or commands a fleet (2+ groups). Some infantry forces prefer the older "General". Seniority is designated by stars, with the highest achievable rank is a 6-star Admiral/General\\
+  \end{standardtable}
 
   \end{multicols}
 
   \newpage
+  
+  \subsection{Worlds}
 
-  \subsection{Core Worlds}
+  \subsubsection{Core Worlds}
 
-  \begin{powertable}{ p{.10\textwidth} p{.10\textwidth} p{.05\textwidth} p{.10\textwidth} p{.05\textwidth} p{.05\textwidth} p{.10\textwidth} p{.25\textwidth} }
-    \textbf{Name} & \textbf{Atmo.} & \textbf{Temp} & \textbf{Biosphere} & \textbf{Pop.} & \textbf{TL} & \textbf{Sector} & \textbf{Tags}\\
-    Al-sahhah & Breath. & Vary & Compatible & 10B+ & 4 & Al-Taleqani & Trade Hub, Heavy Industry\\
-    Androcles & Breath. & Temp. & None & 100K+ & 3 & Ianassa & Freak Geology, Quarantined\\
-    Arantza & Thin & Warm & Compatible & 1M+ & 4 & Mandad & Restrictive Laws, Primitive Aliens\\
-    Ballesteros & Thick & Temp. & Compatible & 10M+ & 4 & Pheegus & Rigid Culture, Seagoing cities\\
-    Bergthora & Thin & Temp. & Hybrid & 1M+ & 5 & Penthus & Heavy Industry, Theocracy\\
-    Mecisteus & Breath. & Temp. & Compatible & 1B+ & 4 & Yafiah & Banking, Diplomats, Local Tech\\
-    Merlo & Breath. & Temp. & Incompat. & 1M+ & 3 & Mandad & Psionic School, Quarantined\\
-    Olaria & Unbreath. & Temp. & Compatible & 1B+ & 5 & Eurymedon & Pre-Surge Cultists, Xenophiles\\
-    Raghd & Breath. & Temp. & None & 10B+ & 5 & Carreno & Flying Cities, Major Spaceyard\\
+  \begin{powertable}{ p{.10\textwidth} p{.10\textwidth} p{.05\textwidth} p{.05\textwidth} p{.20\textwidth} p{.35\textwidth} }
+    \textbf{Name} & \textbf{A-T-B} & \textbf{Pop.} & \textbf{TL} & \textbf{Sector} & \textbf{Tags}\\
+    Aerope	    & T-C-H &	10M+  & 3	& Eurymedon (00-03)   & Bigotry, Fear of Psionics\\
+    Al-sahhah   & B-V-C & 1B+   & 4 & Al-Taleqani (03-05) & Specialised Technology, Regional Hegemon\\
+    Androcles   & B-T-R & 100K+ & 3 & Ianassa (01-04)     & Freak Geology, Quarantined\\
+    Arantza     & T-W-C & 1M+   & 4 & Mandad (02-03)      & Restrictive Laws, Primitive Aliens\\
+    Ballesteros & T-T-C & 1M+   & 4 & Pheegus (05-05)     & Rigid Culture, Seagoing cities\\
+    Bergthora   & A-T-M & 1M+   & 5 & Penthus (06-04)     & Heavy Industry, Theocracy\\
+    Hildegunn   & B-W-C &	100K+	& 4	& Ianassa (01-04)     & Pre-Surge Archive, Intelligence\\
+    Khadim	    & T-C-I & 100K+ & 3	& Al-Taleqani (03-05) & Gold Rush, Colonised\\
+    Mahats	    & T-T-E &	100K+ &	4 & Careeno (05-04)     & Agriculture, Theocracy\\
+    Marider	    & A-T-R & 10M+	& 5	& Zena (03-04)        & Heavy Mining, Major Spaceyard\\
+    Mecisteus   & B-T-C & 100M+ & 4 & Yafiah (01-03)      & Banking, Local Specialiaty\\
+    Merlo       & B-T-I & 1M+   & 3 & Mandad (02-03)      & Psionic School, Quarantined\\
+    Nishtha     &	B-C-C &	100K+	& 4	& Eurymedon (00-03)   & Pre-Surge Ruins, Pilgrimage\\
+    Olaria      & G-T-C & 10M+  & 5 & Eurymedon (00-03)   & Pre-Surge Cultists, Xenophiles\\
+    Orithyia    & G-T-E &	100K+	& 4	& Pheegus (05-05)     & Altered Humans, Agriculture\\
+    Parezi	    & A-W-M & 1M+	  & 4	& Heraclitus (04-04)  & Heavy Mining, Bubble Cities\\
+    Polypheme	  & G-V-I & 10M+  &	4 & Careeno (05-04)     &	Trade Hub, Specialised AI\\
+    Raghd       & B-T-Z & 1B+   & 5 & Carreno (05-04)     & Flying Cities, Major Spaceyard\\
+    Semera      & B-V-I &	100K+	& 4	& Penthus (06-04)     & Outpost, Police State\\
+    Thurid      & B-C-C & 100M+ & 4	& Zena (03-04)        & Trade Hub, Heavy Industry\\
+  \end{powertable}
+ 
+  \subsubsection{Independent Worlds}
+
+  \begin{powertable}{ p{.10\textwidth} p{.10\textwidth} p{.05\textwidth} p{.05\textwidth} p{.20\textwidth} p{.35\textwidth} }
+    \textbf{Name} & \textbf{A-T-B} & \textbf{Pop.} & \textbf{TL} & \textbf{Sector} & \textbf{Tags}\\
+    Amir        & B-T-C & 1M+   & 4 & Duha (00-06)      & Oceanic World, Fear of Psionics\\
+    Ba'albaki	  & B-C-H &	1M+   &	4	& Xihuan (05-02)    & Psionic School, Psionic Worship\\
+    Dirce       & B-V-C & 100K+ & 4 & Pooja (04-01)     & Desert World, Civil War\\
+    Garrastazu  & T-T-H & 1M+   & 3 & Duha (00-06)      & Violent Sectarians, Heavy Mining\\
+    Georghiou	  & B-T-E & 1M+   &	3 &	Sakeena (07-08)   & Colonised, Agriculture\\
+    Oeneus      & G-T-I & 1M+   & 3 & Sakeena (07-08)	  & Colonised, Heavy Industry\\
+    Sakeena     & T-T-I & 10B+  & 5 & Sakeena (07-08)   & Major Spaceyard, Police State\\
+    Salimah	    & B-T-E & 100K+ &	4	& Mahallati (04-07) & Rigid Culture, Eugenic Cultists\\
+    Theano      & B-F-H & 100K+ & 3 & Yongheng (07-05)  & Outpost, Hatred\\
+    Thorhalla   & T-V-H & 10M+  & 4 & Xihuan (05-02)    & Tyranny, Bigotry\\
+    Vinata      & G-W-C & 1M+   & 4 & Mahallati (04-07) & Civil War, Bubble Cities\\
+    Vargos      & T-T-H & 1B+   & 3 & Yongheng (07-05)  & Cold War, Warlords\\
   \end{powertable}
 
-  \subsection{Independent Worlds}
+  \subsubsection{Lost Worlds}
 
-  \begin{powertable}{ p{.10\textwidth} p{.10\textwidth} p{.05\textwidth} p{.10\textwidth} p{.05\textwidth} p{.05\textwidth} p{.10\textwidth} p{.25\textwidth} }
-    \textbf{Name} & \textbf{Atmo.} & \textbf{Temp} & \textbf{Biosphere} & \textbf{Pop.} & \textbf{TL} & \textbf{Sector} & \textbf{Tags}\\
-    Amir & Breathable & Temp. & Compatible & 1M+ & 4 & Duha & Oceanic World, Fear of Psionics\\
-    Dirce & Breath. & Vary & Compatible & 100K+ & 4 & Pooja & Desert World, Civil War\\
-    Garrastazu & Breath. & Temp. & Hybrid & 1M+ & 3 & Duha & Sectarians, Heavy Mining\\
-    Sakeena & Thick & Temp. & Incompat. & 1B+ & 5 & Sakeena & Major Spaceyard, Police State\\
-    Theano & Breathable & Frozen & Incompat. & 100K+ & 4 & Yongheng & Outpost, Hatred\\
-    Vinata & Unbreath. & Warm & Compatible & 1M+ & 4 & Mahallati & Civil War, Bubble Cities\\
-    Vargos & Thick & Temp. & None & 10B+ & 3 & Yongheng & Cold War, Warlords\\
+  \begin{powertable}{ p{.10\textwidth} p{.10\textwidth} p{.05\textwidth} p{.05\textwidth} p{.20\textwidth} p{.35\textwidth} }
+    \textbf{Name} & \textbf{A-T-B} & \textbf{Pop.} & \textbf{TL} & \textbf{Sector} & \textbf{Tags}\\
+    Akriti      & A-T-C & ?     & ? & Koatian (05-09)     & Zombies, Out of Contact\\
+    Chloe       & B-T-C & 100K+ & 2 & Ezkurra (03-08)     & Minimal Contact, Fear of Tech\\
+    Echepolos   & ?-T-M & ?     & ? & Shakoor (07-01)     & Radioactive, Tomb World\\
+    Gyda        & B-C-C & 10K+  & 3 & Aslief (00-09)      & Xenophobes, Pre-Surge Archive\\
+    Maqsood     & B-C-H & 100K+ & 3 & Dimitrikos (01-09)  & Psionic Worship, Out of Contact\\
+    Purva       & B-F-C & 100K+ & 3 & Barazorda (01-08)   & Feral, Pre-Surge Cultists\\
+    Pylaimenos  &	A-V-Z & ?     &	? & Thorkatia (07-00)   &	Sealed Menace, Unbreaked AI\\
+    Sagari      & B-T-C & 10K+  & 4 & Shakoor (07-01)     & Hostile Space, Badlands World\\
+    Xanthippe	  & B-T-H &	1M+   &	4	& Roig (06-00)        & Tyranny, Theocracy\\
   \end{powertable}
 
-  \subsection{Lost Worlds}
+  \subsubsection{Ghan Worlds}
 
-  \begin{powertable}{ p{.10\textwidth} p{.10\textwidth} p{.05\textwidth} p{.10\textwidth} p{.05\textwidth} p{.05\textwidth} p{.10\textwidth} p{.25\textwidth} }
-    \textbf{Name} & \textbf{Atmo.} & \textbf{Temp} & \textbf{Biosphere} & \textbf{Pop.} & \textbf{TL} & \textbf{Sector} & \textbf{Tags}\\
-    Akriti & Thin & Temp. & Compatible & 10K+ & 2 & Koation & Zombies, Out of Contact\\
-    Chloe & Breath. & Temp. & Compatible & 100K+ & 2 & Barazorda & Minimal Contact, Fear of Tech\\
-    Echepolos & Breath. & Temp. & Microbial & 10K+ & 4 & Shakoor &  Radioactive, Tomb World\\
-    Gyda & Breathable & Cold & Compatible & Failed & 3 & Ezkurra & Xenophobes, Pre-Surge Archive\\
-    Maqsood & Breath. & Cold & Hybrid & 100K+ & 0 & Dimitrikos & Psionic Worship, Out of Contact\\
-    Purva & Breath. & Frozen & Compatible & 100K+ & 3 & Dimitrikos & Feral, Pre-Surge Cultists\\
-    Sagari & Breathable & Temp. & Compatible & 10K+ & 4 & Thorkatia & Hostile Space, Badlands World\\
-  \end{powertable}
-
-  \subsection{Ghan Worlds}
-
-  \begin{powertable}{ p{.10\textwidth} p{.10\textwidth} p{.05\textwidth} p{.10\textwidth} p{.05\textwidth} p{.05\textwidth} p{.10\textwidth} p{.25\textwidth} }
-    \textbf{Name} & \textbf{Atmo.} & \textbf{Temp} & \textbf{Biosphere} & \textbf{Pop.} & \textbf{TL} & \textbf{Sector} & \textbf{Tags}\\
-    Ghan & Breath. & Temp. & Compatible & 10B+ & 5 & Ghan & Major Spaceyard, Local Speciality\\
+  \begin{powertable}{ p{.10\textwidth} p{.10\textwidth} p{.05\textwidth} p{.05\textwidth} p{.20\textwidth} p{.35\textwidth} }
+    \textbf{Name} & \textbf{A-T-B} & \textbf{Pop.} & \textbf{TL} & \textbf{Sector} & \textbf{Tags}\\
+    Ghalla	& B-W-C &	100K+	& 4	& Ghan Sector 1 (00-01) & Trade Hub, Local Speciality\\
+    Ghan    & B-T-C & 10B+  & 5 & Ghan (00-00)          & Banking, Regional Hegemon\\
+    Ghatla	& T-W-C &	100K+	& 4	& Ghan (00-00)          & Freak Weather, Agriculture\\
+    Gharda  &	B-W-C & 100K+ &	4	& Ghan Sector 2 (02-01) & Oceanic, Major Spaceyard\\
+    Ghusha	& A-C-M	& 100K+ &	4	& Ghan Sector 2 (02-01) & Heavy Mining, Freak Geology\\
   \end{powertable}
 
   \subsection{Corporations}
+  
+  \subsubsection{Core Corporations}
 
-  \begin{powertable}{ p{.35\textwidth} p{.25\textwidth} p{.30\textwidth} }
-    \textbf{Name} & \textbf{Business} & \textbf{Headquarters}\\
-    Al-Astra Association & Heavy Weapons & Al-sahhah (Core)\\
-    Anistonopoulos Clan & Banking & Mecisteus (Core)\\
-    Cafu Pact & Weapons & Dirce (Ind.)\\
-    Colonial Mining & Mining & Careeno (Core)\\
-    Faraj Fishing & Fishing & Amir (Ind.)\\
-    Ghan Systems & Xenotech & Ghan Prime (Ghan)\\
-    Haen Multistellar & Art & Olaria (Core)\\
-    Mavridou Cooperative & Aeronautics & Raghd (Core)\\
-    Panstellar Zaibatsu & Construction & Ballesteros (core)\\
-    Nopoulos Partnership & Fishing & Ballesteros (Core)\\
-    Sakeena Shipyards & Shipyards & Sakeena (Ind.)\\
-    Spiker Group & Pharma., Drugs & Vinata (Ind.)\\
-    Tatum Farming Collective & Livestock & Arantza (Core)\\
-    West Wind Outfit & Weapons & Vargos (Ind.)\\
+  \begin{powertable}{ p{.20\textwidth} p{.35\textwidth} p{.35\textwidth} }
+    \textbf{Business} & \textbf{Name} & \textbf{Headquarters}\\
+    Agriculture   & Tatum Farming Collective  & Arantza, Mandad (02-03)\\
+    Agriculture   & Aqualis Food Conglomerate & Mahats, Careeno (05-04)\\
+    Agriculture   & SuriTech Foodstuffs       & Orithyia, Pheegus (05-05)\\
+    Astronautics  & Mavridou Cooperative      & Raghd, Careeno (05-04)\\
+    Astronautics  & Quebe-Luxfause Systems    & Marider, Zena (03-04)\\
+    Biotech       & Interstellar Genetics Inc & Mahats, Careeno (05-04)\\
+    Biotech       & Morgath Industries        & Khadim, Al-Taleqani (03-05)\\
+    Biotech       & Umbrella Coorporation     & Ballestreros, Pheegus (05-05)\\
+    Construction  & Novaplex                  & Mecisteus, Yafiah (01-03)\\
+    Construction  & Panstellar Zaibatsu       & Bergthora, Penthus (06-04)\\
+    Cybernetics   & Imaharatronics            & Olaria, Eurymedon (00-03)\\
+    Cybernetics   & Lacuna, Inc.              & Hildegunn, Ianassa (01-04)\\
+    Cybernetics   & Wayne Enterprises         & Thurid, Zena (03-04)\\
+    Electronics   & Altin Alliance            &	Polypheme, Careeno (05-04)\\
+    Electronics   & Gowix Computers           & Hildegunn, Ianassa (01-04)\\
+    Electronics   & MicroData Technologies    & Al-sahhah, Al-Taleqani (03-05)\\
+    Entertainment & Al-Rhul Productions       &	Al-sahhah, Al-Taleqani (03-05)\\
+    Entertainment & Haen Multistellar         & Olaria, Eurymedon (00-03)\\
+    Exploration   & Bellixan Endeavors        & Khadim, Al-Taleqani (03-05)\\
+    Exploration   & Degan Explorations        & Nishtha, Eurymedon (00-03)\\
+    Finance       & Anistonopoulos Clan       & Mecisteus, Yafiah (01-03)\\
+    Finance       & Gringotts                 & Mecisteus, Yafiah (01-03)\\
+    Fishing       & Nopoulos Partnership      & Ballesteros, Pheegus (05-05)\\
+    Fuel Refinery & Burns Industries          & Raghd, Careeno (05-04)\\
+    Fuel Refinery & Parezi Energy             & Parezi, Heraclitus (04-04)\\
+    Genetics      & Gentik                    & Bergthora, Penthus (06-04)\\
+    Genetics      & Orithyia Genetics         & Orithyia, Pheegus (05-05)\\
+    Genetics      & Nazari Cooperative        & Olaria, Eurymedon (00-03)\\
+    Manufacturing & Gorallis Metalworking     & Raghd, Careeno (05-04)\\
+    Manufacturing & Kroeskin Fabrications     & Thurid, Zena (03-04)\\
+    Manufacturing & Merr-Sonn Industrial      & Al-sahhah, Al-Taleqani (03-05)\\
+    Mining        & Colonial Mining           & Parezi, Heraclitus (04-04)\\
+    Mining        & Nexcore Mining Corp       & Marider, Zena (03-04)\\
+    Pharma.       & Saraphis Megacorp         & Mecisteus, Yafiah (01-03)\\
+    Pharma.       & Velunza Circle            & Olaria, Eurymedon (00-03)\\
+    Programming   & HoloGraphics Interstellar & Mecisteus, Yafiah (01-03)\\
+    Programming   & Perzome SoftWEAR          & Olaria, Eurymedon (00-03)\\
+    Programming   & Pied Piper                & Hildegunn, Ianassa (01-04)\\
+    Robotics      & Advanced Ideas Mechanics  & Marider, Zena (03-04)\\
+    Robotics      & Aperture Science, Inc.    & Thurid, Zena (03-04)\\
+    Robotics      & Cyberdyne Systems         & Bergthora, Penthus (06-04)\\
+    Security      & Asset Group Solutions     & Al-sahhah, Al-Taleqani (03-05)\\
+    Security      & Barichello Multistellar   & Semera, Penthus (06-04)\\
+    Security      & Santhe Security           & Mecisteus, Yafiah (01-03)\\
+    Spacecraft    & Curich Engineering        & Marider, Zena (03-04)\\
+    Spacecraft    & Ferris Spacecraft         & Marider, Zena (03-04)\\
+    Spacecraft    & Solar Spacecraft          & Raghd, Careeno (05-04)\\
+    Spacecraft    & Starlette Industries      & Raghd, Careeno (05-04)\\
+    Snacks        & Buy n Large               & Thurid, Zena (03-04)\\
+    Snacks        & Los Pollos Hermanos       & Al-sahhah, Al-Taleqani (03-05)\\
+    Weapons       & Al-Astra Association      & Al-sahhah, Al-Taleqani (03-05)\\
+    Weapons       & Stark Industries          & Thurid, Zena (03-04)\\
+  \end{powertable}
+  
+  \subsubsection{Independant Coorporations}
+  
+  \begin{powertable}{ p{.25\textwidth} p{.35\textwidth} p{.35\textwidth} }
+    \textbf{Business} & \textbf{Name} & \textbf{Headquarters}\\
+    Fishing       & Faraj Fishing             & Amir, Duha (00-06)\\
+    Illicit Drugs & Zea Outfit	              & Vinata, Mahallati (04-07)\\
+    Illicit Drugs & Spiker Group              & Dirce, Pooja (04-01)\\
+    Piracy        & Magnus Syndicate          & Sagari, Shakoor (07-01)\\
+    Spacecraft    & Ghan Spacecraft           & Gharda, Ghan Sector 2 (02-01)\\
+    Spacecraft    & Sakeena Shipyards         & Sakeena, Sakeena (07-08)\\
+    Weapons       & Cafu Pact                 & Dirce, Pooja (04-01)\\
+    Weapons       & Jayhoon Faction           & Vinata, Mahallati (04-07)\\
+    Weapons       & Striker Ring              & Sagari, Shakoor (07-01)\\
+    Weapons       & West Wind Outfit          & Vargos, Yongheng (07-05)\\
+    Xenotech      & Ghan Systems              & Ghalla, Ghan Sector 1 (00-01)\\
   \end{powertable}
 
   \subsection{Politics}
+  
+  \subsubsection{Core World Factions}
 
-  \begin{powertable}{ p{.20\textwidth} p{.10\textwidth} p{.15\textwidth} p{.10\textwidth} p{.10\textwidth} p{.20\textwidth} }
-    \textbf{Name} & \textbf{Ruler} & \textbf{Economy} & \textbf{Migrants} & \textbf{Homeworld} & \textbf{Issues}\\
-    Buffalo Party & Rural & Laissez-faire & Hybrid & Arantza & Tradition, Immigration\\
-    Cerulean Guild & Urban & State industry & Hybrid & Mecisteus & Government reform, Industry\\
-    Cobalt Consensus & Bourgeoisie & Socialist & Xenophilia & Careeno & Welfare, Poverty\\
+  \begin{powertable}{ p{.20\textwidth} p{.10\textwidth} p{.10\textwidth} p{.25\textwidth} p{.25\textwidth} }
+    \textbf{Name} & \textbf{P-E-M} & \textbf{Seats} & \textbf{Homeworld} & \textbf{Issues}\\
+    Buffalo Party     & T-F-H & 5   & Arantza, Mandad (02-03)         & Culture, Tradition \\
+    Cerulean Guild    & P-F-H & 2   & Mecisteus, Yafiah (01-03)       & Government reform, Industry\\
+    Cobalt Consensus  & M-F-P & 7   & Raghd, Careeno (05-04)          & Industry, Welfare \\
+    Democratic Party	& M-F-P & 13  & Thurid, Zena (03-04)            &	Government reform, Foreign Policy\\
+    Freedom Element	  & E-A-X & 1   & Mecisteus, Yafiah (01-03)       &	Foreign Policy, Tradition\\
+    Homeland Alliance	& T-P-X	& 3   & Ballesteros, Pheegus (05-05)    & Bigotry, Culture\\
+    Iron Front	      & W-P-H & 11  & Parezi, Heraclitus (04-04)      &	Poverty, Welfare\\
+    Libertarian       & P-F-P & 5   & Mecisteus, Yafiah (01-03)       & Individual Rights, Industry\\
+    Liberty Combine	  & M-F-P & 15  & Al-sahhah, Al-Taleqani (03-05)  &	Foreign Policy, Individual Rights\\
+    Fellowship        &	P-S-P & 3   & Hildegunn, Ianassa (01-04)      &	Foriegn Policy, Individual Rights\\
+    Popular Banner    & W-A-X & 5   & Aerope, Eurymedon (00-03)       &	Bigotry, Immigration\\
+    Psionic Union	    & O-C-P & 3   & Merlo, Mandad (02-03)           &	Government Reform, Individual Rights\\
+    Social Federation &	T-S-H & 6   & Raghd, Careeno (05-04) 	        & Culture, Industry\\
+    Tyrian Consensus	& O-I-X & 4   &	Bergthora, Penthus (05-04)      & Religion, Tradition\\
+    Unified Planets   &	M-F-H & 11  & Al-sahhah, Al-Taleqani (03-05)  &	Foriegn Policy, Military\\
+    Victory Sodality	& T-I-H & 6   & Semera, Penthus (05-04)         &	Industry, Military\\
   \end{powertable}
 
   \newpage
