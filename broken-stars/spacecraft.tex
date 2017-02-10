@@ -1,0 +1,338 @@
+ % =================
+% Spacecraft
+% =================
+
+\section{Spacecraft}
+
+\begin{multicols}{2}
+
+\subsection{Spacecraft Creation}
+
+\begin{enumerate}
+
+  \item \textbf{Hull}: Select a Hull type. This will give your spacecraft some defaults and base values such as crew size, storage space and available power.
+  
+  \item \textbf{Rank}: All spacecraft have a rank to help designate it's quality. These ranks are Novice, Seasoned, Veteran, Heroic and Legendary. New crews will always start with a Novice spacecraft, although the GM may allow for better craft. Each rank above Novice gains your spacecraft 4 advancement points, to be spent as would with Hindrances.
+
+  \item \textbf{Attributes}: You start with a d4 in each attribute and have 5 points with which to raise them. Raising an attribute by one die type costs 1 point (but you cannot raise an attribute above a d12).
+
+  \begin{standardtable}{\linewidth}{sb}
+    \textbf{Attribute} & \textbf{Description}\\
+    Armour  & Represents Hull integrity and ability to take damage\\
+    Engines & Determines acceleration, number of IDD jumps, and maximum impulse velocity\\
+    Power   & How much power is available to power all of the systems.\\
+    Bulk    & The size of the ship, relative to others in it's class\\
+    Systems & Determines the effectiveness of spacecraft systems, and how many new ones you can install\\
+  \end{standardtable}
+
+  \item \textbf{Systems}: You have 5 points for systems. Each die type in a system costs 1 point up to the Systems attribute. Going over the Systems attribute costs 2 points per level. Each system has a linked Skill; when a character uses a system, they first roll their linked Skill to see if they can confer a bonus to the system roll (see Cooperation rules).
+  \begin{standardtable}{\linewidth}{sb}
+    \textbf{System} & \textbf{Linked Skill}\\
+    Manuever    & Piloting\\
+    Navigation  & Astrogation\\
+    Operations  & Smarts\\
+    Repair      & Repair\\
+    Sensors     & Notice\\
+    Weapons     & Shooting\\
+  \end{standardtable}
+
+  \item \textbf{Derived Traits}: Calculate your derived traits according using your attributes and skills.
+
+  \begin{standardtable}{\linewidth}{sb}
+    \textbf{Trait} & \textbf{Description}\\
+    Evade     & Calculated as: \textbf{-( (Manuever / 2) -1 )}. Target penalty for attackers when using the evade action.\\
+    Toughness & Calculated as: \textbf{(Armour / 2) + 2}. Add any additional armour upgrades on top of toughness.\\
+  \end{standardtable}
+
+  \item \textbf{Hindrances}: You can choose to gain additional character creation points by taking up to \textbf{one} Major Hindrace (2 points) and up to \textbf{two} Minor Hindrances (1 point each).
+
+  \begin{itemize}
+      \item For 2 points you can gain another attribute point or choose an \textbf{Edge}.
+      \item For 1 point you can gain another systems point\%.
+  \end{itemize}
+
+  \item \textbf{Edges}: Edges are what sets your ship apart from everyone else.
+
+  \item \textbf{Gear}: New crews are given a budget of up to 350k to equip their spacecraft. You can ignore this budget if you are purchasing with your own hard-earned credits.
+
+  \item \textbf{Background Detail}: Fill in any other details of your spacecraft's background such as manufactorer, model, past crews and any other detail you like.
+  
+  \item \textbf{Calculate Value}: Calculate your spacecraft's final value. This is the purchase price for the spacecraft, and is usually the size of the debt owed by new crews.
+  
+  \item \textbf{Play}: Spacecraft are considered Wild Cards, which means they get 3 Bennies at the start of a session. They can also take 3 Wounds before becoming immobilised.
+
+\end{enumerate}
+
+\subsection{Spacecraft Rules}
+
+\begin{itemize}
+  \item \textbf{Shaken} Spacecraft can be shaken the same as characters do. If a vessel is shaken it cannot use any of its systems or weapons. The spacecraft counts as an unstable platform and all player actions suffer a -2 penalty as long as it remains shaken. A character must make a "Power" roll to remove the Shaken status and return all systems back to normal operation.
+  \item \textbf{Wounds} Spacecraft have wounds just like a character does, and it incurs the same penalties. If a ship suffers 3 wounds it is incapacitated. Immediately make a "Power" roll modified by the ships repair systems and wound penalties.
+  \begin{itemize}
+    \item On a 1 or less then the vessel is destroyed. The crew has an amount of rounds equal to the Armour die type to evacuate before it explodes and takes everyone with it. 
+    \item On a failure you roll 2d6 on the Damage Table. The damage is permanent and can only be removed through repair in space dock. Some damage is so grave it can never be properly repaired.
+    \item On a success the damage is only temporary and will be removed as soon as all wounds are repaired. If you roll a raise the damage is only temporary and will sort itself out in 5 days or if all wounds are repaired.
+  \end{itemize}
+  \item \textbf{Repairs} Damage can be repaired similar to how a character heals, except there is no golden hour. Repairs can not be completed in space but need to be completed when docked or landed. First an engineer has to roll a repair roll modified by the ships wound level. 
+  \begin{itemize}
+    \item A success repairs one wound and a raise removes 2. Any more raises have no effect. Each repair attempt takes a fixed amount of days depending on spacecraft's Bulk die type plus Size modifier (this time can be reduced by 1 for every engineer who makes a success repair roll, 2 with a raise)
+    \item A failed attempt only wastes the time but does not further harm to the ship and can be retried again the next day without further penalty.
+    \item If no engineer is available the spacecraft can attempt to repair itself with it's own repair skill. This takes twice as long and the ship doubles the wound modifiers
+  \end{itemize}
+  Permanent Damage that resulted in hindrances can not be fixed at all, they are part of the ship now. Permanent damage to die types can be restored with a successful repair roll and a payment of half the difference between the current die type and the original die type (x1000) cost for spare parts. If you want to get repairs done by NPCs the ship is moored for the duration of the repairs and these take twice as long as normal. Cost for the repairs is 1\% of ships value per wound and the full difference between current die type and base die type (x10000 cost.
+  \item \textbf{Maintenance:} A Spacecraft needs to be maintained or it will stop flying. Before maintenance can be completed the ship must not have any wounds left. The base maintenance cost is 0.5\% of the spacecraft's value per month. This can be lowered if the ship has an engineer that performs the maintenance himself. Each month the engineer must succeed at a repair roll modified by the ships repair mod. The maintenance itself takes the spacecraft's Bulk die type in days. 
+  \begin{itemize}
+    \item A success halves maintenance costs. With a raise he was able to do all maintenance work without additional costs.
+    \item Simple failure means the maintenance cost must be paid as calculated.
+    \item On a critical failure however doubles the maintenance cost for that month
+  \end{itemize}
+  If maintenance is not paid on time the ship will suffer. As long as maintenance is outstanding all rolls involving the ship suffer a -1
+penalty for every month of missed mainenace. In the third and every following month of neglect all attributes except Armour are reduced by one die type. This stops once the engineer succeeds in a Repair roll with a raise. If no engineer is available the accumulated maintenance has to be paid at a starport where the ship is moored for the duration that takes twice as long as normal. A ship can not maintain itself. Each lost die type must be repaired individually and takes a full maintenance cycle.
+\end{itemize}
+
+\end{multicols}
+
+\subsection{Damage table}
+\begin{standardtable}{\linewidth}{sb}
+  \textbf{Roll} & \textbf{Damage}\\
+  2 & Power reduced a die type (minimum d4)\\
+  3 – 4 & A random subsystem has been damaged. Gain one of the following hindrances: Brittle Armor, Corrupted Navmap, Fuel Drinker, Failing Subsystems\\
+  5 – 9 & The ship has been damaged in a vital area inside the ship. Reduce by a die type one of the following: Engines, Armour, Systems\\
+  10 & Wrecked Engine Capacitor; Gain the Faulty Engines hindrance. If ship already as that hindrance Engines is reduced a die type (minimum d4)\\
+  11 – 12 &  Smarts reduced one die type (minimum d4)\\
+\end{standardtable}
+
+\subsection{Hulls}
+
+\begin{standardtable}{\linewidth}{ssssssss}
+  \textbf{Hull} & \textbf{Base Cost} & \textbf{Base Crew} & \textbf{Storage} & \textbf{Base Power} & \textbf{Size} & \textbf{Acc / TS} & \textbf{Class}\\
+  Fighter     & 200k  & 1   & 2   & 3   & -1  & 20 / 180  & Fighter\\
+  Shuttle     & 500k  & 1   & 5   & 3   & 0   & 15 / 48   & Small\\
+  Patrol      & 1.5m  & 5   & 10  & 10  & 0   & 20 / 60   & Small\\
+  Corvette    & 2.5m  & 10  & 15  & 10  & +1  & 15 / 48   & Small\\
+  Frigate     & 4.5m  & 30  & 15  & 30  & +4  & 10 / 40   & Medium\\
+  Cruiser     & 8m    & 50  & 30  & 50  & +5  & 8  / 38   & Medium\\
+  Battleship  & 13m   & 100 & 50  & 75  & +8  & 4  / 35   & Large\\
+  Capital     & 20m   & 200 & 100 & 75  & +10 & 2  / 35   & Large\\
+\end{standardtable}
+
+\begin{multicols}{2}
+
+These are the default statistics for your spacecraft. These values will be modified by your spacecraft's attributes to give your vessel a feel of it's own.
+
+The Size modifier works like the Size modifier for normal characters. Add the modifier to your spacecraft's toughness, and when attacking a spacecraft 2 or more levels smaller than you will incur a -2 attack penalty; attacking a spacecraft 4 or more levels larger than you will gain a +2 bonus; attacking a spacecraft 8 or more levels larger than you will gain a +4 bonus.
+
+The Acc / TS field designates your base acceleration and top speed for the hull. The Acceleration value determines how many squares per turn it can increase its speed. It can decrease its speed by twice it's Acceleration. The Top Speed value determines the upper movement limit. There are some additional considerations regarding movement:
+
+\begin{itemize}
+  \item \textbf{Collisions:} The damage to vehicles (and its passengers) is 1d6 for every multiple of 5 of the spacecraft's speed. Increase this damage if you collide with another vehicle moving towards you. Add up the speed of both vehicles and add them together. Vehicle with dedicated armour subtract their armour from the damage. Anyone wearing safety harnesses take half damage.
+  \item \textbf{Speeding:} It is easier to manuever at slower speeds. If your current speed is over 15, apply a -2 handling penalty on the pilot. At over 30, the penalty is -4
+  \item \textbf{Turning:} Vehicles make a turn at a 45 degree angle per round (there is a turning template in the books). To make a tighter turn, you must make a Manuever. To perform a manuever, describe to the GM what it is you exactly wish to do. The GM determines a suitable penalty (from -1 to -4), and then you can make a spacecraft manuever roll to see if you pull it off (the pilot can use their piloting skill to cooperate).
+\end{itemize}
+  
+\subsection{Attributes}
+
+\subsubsection{Armour}
+
+Armour generally represents your hull integrity and ability to take damage. Taken with the "Size" value of your hull, it will calculate the Toughness value for your spacecraft.
+
+\begin{standardtable}{\linewidth}{sb}
+  \textbf{Die} & \textbf{Cost}\\
+  d4  & x0.5 of Base\\
+  d6  & x0.75 of Base\\
+  d8  & x1 of Base\\
+  d10 & x1.25 of Base\\
+  d12 & x1.5 of Base\\
+\end{standardtable}
+
+\subsubsection{Engines}
+
+Engines represent the how fast your spacecraft can go, and give some engines give you the ability to make an IDD jump. Normal impulse uses neglible fuel (and can be supplemented by your Power core), but IDD jumps require fuel to operate. After the spacecraft completes the number of jumps as indicated by their Engine they need to be refueled. That happens in any space dock or port and costs the \# of jumps x 1000 x local market cost factor in credits.
+
+Travel within a region in a sector (planetary body or space station and it's moons, asteriods, and immediate objects) will take on average 6 hours.
+Travel to another region in a sector (another planet or space station within a sector) will take on average 48 hours.
+Travel using the IDD will take on average 6 days per hex.
+
+\begin{standardtable}{\linewidth}{ssb}
+  \textbf{Die} & \textbf{Jumps} & \textbf{Cost}\\
+  d4  & - & x0.5 of Base\\
+  d6  & 1 & x0.75 of Base\\
+  d8  & 2 & x1 of Base\\
+  d10 & 3 & x1.25 of Base\\
+  d12 & 4 & x1.5 of Base\\
+\end{standardtable}
+
+\subsubsection{Power}
+
+Power cores run all of the computer system on the spacecraft (with the exception of the Engine). Larger power cores allow you to operate more systems at once, but there is nothing stopping the cost-saavy captain from using a smaller power core and diverting power to systems only when they need to.
+
+\begin{standardtable}{\linewidth}{sbb}
+  \textbf{Die} & \textbf{Power} & \textbf{Cost}\\
+  d4  & x0.5 of Base & x0.5 of Base\\
+  d6  & x1 of Base   & x0.75 of Base\\
+  d8  & x1.5 of Base & x1 of Base\\
+  d10 & x2 of Base   & x1.25 of Base\\
+  d12 & x2.5 of Base & x1.5 of Base\\
+\end{standardtable}
+
+\subsubsection{Bulk}
+
+Equipment and extra crew require space, and a larger spacecraft allows you to hold more. Storage space allows you to install new equipment, hold cargo, and create new quarters for extra crew. A single unit of storage is equivalent to a 2m cube and can store up to 500kg of secured goods. The Base Crew value for your hull type shows you the minimum viable crew to operate your spacecraft, and extra crew require 1 unit of Storage as living quarters.
+
+\begin{standardtable}{\linewidth}{sbb}
+  \textbf{Die} & \textbf{Storage} & \textbf{Cost}\\
+  d4  & x1 of Base      & x0.5 of Base\\
+  d6  & x1.25 of Base   & x0.75 of Base\\
+  d8  & x1.5 of Base    & x1 of Base\\
+  d10 & x1.75 of Base   & x1.25 of Base\\
+  d12 & x2 of Base      & x1.5 of Base\\
+\end{standardtable}
+
+\subsubsection{Systems}
+
+Systems govern the effectiveness of your onboard sensors, weapons, and computers. Better systems means more effective ship operations.
+
+\begin{standardtable}{\linewidth}{sbb}
+  \textbf{Die} & \textbf{Cost}\\
+  d4  & x0.5 of Base\\
+  d6  & x0.75 of Base\\
+  d8  & x1 of Base\\
+  d10 & x1.25 of Base\\
+  d12 & x1.5 of Base\\
+\end{standardtable}
+
+\subsection{Systems}
+
+Every spacecraft comes with an onboard computer that handles the operation of different ship functions. While an operator is required to use these systems (and can give a bonus to the system roll), the Spacecraft uses it's own system die with wild die to determine the outcome. 
+
+\subsubsection{Manuever}
+
+Every spacecraft has little thrusters set around the hull to give the vessel better manueverability. These thrusters are independant of the main Engine (which simply gives us thrust), and are responsible for steering the ship. These manuever systems are also useful in evading enemy weapon systems by juking and diving in random patterns (however these are not a replacement for dedicated evasive systems)
+
+\subsubsection{Navigation}
+
+Navigating the Black can be a treacherous thing, and a up-to-date and accurate navigation system can be the most important system for any crew. Longer IDD jumps are risky as you can never guarantee that you are going to precisely place your spacecraft where you want it. When processing your Jump exit, the target number will be 2 times the number of sectors you wish to jump over.
+
+Navigation systems can also be used to safely plot a course through treacherous territory, such as asteroid belts or solar flares.
+
+\subsubsection{Operations}
+
+Operations are a catch-all term to refer to any other type of system that does not fall into one of the other categories. This includes Medical bays, Hydroponic bays, Manufactories, and Cortical Stack back-up arrays. Some of these systems may require a dedicated skill, other when roll a Smarts check when using an operations system.
+
+\subsubsection{Repair}
+
+When operating in the vacuum of space it is of extreme importance to keep your spacecraft running. Repair systems allow you to seal any hull breaches, diagnose systems failures, and automatically repair damaged systems.
+
+\subsubsection{Sensors}
+
+Sensors give your spacecraft information about environment outside the spacecraft. Depending on the complexity of your sensor you can information such as:
+
+\begin{itemize}
+  \item Atmospheric information of an undiscovered planet
+  \item Make and model of a spacecraft, as well as it's weapons systems
+  \item Set proximity alerts of dangerous objects such as debris, meteors and asteroids
+  \item Provide a weapons lock on an enemy spacecraft (confers a +2 bonus on next round)
+\end{itemize}
+
+\subsubsection{Weapons}
+
+Weapons are all about launching your deadly armada against the enemy. Bonuses to your attack can be gained by providing a targeting lock via your Sensors or Piloting your spacecraft so that your manuever your enemy just where you want them.
+
+\end{multicols}
+
+\subsection{Spacecraft Hindrances}
+
+\begin{powertable}{ p{.25\textwidth} p{.15\textwidth} p{.55\textwidth} }
+  \textbf{Hindrance} & \textbf{Type} & \textbf{Effect}\\
+  Brittle Armor      & Major         & Your hull plating is of low quality. -1 Toughness\\
+  Corrupted Navmaps  & Minor         & +d6 space travel time\\
+  Defunct Scanner    & Minor         & 50\%chance on hit that scanners die, resulting in -2 to shooting and notice\\
+  Failing Subsystems & Major         & -2 Repair, Roll of 1 causes Malfunction\\
+  Faulty Engines     & Minor         & -1 Acc/ -2 TS\\
+  Fuel Drinker       & Minor         & -1 Jump, but still need to pay for full fuel load\\
+  Old Pot            & Major         & -1 to Armour and Engine, +2 system points\\
+  Quirk              & Minor         & Something minor does not work correctly\\
+  Toothless          & Major         & The ship type was not designed with combat in mind. In opposed rolls, enemies receive +1\\
+  Unlucky            & Major         & Critical 1's on spacecraft system rolls cannot be re-rolled by spending a bennie\\
+  Wanted             & Minor/Major   & The ship is wanted by someone\\
+\end{powertable}
+
+\subsection{Spacecraft Edges}
+
+\begin{powertable}{ p{.25\textwidth} p{.20\textwidth} p{.45\textwidth} }
+  \textbf{Edge} & \textbf{Requirement} & \textbf{Effect}\\
+  Advanced Auto-repair System & Seasoned, Systems d10+ & +1 to repair rolls, halve repair time with raise\\
+  Afterburner & Novice, Engine d6+ & Gain Engine dice as bonus to Acceleration for d6 rounds\\
+  Armorplating & Seasoned & Toughness +1\\
+  Capital destroyer & Novice, Armour d8+ & +1d8 damage when shooting at large spacecraft\\
+  Caring Crew & Novice & Crew can use bennies on ship rolls\\
+  Combat Circuitry & Seasoned, Engines d8+ & +2 to recover from Shaken\\
+  Famous Weapon & Novice, Weapons d10 & +1 shooting with a specific weapon\\
+  Fuel Efficient & Novice, Engines d8+ & +1 Jump\\
+  Improved firing Line & Seasoned & Can use Crew Bennies on damage rolls\\
+  Improved Sensor Array & Novice, Systems d8+ & +1 to notice checks\\
+  Maneuver Jets  & Novice, Manuever d6+ & +1 to piloting rolls for maneuvers\\
+  Maneuver Jets (Imp.) & Maneuver Jets & +2 to piloting rolls for maneuvers\\
+  Prototype Astrogation & Novice, Systems d6+ & +2 on Astronautics rolls\\
+  Proximity Alert & Novice & Notice at -2 to detect surprise attackers and other danger\\
+  Trusty old ship & Veteran, Systems d6+ & 2 points to spend on systems\\
+  Well Built & Novice & +2 to Power rolls when Incapacitated\\
+\end{powertable}
+
+\subsection{Spacecraft Fittings}
+
+Some equipment requires the cost, power or storage requirements to be adjusted. Use the following rules (round down with fractions):
+
+\begin{itemize}
+  \item Hull type modifiers are: Fighter x0.5, Small x1, Medium x1.5, Large x2
+\end{itemize}
+
+\subsubsection{Fittings}
+
+\begin{powertable}{ p{.25\textwidth} p{.05\textwidth} p{.05\textwidth} p{.05\textwidth} p{.45\textwidth} }
+  \textbf{Gear} & \textbf{Value} & \textbf{Slots} & \textbf{Power} & \textbf{Description}\\
+  Anti Missile Emitter & 25K  & 5 & 2 & Requires a successful Operations roll. -1 to enemy shooting rolls to get a missile lock (-2 on raise). Adjust values by above rules\\
+  All-Terrain Landing  & 25K  & 5 & 1 & The ship can land on soft ground and even water\\
+  Armor                & 20K  & 2 & - &  +2 Armor. Adjust cost and storage by above rules\\
+  Automatic targeting  & 100K & 1 & 1 &  (RESTRICTED) Fires one weapon system without a gunner\\
+  Cloaking Device      & 300K & 2 & 5 & (RESTRICTED) Requires a successful Operations roll. -1 cumulative penalty on enemy Notice rolls per 2 slots. Maximum -4. Adjust values by above rules\\
+  Crew Quarters        & 1K   & 1 & - & Increases crew contingent by 1\\
+  Cryo Systems         & 10K  & 2 & 2 & Converts 1 unit of storage so that it is suitable for the transportation of food and people in cryostasis. (The other storage unit holds the cryo refigeration unit)\\
+  Electronic Counter Measures & 150K & 5 & 5 & (RESTRICTED) Requires a successful Operations roll. When engaged will disrupt enemy sensors, -2 to all enemy attack rolls (-4 on a raise). Adjust values by above rules\\
+  Emergency Capsule    & 5K   & 1 & - & Each capsule carries 1/5/10/20 people per Hull category. Adjust values by above rules\\
+  Fuel bunkers         & 2.5K & 1 & - & Adds fuel for one more jump between fuelings. Adjust values by above rules\\
+  Fuel scoops          & 5K   & 1 & 1 & Can scoop fuel directly from gas giants. Adjust values by above rules\\
+  Guest Quarters       & 10K  & 5 & - & Provides comfortable accommodations for 4 passengers\\
+  Hydroponics          & 10K  & 1 & 2 & Each storage unit produces enough food and water resources for 4 people\\
+  Livestock Storage    & 15K  & 2 & - & Enables Transport of livestock\\
+  Magnetic Grappler    & 20K  & 5 & 2 & Allows grappling of another ship. Adjust values by above rules. Has a very short range of 1 square. Use an Operations roll against target's Maneuver, if the ship is the same size then incur a -2 penalty, -4 if larger. On a success you have disabled and grappled it. If it is a larger size category the victim will free itself on a club on your initiative card until you have successfully boarded or otherwise fully disabled it\\
+  Medbay               & 10K  & 1 & 1 & Provides medical facilities, including surgery. +2 to all medical rolls done here\\
+  Point Defense Lasers & 25k  & 2 & 4 & Requires a successful Operations roll. -2 Shooting versus weapons that use ammo and projectiles. Adjust values by above rules\\
+  Power Generator      & 15K  & 5 & - & +1 available power\\
+  Soldier's Barracks   & 50K  & 5 & - & Supports 8 soldiers. Includes quarters, armories etc\\
+  Stabilizer           & 75K  & 2 & 3 & +1 on Piloting rolls. Adjust values by above rules\\
+  Turbo Engine         & 15K  & 1 & 3 & +1 Top Speed per space. Adjust values by above rules. Max +4\\
+  Workshop             & 5k   & 2 & 1 & Tech workshops for maintenance and repair. +2 to all repair rolls done here\\
+\end{powertable}
+
+\subsubsection{Weapons}
+
+\begin{itemize}
+  \item Fixed weapons require the Pilot to align the spacecraft and weapon towards the target
+  \item Turrent weapons require the Weapon system to target enemy ships, but do require the target to be in it's field of view
+\end{itemize}
+
+\begin{powertable}{ p{.15\textwidth} p{.05\textwidth} p{.05\textwidth} p{.05\textwidth} p{.10\textwidth} p{.05\textwidth} p{.35\textwidth} }
+  \textbf{Weapon} & \textbf{Value} & \textbf{Slots} & \textbf{Power} & \textbf{Damage} & \textbf{AP} & \textbf{Description}\\
+  Auto Cannon     & 100K  & 10  & 3 & 4d6+1 & 4 & Range: 50/100/200, RoF: 3, Shots: 100, Auto, Heavy Weapon, Fixed. Accelerates metal alloy that is shaved off. Ammo costs 1500 credits \\
+  Auto Turrent    & 150K  & 10  & 10 & 4d6 & 4 & Range: 40/80/160, RoF: 3, Shots: 100, Auto, Heavy Weapon, Turrent. Accelerates metal alloy that is shaved off. Ammo costs 1500 credits \\
+  Laser Turrent   & 75K   & 2   & 4 & 3d6   & 3 & Range: 24/48/96, RoF: 4, Auto, 3RB, Turret, Heavy Weapon\\
+  Mass Driver     & 125K  & 15  & 3 & 4d8+1 & 5 & Range: 75/150/300, RoF: 1, Shots: 150, Semi-Auto, Fixed, Heavy Weapon. Similar to the Auto Cannon but fires larger projectiles. Ammo costs 2000 credits\\
+  Missile Launcher, Light & 150K & 4 & 4 & 4d8 & 6 & Range: 100/200/400, RoF: 2, Medium Burst, Heavy Weapon. Missles cost 500 credits each\\
+  Missile Launcher, Heavy & 250K & 6 & 4 & 5d8 & 6 & Range: 150/300/600, RoF: 2, Medium Burst, Heavy Weapon. Missles cost 750 credits each\\
+  Missile Launcher, Armour Piercer & 350K & 6 & 4 & 5d8 & 150 & Range: 75/150/300, RoF: 4, Medium Burst, Heavy Weapon. Missiles costs 1500 each\\
+  Multifocal Laser & 25K  & 1   & 2 & 3d4+1   & 2 & Range: 24/48/96, RoF: 1, Semi-Auto, Fixed, Heavy Weapon. Twinned assay and penetration lasers modulate the frequency of this beam for remarkable armor penetration\\
+  Plasma Cannon   & 150K  & 5   & 5 & 4d10+1 & 7 & Range: 24/48/96, RoF: 2, Auto, Fixed, Heavy Weapon. Superheats a hydrogen pellet until it reaches it’s plasma state, and then accelerates the plasma to it’s target by magnetic coils. Ammo costs 3000 credits\\
+  Plasma Turret   & 200K  & 5   & 10 & 4d10 & 6 & Range: 20/40/80, RoF: 2, Auto, Turret, Heavy Weapon. Superheats a hydrogen pellet until it reaches it’s plasma state, and then accelerates the plasma to it’s target by magnetic coils. Ammo costs 3000 credits\\
+  Sandthrower     & 50K   & 1   & 1  & 4d4 / 3d4 / 2d4 & 1 & Range: 20/40/80, RoF: 1, Fixed, +2 Shooting. Projecting a spray of tiny, dense particulate matter, sandthrowers are highly effective against lightly-armored fighters\\
+\end{powertable}
