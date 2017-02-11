@@ -1,6 +1,6 @@
 \documentclass[10pt,twoside]{article}
-\usepackage{dnd}
 \usepackage[utf8]{inputenc}
+\usepackage{dnd}                      % Custom components
 \usepackage{multicol}                 % Multicolumn pages
 \usepackage[hidelinks]{hyperref}      % Clickable table of content links
 
@@ -11,29 +11,6 @@
 
 % Image directory
 \graphicspath{ {images/} }
-
-% Table settings
-\newcolumntype{b}{X}
-\newcolumntype{s}{>{\hsize=.5\hsize}X}
-\newenvironment{powertable}{\rowcolors{2}{bgtan}{commentgreen}\longtable} {\endlongtable}
-\newenvironment{standardtable}{
-    \par\vspace*{8pt}
-    \noindent
-    \fontfamily{lmss}\selectfont %Select font
-    \rowcolors{1}{bgtan}{commentgreen} % Alternate colors
-    \tabularx
-}
-{\vspace{8pt plus 1pt}\noindent\endtabularx}
-% Table Environment
-\newenvironment{redtable}{
-    \par\vspace*{8pt}
-    \noindent
-    \fontfamily{lmss}\selectfont %Select font
-    \rowcolors{1}{bgtan}{itemtablepink} % Alternate colors
-    \tabularx
-}
-{\vspace{8pt plus 1pt}\noindent\endtabularx}
-
 
 % Start document
 \begin{document}
@@ -97,60 +74,6 @@
   \include{broken-stars/sector}
   % Lingo and Terminology
   \include{broken-stars/lingo}
-  % Examples
-  \section{Templates}
-  
-  \begin{multicols}{2}
-  
-    \subsection{Spacecraft}
-    
-    \textbf{Osa T-1}
-    \begin{standardtable}{\linewidth}{sb}
-      \textbf{Make}       & Sakeena Shipyards\\
-      \textbf{Hull}       & Fighter\\
-      \textbf{Rank}       & Novice\\
-      \textbf{Armour}     & d4\\
-      \textbf{Engines}    & d4\\
-      \textbf{Power}      & d8\\
-      \textbf{Bulk}       & d6\\
-      \textbf{Systems}    & d8\\
-      \textbf{Skills}     & Manever d6; Weapons d6; Sensors d4\\
-      \textbf{Crew}       & 1\\
-      \textbf{Storage}    & 3\\
-      \textbf{Power}      & 5\\
-      \textbf{Size}       & -1\\
-      \textbf{Acc / TS}   & 20 / 180\\
-      \textbf{Jumps}      & -\\
-      \textbf{Evade}      & -2\\
-      \textbf{Toughness}  & 3\\
-      \textbf{Fittings}   & -\\
-      \textbf{Weapons}    & Laser Turrent (top)\\
-      \textbf{Value}      & 925K\\
-    \end{standardtable}
-    
-    \textbf{Falcon}
-    \begin{standardtable}{\linewidth}{sb}
-      \textbf{Make}       & Solar Spacecraft\\
-      \textbf{Hull}       & Corvette\\
-      \textbf{Rank}       & Novice\\
-      \textbf{Armour}     & d6\\
-      \textbf{Engines}    & d8\\
-      \textbf{Power}      & d6\\
-      \textbf{Bulk}       & d4\\
-      \textbf{Systems}    & d6\\
-      \textbf{Skills}     & Maneuver d4; Operations d6; Sensors d4; Weapons d4\\
-      \textbf{Crew}       & 10\\
-      \textbf{Storage}    & 15\\
-      \textbf{Power}      & 10\\
-      \textbf{Size}       & +1\\
-      \textbf{Acc / TS}   & 15 / 48\\
-      \textbf{Jumps}      & 2\\
-      \textbf{Evade}      & -1\\
-      \textbf{Toughness}  & 6\\
-      \textbf{Fittings}   & -\\
-      \textbf{Weapons}    & Missile Launcher - Light (Front), Laser Turrent (Top)\\
-      \textbf{Value}      & 10.7M\\
-    \end{standardtable}
-    
-  \end{multicols}
+  % Templates
+  \include{broken-stars/template}
 \end{document}

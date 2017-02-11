@@ -126,6 +126,28 @@
 }
 {\vspace{8pt plus 1pt}\noindent\endtabularx}
 
+% Table settings
+\newcolumntype{b}{X}
+\newcolumntype{s}{>{\hsize=.5\hsize}X}
+\newenvironment{powertable}{\rowcolors{2}{bgtan}{commentgreen}\longtable} {\endlongtable}
+\newenvironment{standardtable}{
+    \par\vspace*{8pt}
+    \noindent
+    \fontfamily{lmss}\selectfont %Select font
+    \rowcolors{1}{bgtan}{commentgreen} % Alternate colors
+    \tabularx
+}
+{\vspace{8pt plus 1pt}\noindent\endtabularx}
+% Table Environment
+\newenvironment{redtable}{
+    \par\vspace*{8pt}
+    \noindent
+    \fontfamily{lmss}\selectfont %Select font
+    \rowcolors{1}{bgtan}{itemtablepink} % Alternate colors
+    \tabularx
+}
+{\vspace{8pt plus 1pt}\noindent\endtabularx}
+
 %
 % Green comment box definition
 %
