@@ -1,57 +1,33 @@
-\documentclass[10pt,twoside]{article}
-\usepackage[utf8]{inputenc}
+\documentclass[10pt,a4paper,twoside]{article}
+\usepackage[utf8]{inputenc}           % Use Unicode (non-english characters)
 \usepackage{dnd}                      % Custom components
 \usepackage{multicol}                 % Multicolumn pages
 \usepackage[hidelinks]{hyperref}      % Clickable table of content links
+\usepackage{palatino}                 % Closest built-in font I could find
 
 % Page Settings
-\raggedcolumns
-\setlength{\parindent}{0em}
-\setlength{\parskip}{0.5em}
-
-% Image directory
-\graphicspath{ {images/} }
+\raggedcolumns                        % Set up ragged columns for multicols
+\setlength{\columnsep}{1cm}           % Column seperator
+\setlength{\parindent}{0em}           % Paragraph indent size
+\setlength{\parskip}{0.5em}           % Paragraph after gap
+\graphicspath{ {images/} }            % Image directory
+\emergencystretch 10pt                % allow some extra stretching
 
 % Start document
 \begin{document}
 
   \section*{Broken Stars: Players guide}
 
-  \begin{multicols}{2}
-
-  \addtocounter{section}{1}
-
-  Welcome to the Black, adventurer!
-
-  The year is 3210 and, despite the set-backs, humanity has streched out across the stars. We somehow managed to escape ancient Earth using "propulsion thrusters", engines that spewed matter out from one end to create kinetic energy. Soon after that we terraformed and colonised the entire Sol star system in a few short centuries. We also figured out how to do \textit{real} artificial intelligence, put computers inside our brains, make deadly energy weapons, and all the other cool technology we use in our everyday lives and take for granted.
-
-  But the game-changer came with the invention of the Trans-Dimensional Drive, commonly known as TDD. This special machine allowed us to bend the laws of Space-Time for Faster Than Light (FTL) travel using what the tech-heads call "trans-dimensional energy". The TDD allowed us simple apes to escape the gravity of Sol and \textit{really} explore the big ol' Black.
-
-  And so "civilisation" continued to expand. We celebrated each new colony founded, alien species encountered, and star sector charted. We started to link everything together using gigantic Jump Portals that allowed improbably large spacecraft to instantaneously travel to other sectors. The Black fell to humanity's insatiable curiousity.
-
-  We became so reliant on TDD technology that we didn't even care about the side-effects. It just so happens that you begin to change when you are exposed to trans-dimensional energy. Some develop the ability to manipulate Space-Time, others become malformed, but most are just driven mad. These people became known as psionics, psychics, paranorms, or jsingshen. Dedicated research centres studied and trained psionics so that they could help humanity stretch out even further across the Black.
-
-  And then it all came crashing down.
-
-  We call it \textit{The Surge}. It was a large shockwave of energy that exploded from deep within the center of the galaxy, sweeping across and overloading everything that used trans-dimensional energy. In a matter of seconds we lost our Jump Portals, TDD engines and even psionics to the Surge.
-
-  The aftermath was terrible. Many worlds relied on the food imports delivered by the FTL trade network and began to starve. Other worlds slid into barbarism as they fought over dwindling resources. All across the Black, countless worlds began their struggle due to their sudden isolation. And any remaining Psionics had to learn to safely harness their powers without the guidance of experienced mentors.
-
-  But over the last few centuries we have begun to rebuild. We turn our eyes to the edges of the Black once again. Warlords and petty tyrants scheme to expand their stellar domain. Reclaimers plunder the ruins of worlds that did not survive. Trade routes are being restored through the use of the Intra-Dimensional Drive (IDD), a safer derivative of the TDD. And Psionics practice their skills away from the distrustful eyes of those who see the use of trans-dimensional energy as an imminent threat to civilisation.
-
-  \textbf{Good luck out in the Black!}
-
-  \vspace{\baselineskip}
-
-  \includegraphics[width=\linewidth]{rebellion_of_stars___starship_blackbeard_by_hideyoshi-d8p607x}
+  \hline
   
-
-  \newpage
+  \begin{multicols}{2}
 
   \tableofcontents
   
   \end{multicols}
   
+  % Intro
+  \include{broken-stars/intro}
   % Character Creation Game Concepts & Combat rules
   \include{broken-stars/rules}
   % Skills list
