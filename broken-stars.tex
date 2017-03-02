@@ -2,10 +2,12 @@
 \usepackage[utf8]{inputenc}           % Use Unicode (non-english characters)
 \usepackage{dnd}                      % Custom components
 \usepackage{multicol}                 % Multicolumn pages
-\usepackage[hidelinks]{hyperref}      % Clickable table of content links
 \usepackage{palatino}                 % Closest built-in font I could find
+\usepackage{ulem}                     % Underline elements
+\usepackage[hidelinks]{hyperref}      % Clickable table of content links
 
 % Page Settings
+\emergencystretch 10pt                % allow some extra stretching
 \raggedcolumns                        % Set up ragged columns for multicols
 \setlength{\columnsep}{1cm}           % Column seperator
 \setlength{\parindent}{0em}           % Paragraph indent size
@@ -52,4 +54,7 @@
   \include{broken-stars/lingo}
   % Templates
   \include{broken-stars/template}
+  % Templates
+  \include{broken-stars/sheet-characters}
+  \include{broken-stars/sheet-spacecrafts}
 \end{document}

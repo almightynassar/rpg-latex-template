@@ -31,9 +31,6 @@
 % Style Parameters
 %
 
-% Font environment
-\newenvironment{lmss}{\fontfamily{lmss}\selectfont}{}
-
 % Define colors, sampled from the books.
 \usepackage{color}
 \definecolor{bgtan}{HTML}{F7F2E5}          % Used for background and quotebox
@@ -95,6 +92,12 @@
       }
    }
 
+
+% Raised Rule Command:
+%  Arg 1 (Optional) - How high to raise the rule
+%  Arg 2            - Thickness of the rule
+%\newcommand{\raisedrule}[2][0em]{\leaders\hbox{\rule[#1]{1pt}{#2}}\hfill}
+
 %
 % D&D Sections
 %
@@ -132,7 +135,6 @@
 \newenvironment{standardtable}{
     \par\vspace*{8pt}
     \noindent
-    \fontfamily{lmss}\selectfont %Select font
     \rowcolors{1}{bgtan}{puregold} % Alternate colors
     \tabularx
 }
@@ -141,7 +143,6 @@
 \newenvironment{redtable}{
     \par\vspace*{8pt}
     \noindent
-    \fontfamily{lmss}\selectfont %Select font
     \rowcolors{1}{bgtan}{itemtablepink} % Alternate colors
     \tabularx
 }
@@ -162,8 +163,7 @@
     left=8pt,
     right=8pt,
     arc=0mm,
-    fonttitle=\fontfamily{lmss}\selectfont\scshape\color{black},
-    fontupper=\fontfamily{lmss}\selectfont,
+    fonttitle=\scshape\color{black},
     title=#2,
     parbox = false,
     colback=commentgreen,
@@ -189,7 +189,6 @@
     frame hidden,
     before skip=8pt plus2pt,
     breakable,
-    fontupper=\fontfamily{lmss}\selectfont,
     after={\vspace{7pt plus 1pt}\noindent},
     #1
 }
@@ -200,7 +199,6 @@
 \newenvironment{itemtable}{
     \par\vspace*{2pt}
     \noindent
-    \fontfamily{lmss}\selectfont %Select font
     \rowcolors{1}{monstertan}{monstertandark} % Alternate colors
     \tabularx{\linewidth}{XX}
 }
@@ -210,7 +208,6 @@
 \newenvironment{dnditemtable}{
     \par\vspace*{8pt}
     \noindent
-    \fontfamily{lmss}\selectfont %Select font
     \rowcolors{1}{bgtan}{itemtablepink} % Alternate colors
     \tabularx{\linewidth}{XX}
 }
@@ -255,7 +252,6 @@
     colbacktitle=monstertan,
     colframe=titlered,
     fonttitle=\scshape\bfseries\color{titlered}\Large,
-    fontupper=\fontfamily{lmss}\selectfont,
     title=#2,
     after={\vspace{7pt plus 1pt}\noindent},
     #1
@@ -343,8 +339,7 @@
 	boxsep=0.25ex,
 	left=8pt,
 	right=8pt,
-	fonttitle=\fontfamily{fosj}\selectfont\scshape\bfseries\color{black},
-	fontupper=\fontfamily{lmss}\selectfont,
+	fonttitle=\scshape\bfseries\color{black},
 	title=#2,
 	arc=0mm,
 	parbox = false,
@@ -381,7 +376,6 @@
     parbox = false,
     borderline west={1pt}{-0.5pt}{titlered},
     borderline east={1pt}{-0.5pt}{titlered},
-    fontupper = \fontfamily{lmss}\selectfont,
     overlay={
         \foreach \n in {north east,north west,south east,south west}
         {\draw [titlered, fill=titlered] (frame.\n) circle (2pt); }; },
@@ -405,7 +399,6 @@
     frame hidden,
     before skip=8pt plus2pt,
     breakable,
-    fontupper=\fontfamily{lmss}\selectfont,
     after={\vspace{7pt plus 1pt}\noindent},
     #1
 }
@@ -417,7 +410,6 @@
 \newenvironment{spelltable}{
 	\par\vspace*{2pt}
     \noindent
-    \fontfamily{lmss}\selectfont %Select font
     \rowcolors{1}{monstertan}{monstertandark} % Alternate colors
     \tabularx{\linewidth}{XX}
 }
