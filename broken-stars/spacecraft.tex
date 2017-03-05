@@ -12,43 +12,51 @@
 
   \item \textbf{Hull}: Select a Hull type. This will give your spacecraft some defaults and base values such as crew size, storage space and available power.
   
-  \item \textbf{Rank}: All spacecraft have a rank to help designate it's quality. These ranks are Novice, Seasoned, Veteran, Heroic and Legendary. New crews will always start with a Novice spacecraft, although the GM may allow for better craft. Each rank above Novice gains your spacecraft 4 advancement points, to be spent as would with Hindrances.
+  \item \textbf{Rank}: All spacecraft have a rank to help designate it's quality. These ranks are Novice, Seasoned, Veteran, Heroic and Legendary. New crews will always start with a Novice spacecraft, although the GM may allow for better craft. Each rank above Novice gains your spacecraft 4 advancement points.
 
   \item \textbf{Attributes}: You start with a d4 in each attribute and have 5 points with which to raise them. Raising an attribute by one die type costs 1 point (but you cannot raise an attribute above a d12).
 
-  \begin{standardtable}{\linewidth}{sb}
-    \textbf{Attribute} & \textbf{Description}\\
-    Armour  & Represents Hull integrity and ability to take damage\\
-    Engines & Determines acceleration, number of IDD jumps, and maximum impulse velocity\\
-    Power   & How much power is available to power all of the systems.\\
-    Bulk    & The size of the ship, relative to others in it's class\\
-    Systems & Determines the effectiveness of spacecraft systems, and how many new ones you can install\\
-  \end{standardtable}
+  \begin{redtable}{\linewidth}{ @{} L{1} @{}}
+    \textbf{Armour}\\
+    Represents Hull integrity and ability to take damage\\
+    \textbf{Engines}\\
+    Determines acceleration, number of IDD jumps, and maximum impulse velocity\\
+    \textbf{Power}\\
+    How much power is available to power all of the systems.\\
+    \textbf{Bulk}\\
+    The size of the ship, relative to others in it's class\\
+    \textbf{Systems}\\
+    Determines the effectiveness of spacecraft systems\\
+  \end{redtable}
 
-  \item \textbf{Systems}: You have 5 points for systems. Each die type in a system costs 1 point up to the Systems attribute. Going over the Systems attribute costs 2 points per level. Each system has a linked Skill; when a character uses a system, they first roll their linked Skill to see if they can confer a bonus to the system roll (see Cooperation rules).
-  \begin{standardtable}{\linewidth}{sb}
+  \item \textbf{Systems}: You have 10 points for systems. Each die type in a system costs 1 point up to the Systems attribute. Going over the Systems attribute costs 2 points per level. Each system has a linked Skill; when a character uses a system, they first roll their linked Skill to see if they can confer a bonus to the system roll (see Cooperation rules).
+  \begin{redtable}{\linewidth}{ @{} L{.5} @{} L{.5} @{} }
     \textbf{System} & \textbf{Linked Skill}\\
-    Manuever    & Piloting\\
+    Auto-pilot  & Piloting\\
+    ECM         & Operations\\
     Navigation  & Astrogation\\
     Operations  & Smarts\\
     Repair      & Repair\\
     Sensors     & Notice\\
     Weapons     & Shooting\\
-  \end{standardtable}
+  \end{redtable}
 
   \item \textbf{Derived Traits}: Calculate your derived traits according using your attributes and skills.
 
-  \begin{standardtable}{\linewidth}{sb}
-    \textbf{Trait} & \textbf{Description}\\
-    Evade     & Calculated as: \textbf{-( (Manuever / 2) -1 )}. Target penalty for attackers when using the evade action.\\
-    Toughness & Calculated as: \textbf{(Armour / 2) + 2}. Add any additional armour upgrades on top of toughness.\\
-  \end{standardtable}
+  \begin{redtable}{\linewidth}{ @{} L{1} @{}}
+    \textbf{Cargo}\\
+    Calculated as: \textbf{(Excess Storage * 500 kg}. How much cargo you can carry.\\
+    \textbf{Evade}\\
+    Calculated as: \textbf{(Autopilot / 2) +2}. Target number for attackers.\\
+    \textbf{Toughness}\\
+    Calculated as: \textbf{(Armour / 2) + 2}. Add any additional armour upgrades on top of toughness.\\
+  \end{redtable}
 
   \item \textbf{Hindrances}: You can choose to gain additional character creation points by taking up to \textbf{one} Major Hindrace (2 points) and up to \textbf{two} Minor Hindrances (1 point each).
 
   \begin{itemize}
-      \item For 2 points you can gain another attribute point or choose an \textbf{Edge}.
-      \item For 1 point you can gain another systems point\%.
+      \item For 2 points you can gain another attribute point or choose an \textbf{Edge}
+      \item For 1 point you can gain another systems point
   \end{itemize}
 
   \item \textbf{Edges}: Edges are what sets your ship apart from everyone else.
@@ -58,8 +66,6 @@
   \item \textbf{Background Detail}: Fill in any other details of your spacecraft's background such as manufactorer, model, past crews and any other detail you like.
   
   \item \textbf{Calculate Value}: Calculate your spacecraft's final value. This is the purchase price for the spacecraft, and is usually the size of the debt owed by new crews.
-  
-  \item \textbf{Play}: Spacecraft are considered Wild Cards, which means they get 3 Bennies at the start of a session. They can also take 3 Wounds before becoming immobilised.
 
 \end{enumerate}
 
@@ -67,7 +73,7 @@
 
 \begin{itemize}
   \item \textbf{Shaken} Spacecraft can be shaken the same as characters do. If a vessel is shaken it cannot use any of its systems or weapons. The spacecraft counts as an unstable platform and all player actions suffer a -2 penalty as long as it remains shaken. A character must make a "Power" roll to remove the Shaken status and return all systems back to normal operation.
-  \item \textbf{Wounds} Spacecraft have wounds just like a character does, and it incurs the same penalties. If a ship suffers 3 wounds it is incapacitated. Immediately make a "Power" roll modified by the ships repair systems and wound penalties.
+  \item \textbf{Wounds} Spacecraft have wounds just like a character does, and it incurs the same penalties. It is incapacitated if a ship suffers more wounds than it's limit. Immediately make a "Power" roll modified by the ship's wound penalties.
   \begin{itemize}
     \item On a 1 or less then the vessel is destroyed. The crew has an amount of rounds equal to the Armour die type to evacuate before it explodes and takes everyone with it. 
     \item On a failure you roll 2d6 on the Damage Table. The damage is permanent and can only be removed through repair in space dock. Some damage is so grave it can never be properly repaired.
@@ -80,7 +86,7 @@
     \item If no engineer is available the spacecraft can attempt to repair itself with it's own repair skill. This takes twice as long and the ship doubles the wound modifiers
   \end{itemize}
   Permanent Damage that resulted in hindrances can not be fixed at all, they are part of the ship now. Permanent damage to die types can be restored with a successful repair roll and a payment of half the difference between the current die type and the original die type (x1000) cost for spare parts. If you want to get repairs done by NPCs the ship is moored for the duration of the repairs and these take twice as long as normal. Cost for the repairs is 1\% of ships value per wound and the full difference between current die type and base die type (x10000 cost.
-  \item \textbf{Maintenance:} A Spacecraft needs to be maintained or it will stop flying. Before maintenance can be completed the ship must not have any wounds left. The base maintenance cost is 0.5\% of the spacecraft's value per month. This can be lowered if the ship has an engineer that performs the maintenance himself. Each month the engineer must succeed at a repair roll modified by the ships repair mod. The maintenance itself takes the spacecraft's Bulk die type in days. 
+  \item \textbf{Maintenance:} A Spacecraft needs to be maintained or it will stop flying. Before maintenance can be completed the ship must not have any wounds left. The base maintenance cost is 0.5\% of the spacecraft's value per month. This can be lowered if the ship has an engineer that performs the maintenance himself. Each month the engineer must succeed at a repair roll modified by the ships repair mod. The maintenance itself takes the spacecraft's Bulk die type plus Size modifier in days. 
   \begin{itemize}
     \item A success halves maintenance costs. With a raise he was able to do all maintenance work without additional costs.
     \item Simple failure means the maintenance cost must be paid as calculated.
@@ -90,30 +96,30 @@
 penalty for every month of missed mainenace. In the third and every following month of neglect all attributes except Armour are reduced by one die type. This stops once the engineer succeeds in a Repair roll with a raise. If no engineer is available the accumulated maintenance has to be paid at a starport where the ship is moored for the duration that takes twice as long as normal. A ship can not maintain itself. Each lost die type must be repaired individually and takes a full maintenance cycle.
 \end{itemize}
 
-\end{multicols}
-
 \subsection{Damage table}
-\begin{standardtable}{\linewidth}{sb}
+\begin{redtable}{\linewidth}{ @{} L{.25} @{} L{.75} @{} }
   \textbf{Roll} & \textbf{Damage}\\
   2 & Power reduced a die type (minimum d4)\\
   3 – 4 & A random subsystem has been damaged. Gain one of the following hindrances: Brittle Armor, Corrupted Navmap, Fuel Drinker, Failing Subsystems\\
   5 – 9 & The ship has been damaged in a vital area inside the ship. Reduce by a die type one of the following: Engines, Armour, Systems\\
   10 & Wrecked Engine Capacitor; Gain the Faulty Engines hindrance. If ship already as that hindrance Engines is reduced a die type (minimum d4)\\
   11 – 12 &  Smarts reduced one die type (minimum d4)\\
-\end{standardtable}
+\end{redtable}
+
+\end{multicols}
 
 \subsection{Hulls}
 
-\begin{standardtable}{\linewidth}{ssssssss}
-  \textbf{Hull} & \textbf{Base Cost} & \textbf{Base Crew} & \textbf{Storage} & \textbf{Base Power} & \textbf{Size} & \textbf{Acc / TS} & \textbf{Class}\\
-  Fighter     & 200k  & 1   & 2   & 3   & -1  & 20 / 180  & Fighter\\
-  Shuttle     & 500k  & 1   & 5   & 3   & 0   & 15 / 48   & Small\\
-  Patrol      & 1.5m  & 5   & 10  & 10  & 0   & 20 / 60   & Small\\
-  Corvette    & 2.5m  & 10  & 15  & 10  & +1  & 15 / 48   & Small\\
-  Frigate     & 4.5m  & 30  & 15  & 30  & +4  & 10 / 40   & Medium\\
-  Cruiser     & 8m    & 50  & 30  & 50  & +5  & 8  / 38   & Medium\\
-  Battleship  & 13m   & 100 & 50  & 75  & +8  & 4  / 35   & Large\\
-  Capital     & 20m   & 200 & 100 & 75  & +10 & 2  / 35   & Large\\
+\begin{standardtable}{\linewidth}{ @{} L{.2} @{} L{.1} @{} L{.1} @{} L{.1} @{} L{.1} @{} L{.1} @{} L{.1} @{} L{.2} @{} }
+  \textbf{Hull} & \textbf{Base Cost} & \textbf{Crew} & \textbf{Storage} & \textbf{Power} & \textbf{Size} & \textbf{Acc / TS}\\
+  Fighter     & 100k  & 1   & 2   & 3   & -1  & 25 / 200\\
+  Shuttle     & 150k  & 2   & 5   & 3   & 0   & 20 / 60\\
+  Patrol      & 500k  & 2   & 10  & 7   & 0   & 15 / 60\\
+  Corvette    & 1m    & 10  & 15  & 10  & +1  & 15 / 60\\
+  Frigate     & 2m    & 30  & 15  & 30  & +4  & 10 / 40\\
+  Cruiser     & 4m    & 50  & 30  & 50  & +5  & 8  / 38\\
+  Battleship  & 8m    & 100 & 50  & 75  & +8  & 4  / 35\\
+  Capital     & 16m   & 200 & 100 & 75  & +10 & 2  / 35\\
 \end{standardtable}
 
 \begin{multicols}{2}
