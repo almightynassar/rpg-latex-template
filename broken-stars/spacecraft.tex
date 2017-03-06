@@ -1,4 +1,4 @@
- % =================
+% =================
 % Spacecraft
 % =================
 
@@ -110,16 +110,16 @@ penalty for every month of missed mainenace. In the third and every following mo
 
 \subsection{Hulls}
 
-\begin{standardtable}{\linewidth}{ @{} L{.2} @{} L{.1} @{} L{.1} @{} L{.1} @{} L{.1} @{} L{.1} @{} L{.1} @{} L{.2} @{} }
-  \textbf{Hull} & \textbf{Base Cost} & \textbf{Crew} & \textbf{Storage} & \textbf{Power} & \textbf{Size} & \textbf{Acc / TS}\\
-  Fighter     & 100k  & 1   & 2   & 3   & -1  & 25 / 200\\
-  Shuttle     & 150k  & 2   & 5   & 3   & 0   & 20 / 60\\
-  Patrol      & 500k  & 2   & 10  & 7   & 0   & 15 / 60\\
-  Corvette    & 1m    & 10  & 15  & 10  & +1  & 15 / 60\\
-  Frigate     & 2m    & 30  & 15  & 30  & +4  & 10 / 40\\
-  Cruiser     & 4m    & 50  & 30  & 50  & +5  & 8  / 38\\
-  Battleship  & 8m    & 100 & 50  & 75  & +8  & 4  / 35\\
-  Capital     & 16m   & 200 & 100 & 75  & +10 & 2  / 35\\
+\begin{standardtable}{\linewidth}{ @{} L{.2} @{} L{.1} @{} L{.1} @{} L{.1} @{} L{.1} @{} L{.1} @{} L{.1} @{} L{.2} @{} L{.1} @{} }
+  \textbf{Hull} & \textbf{Base Cost} & \textbf{Crew} & \textbf{Storage} & \textbf{Power} & \textbf{Size} & \textbf{Acc / TS} & \textbf{Wounds} \\
+  Fighter     & 100k  & 1   & 2   & 3   & -1  & 25 / 200 & 2\\
+  Shuttle     & 150k  & 2   & 5   & 3   & 0   & 20 / 60  & 2\\
+  Patrol      & 500k  & 2   & 10  & 7   & 0   & 15 / 60  & 3\\
+  Corvette    & 1m    & 10  & 15  & 10  & +1  & 15 / 60  & 3\\
+  Frigate     & 2m    & 30  & 15  & 30  & +4  & 10 / 40  & 4\\
+  Cruiser     & 4m    & 50  & 30  & 50  & +5  & 8  / 38  & 4\\
+  Battleship  & 8m    & 100 & 50  & 75  & +8  & 4  / 35  & 5\\
+  Capital     & 16m   & 200 & 100 & 75  & +10 & 2  / 35  & 5\\
 \end{standardtable}
 
 \begin{multicols}{2}
@@ -144,11 +144,11 @@ Armour generally represents your hull integrity and ability to take damage. Take
 
 \begin{standardtable}{\linewidth}{sb}
   \textbf{Die} & \textbf{Cost}\\
-  d4  & x0.5 of Base\\
-  d6  & x0.75 of Base\\
-  d8  & x1 of Base\\
-  d10 & x1.25 of Base\\
-  d12 & x1.5 of Base\\
+  d4  & x0.5\\
+  d6  & x1\\
+  d8  & x1.5\\
+  d10 & x2\\
+  d12 & x3\\
 \end{standardtable}
 
 \subsubsection{Engines}
@@ -159,13 +159,13 @@ Travel within a region in a sector (planetary body or space station and it's moo
 Travel to another region in a sector (another planet or space station within a sector) will take on average 48 hours.
 Travel using the IDD will take on average 6 days per hex.
 
-\begin{standardtable}{\linewidth}{ssb}
-  \textbf{Die} & \textbf{Jumps} & \textbf{Cost}\\
-  d4  & - & x0.5 of Base\\
-  d6  & 1 & x0.75 of Base\\
-  d8  & 2 & x1 of Base\\
-  d10 & 3 & x1.25 of Base\\
-  d12 & 4 & x1.5 of Base\\
+\begin{standardtable}{\linewidth}{sssb}
+  \textbf{Die} & \textbf{Jumps} & \textbf{Cost} & \textbf{Acc / TS}\\
+  d4  & - & x0.5 & x1\\
+  d6  & 1 & x1   & x1\\
+  d8  & 2 & x1.5 & x2\\
+  d10 & 3 & x2   & x2\\
+  d12 & 4 & x2.5 & x3\\
 \end{standardtable}
 
 \subsubsection{Power}
@@ -174,11 +174,11 @@ Power cores run all of the computer system on the spacecraft (with the exception
 
 \begin{standardtable}{\linewidth}{sbb}
   \textbf{Die} & \textbf{Power} & \textbf{Cost}\\
-  d4  & x0.5 of Base & x0.5 of Base\\
-  d6  & x1 of Base   & x0.75 of Base\\
-  d8  & x1.5 of Base & x1 of Base\\
-  d10 & x2 of Base   & x1.25 of Base\\
-  d12 & x2.5 of Base & x1.5 of Base\\
+  d4  & x0.5 & x0.5\\
+  d6  & x1   & x1\\
+  d8  & x1.5 & x1.5\\
+  d10 & x2   & x2\\
+  d12 & x3   & x2.5\\
 \end{standardtable}
 
 \subsubsection{Bulk}
@@ -187,11 +187,11 @@ Equipment and extra crew require space, and a larger spacecraft allows you to ho
 
 \begin{standardtable}{\linewidth}{sbb}
   \textbf{Die} & \textbf{Storage} & \textbf{Cost}\\
-  d4  & x1 of Base      & x0.5 of Base\\
-  d6  & x1.25 of Base   & x0.75 of Base\\
-  d8  & x1.5 of Base    & x1 of Base\\
-  d10 & x1.75 of Base   & x1.25 of Base\\
-  d12 & x2 of Base      & x1.5 of Base\\
+  d4  & x1   & x0.5\\
+  d6  & x1.5 & x1\\
+  d8  & x2   & x1.5\\
+  d10 & x2.5 & x2\\
+  d12 & x3   & x2.5\\
 \end{standardtable}
 
 \subsubsection{Systems}
@@ -200,20 +200,24 @@ Systems govern the effectiveness of your onboard sensors, weapons, and computers
 
 \begin{standardtable}{\linewidth}{sbb}
   \textbf{Die} & \textbf{Cost}\\
-  d4  & x0.5 of Base\\
-  d6  & x0.75 of Base\\
-  d8  & x1 of Base\\
-  d10 & x1.25 of Base\\
-  d12 & x1.5 of Base\\
+  d4  & x1\\
+  d6  & x1.5\\
+  d8  & x2\\
+  d10 & x2.5\\
+  d12 & x3\\
 \end{standardtable}
 
 \subsection{Systems}
 
 Every spacecraft comes with an onboard computer that handles the operation of different ship functions. While an operator is required to use these systems (and can give a bonus to the system roll), the Spacecraft uses it's own system die with wild die to determine the outcome. 
 
-\subsubsection{Manuever}
+\subsubsection{Auto-pilot}
 
-Every spacecraft has little thrusters set around the hull to give the vessel better manueverability. These thrusters are independant of the main Engine (which simply gives us thrust), and are responsible for steering the ship. These manuever systems are also useful in evading enemy weapon systems by juking and diving in random patterns (however these are not a replacement for dedicated evasive systems)
+An auto-pilot is a simple Ship AI that handles spacecraft movement when you do not have a pilot. The auto-pilot automatically manages the engines, FTL drive and all the little thrusters set around the hull to give the vessel better manueverability. The auto-pilot system is used when calculating the Evade skill when opposing enemy weapon systems by juking and diving in random patterns. You can use the Pilot's piloting skill if you do not have an auto-pilot.
+
+\subsubsection{ECM}
+
+ECM stands for Electronic Counter Measures. It can disrupt enemy sensors and weapon targeting systems. To successfully operate the ECM system requires an opposed Sensor roll; every success and raise means a bonus to your Evade.
 
 \subsubsection{Navigation}
 
@@ -248,7 +252,7 @@ Weapons are all about launching your deadly armada against the enemy. Bonuses to
 
 \subsection{Spacecraft Hindrances}
 
-\begin{powertable}{ p{.25\textwidth} p{.15\textwidth} p{.55\textwidth} }
+\begin{powertable}{ @{} p{.25\textwidth} @{} p{.15\textwidth} @{} p{.55\textwidth} @{} }
   \textbf{Hindrance} & \textbf{Type} & \textbf{Effect}\\
   Brittle Armor      & Major         & Your hull plating is of low quality. -1 Toughness\\
   Corrupted Navmaps  & Minor         & +d6 space travel time\\
@@ -265,7 +269,7 @@ Weapons are all about launching your deadly armada against the enemy. Bonuses to
 
 \subsection{Spacecraft Edges}
 
-\begin{powertable}{ p{.25\textwidth} p{.20\textwidth} p{.45\textwidth} }
+\begin{powertable}{ @{} p{.25\textwidth} @{} p{.20\textwidth} @{} p{.45\textwidth} @{} }
   \textbf{Edge} & \textbf{Requirement} & \textbf{Effect}\\
   Advanced Auto-repair System & Seasoned, Systems d10+ & +1 to repair rolls, halve repair time with raise\\
   Afterburner & Novice, Engine d6+ & Gain Engine dice as bonus to Acceleration for d6 rounds\\
@@ -295,7 +299,7 @@ Some equipment requires the cost, power or storage requirements to be adjusted. 
 
 \subsubsection{Fittings}
 
-\begin{powertable}{ p{.25\textwidth} p{.05\textwidth} p{.05\textwidth} p{.05\textwidth} p{.45\textwidth} }
+\begin{powertable}{ @{} p{.25\textwidth} @{} p{.1\textwidth} @{} p{.1\textwidth} @{} p{.1\textwidth} @{} p{.45\textwidth} @{} }
   \textbf{Gear} & \textbf{Value} & \textbf{Slots} & \textbf{Power} & \textbf{Description}\\
   Anti Missile Emitter & 25K  & 5 & 2 & Requires a successful Operations roll. -1 to enemy shooting rolls to get a missile lock (-2 on raise). Adjust values by above rules\\
   All-Terrain Landing  & 25K  & 5 & 1 & The ship can land on soft ground and even water\\
@@ -328,7 +332,7 @@ Some equipment requires the cost, power or storage requirements to be adjusted. 
   \item Turrent weapons require the Weapon system to target enemy ships, but do require the target to be in it's field of view
 \end{itemize}
 
-\begin{powertable}{ p{.15\textwidth} p{.05\textwidth} p{.05\textwidth} p{.05\textwidth} p{.10\textwidth} p{.05\textwidth} p{.35\textwidth} }
+\begin{powertable}{ @{} p{.15\textwidth} @{} p{.05\textwidth} @{} p{.05\textwidth} @{} p{.05\textwidth} @{} p{.10\textwidth} @{} p{.05\textwidth} @{} p{.35\textwidth} @{} }
   \textbf{Weapon} & \textbf{Value} & \textbf{Slots} & \textbf{Power} & \textbf{Damage} & \textbf{AP} & \textbf{Description}\\
   Auto Cannon     & 100K  & 10  & 3 & 4d6+1 & 4 & Range: 50/100/200, RoF: 3, Shots: 100, Auto, Heavy Weapon, Fixed. Accelerates metal alloy that is shaved off. Ammo costs 1500 credits \\
   Auto Turrent    & 150K  & 10  & 10 & 4d6 & 4 & Range: 40/80/160, RoF: 3, Shots: 100, Auto, Heavy Weapon, Turrent. Accelerates metal alloy that is shaved off. Ammo costs 1500 credits \\
