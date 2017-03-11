@@ -2,147 +2,234 @@
 % Game Concepts
 % =================
 \subsection{Game Concepts}
-\begin{itemize}
-  \item \textbf{Aces:} If you roll the highest number on any die, player rolls that die again and adds that to total
-  \item \textbf{Armour:} Gear that has an armour rating is added to Toughness when the covered location is hit. You only benefit from the armour with the highest bonus (armour ratings do not stack). Attacks are directed at the torso unless otherwise specified.
-  \item \textbf{Armour Piercing:} A weapon that has an AP rating means it ignores that many points of armour. Excess AP is simply lost.
-  \item \textbf{Asphyxiation:} Organics cannot survive the Black without some form of pressurized suit and atmosphere generator. If you run out of atmosphere to breath you must make a vigor check every turn. For every failure you receive a level of fatigue. Stopping all activity will give you a +1, on your Vigor roll. Once you are in breathable atmosphere again you will recover one level of Fatigue every five minutes of breathing. Once Incapacitated, you will die in a number of rounds equal to half of your Vigor die. When a doctor reaches you before that time is up you can be revived with a Medicine roll at -4\\
-  \item \textbf{Basic test:} Roll die over Target Number (usually 4)
-  \item \textbf{Bennies:} Players get 3 Bennies at start of the game. They’re for re-rolls and other things
-  \item \textbf{Bipod:} Machine guns and sniper rifles benefit from the use of a bipod. It takes one action to deploy a bipod, and once deployed it reduces the autofire penalty to -1. If you move, you negate this benefit and will need to reset the bipod
-  \item \textbf{Bleeding Out:} (\textit{see Incapacitated}) Make a Vigor roll every round until they are Stabilized. This happens before cards are dealt. If other characters make Healing rolls, character stabilizes and no more rolls are needed.
-    \begin{redtable}{\linewidth}{@{}L{.25}@{}L{.75}@{}}
-      \textbf{Roll} & \textbf{Result}\\
-      Success & Roll again every round until Stabilized\\
-      Raise & Stabilized. No more rolls\\
-      Fail & Character dies\\
-    \end{redtable}
-  \item \textbf{Cooperative:} Lead character makes their roll, and adds +1 for every success and raise his companions achieved on their own (maximum of +4, except for Strength). Companions must have the skill in question to help Lead character in their task
-  \item \textbf{Cover:} Attacks targeting characters behind cover suffer from the following:
-    \begin{redtable}{\linewidth}{@{}L{.25}@{}L{.75}@{}}
-      \textbf{Type} & \textbf{Penalty}\\
-      Light & -1 to all attacks\\
-      Medium & -2 to all attacks\\
-      Heavy & -4 to all attacks\\
-    \end{redtable}
-  \item \textbf{Darkness:} Lighting affects all actions that require lighting. Apply the following penalties:
-    \begin{redtable}{\linewidth}{@{}L{.25}@{}L{.75}@{}}
-      \textbf{Lighting} & \textbf{Penalty}\\
-      Dim & -1 to all sight-based actions\\
-      Dark & -2 to all sight-based actions, and targets are not visible beyond 2 squares\\
-      Pitch Black & -4 to all sight-based actions, and the target must be detected to be attacked\\
-    \end{redtable}
-  \item \textbf{Dramatic Tasks:} Some actions with deadly consequences and a time limit. You must complete 5 successful rolls to resolve the task. Most tasks come with a -2 penalty
-  \item \textbf{Encumberance:} Your character's load limit is 3 x their Strength die (in kilograms). Each multiple above that limit gives a -1 penalty to Agility and Strength (\textit{do not recalculate your load limit!}) and all related skills
-  \item \textbf{Fear:} You make a Spirit roll to overcome your fear (some monsters add a penalty to your roll)
-  \item \textbf{Group Rolls:} For a group of extras, roll one Trait die and one Wild die. Take the highest of the two as the average for the whole group
-  \item \textbf{Healing:} The Healing skill can be used to treat any fresh wound suffered within the last hour and takes 10 minutes. A success on a Healing roll removes one wound, and a raise removes two. Further raises have no effect. The healer must subtract the patient wound levels as well as their own to the healing roll (trying to heal your own wounds double your wound penalties), as well as another -2 penalty if basic medical supplies are not available. After one hour, only natural healing can remove wounds.
-  \item \textbf{Heavy Weapon:} Gear designated as a HW can affect vehicles and other devices with Heavy Armour
-  \item \textbf{High Explosive:} Gear designated as a HE use a burst template and follows rules for Area Effect attacks
-  \item \textbf{Incapacitated:} After suffering 3 wounds make a Vigor roll:
-    \begin{redtable}{\linewidth}{@{}L{.25}@{}L{.75}@{}}
-      \textbf{Roll} & \textbf{Result}\\
-      1 or Less & Character dies\\
-      Fail & Roll on Injury Table and effect is permanent. You are Bleeding Out\\
-      Success & Roll on Injury Table. Injury gone when healed\\
-      Raise & Roll on Injury Table. Injury gone in 24 hours\\
-    \end{redtable}
-  \item \textbf{Injury table}: Roll 2d6.
-    \begin{redtable}{\linewidth}{@{}L{.25}@{}L{.75}@{}}
-      \textbf{Roll} & \textbf{Result}\\
-      2 - (Irreplaceable) & The GM determines the worst possible outcome\\
-      3-4 (Arm) & Roll left or right arm randomly; it’s unusable like the One Arm Hindrance\\
-      5-9 (Guts) & Roll 1d6; 1-2 reduce Agility, 3-4 reduce Vigor, 5-6 reduce Strength (minimum d4)\\
-      10 (Leg) & Gain the Lame Hindrance (or the One Leg Hindrance)\\
-      11-12 (Head) & Roll 1d6; 1-2 you have a scar and Ugly Hindrance, 3-4 you have the One Eye Hindrance (or Blind), 5-6 reduce Smarts (minimum d4).
-    \end{redtable}
-  \item \textbf{Initiative:} Players get one card per turn and act according to the deck order, going from the Ace to Deuce (in case of ties the suit order is Spade, Heart, Diamond, Club). If the player gets a Joker they can act when they wants, and the Joker gives the PC +2 on all Tests and +2 to Damage
-  \item \textbf{Minimum Strength:} Using gear without equally it's Min. Strength will incur a few penalties. Melee weapons damage die are downgraded to your Strength die, and you do not gain any of the weapon's bonuses (but you do incur their penalties). Ranged weapons incur a -1 penalty to each attack roll for every step of difference between their Strength and the Min. Strength (it is ignored if the weapon is braced on a support or bipod)
-  \item \textbf{Missiles} To fire a missile, you are required to gain a lock (Piloting/Weapons rolls opposed by Target's Piloting/Electronic Warface, with range modifiers). At short range, target has 1 round to evade, 2 at medium, and 3 at long. Evading a missile require a Piloting roll at -4
-  \item \textbf{Movement} Use the following rules to determine movement.
-    \begin{redtable}{\linewidth}{@{}L{.25}@{}L{.75}@{}}
-      \textbf{Movement} & \textbf{Rules}\\
-      Crawling & May crawl 2 squares per turn. This counts as being prone\\
-      Crouching & May move at half Pace. You may run while crouched. Ranged attacks againts you suffer a –1 penalty\\
-      Going Prone & You may fall prone at any time during your action. Getting up costs 2 units of movement\\
-      Difficult Ground & Difficult ground such as mud, steep hills, or snow, slows characters down. Count square of movement as double\\
-      Jumping & 1 square horizontally from a dead stop; 2 squares with a “run and go.” A successful Strength roll grants one extra inch of distance\\
-      Running & You may run an additional 1d6 squares during your turn, but incur a -2 running penalty to all other actions\\
-    \end{redtable}
-  \item \textbf{Natural Healing:} Every 5 days, you make a Vigor roll. You remove one wound level (or incapcitated status) with a success, or improve two steps with a raise. A critical failure increases your wound level by one. You subtract wound penalties from these rolls as usual. Medical attention means that someone with the Healing skill is actively checking the patient's wounds.
-    \begin{redtable}{\linewidth}{@{}L{.75}@{}L{.25}@{}}
-      \textbf{Condition} & \textbf{Modifier}\\
-      Rough travelling & -2\\
-      No medical attention & -2\\
-      Poor environment & -2\\
-      Medical attention (pre-industrial) & -\\
-      Medical attention (industrial and beyond) & +1\\
-      Medical attention (robotics and beyond) & +2\\
-    \end{redtable}
-  \item \textbf{Objects and Obstacles:} Inanimate objects have a parry of 2, no additional damage from raises on attack roll (and no aces on damage). If an attack can’t do enough damage to destroy an object, it can’t be destroyed (in combat).
-    \begin{redtable}{\linewidth}{@{}L{.30}@{}L{.30}@{}L{.40}@{}}
-      \textbf{Object} & \textbf{Toughness} & \textbf{Damage Type}\\
-      Light Door & 8 & Blunt, Cutting\\
-      Heavy Door & 10 & Blunt, Cutting\\
-      Lock & 8 & Blunt, Piercing\\
-      Handcuffs & 12 & Blunt, Piercing, Cutting\\
-      Knife, Sword & 10 & Blunt, Cutting\\
-      Rope & 4 & Cutting, Piercing\\
-      Shield & 10 & Blunt, Cutting\\
-    \end{redtable}
-  \item \textbf{Opposed Rolls:} Defending player rolls. Their roll becomes other player’s Target Number
-  \item \textbf{Power Armour:} Power Armour support their own weight so are not included as part of encumberance. Light suits weigh 50 kg, Medium Suits weigh 75 kg, and Heavy suits weigh 110 kg. All power suits have a 2.5 km communications unit built in. Power Armour lasts 1 week on a single charge, and requires 10 hours charging at a special facility to return to full power
-  \item \textbf{Raise:} Every 4 points over Target Number is a Raise and can give additional benefits
-  \item \textbf{Rate of Fire:} The maximum number of shots that may be taken by this weapon per action
-  \item \textbf{Reloading:} Reloading is an action. Running an reloading requires an Agility roll with a -2 running penalty
-  \item \textbf{Scope:} +2 to Shooting at Medium or longer distances as long as you do not move
-  \item \textbf{Shaken:} Characters are Shaken when they first take damage. On their next turn, make an immediate Spirit roll (\textit{May use Bennies to remove Shaken without a roll})
-    \begin{redtable}{\linewidth}{@{}L{.25}@{}L{.75}@{}}
-      \textbf{Roll} & \textbf{Result}\\
-      Success & Not Shaken but may only do Free Actions\\
-      Raise & Not Shaken and may act normally\\
-      Fail & Still Shaken, may only do Free Actions\\
-    \end{redtable}
-  \item \textbf{Size:} Most humanoids (except for the Ghoa and some Uplifted) start at the default size 0. Adjustments to this value directly affects toughness (add or subtract your size from your toughness). When attacking a creature 2 or more levels smaller than you will incur a -2 attack penalty; attacking a creature 4 or more levels larger than you will gain a +2 bonus; attacking a creature 8 or more levels larger than you will gain a +4 bonus.
-    \begin{redtable}{\linewidth}{@{}L{.25}@{}L{.75}@{}}
-      \textbf{Size} & \textbf{Example}\\
-      -2 & Cat, large rat, small dog\\
-      -1 & Large dog, bobcat, small humanid\\
-      0 & Humanoid, Aliens\\
-      +1 & Bear Uplifted\\
-      +2 & Bull, Gorilla, Horse\\
-      +3 & Bear\\
-      +4 & Rhino, Great White Shark\\
-      +5 & Small Elephant\\
-      +6 & Elephant\\
-      +7 & T-Rex, Orca\\
-      +8 & Dragon\\
-      +9 & Blue Whale\\
-      +10 & Kraken, Leviathan\\
-    \end{redtable}
-  \item \textbf{Snapfire:} Gear with the snapfire property are inaccurate when shot from the hip. If you move at any time during the round, you take a -2 penalty
-  \item \textbf{Soak Roll:} Spend a Benny on a Soak Roll (Vigor check) to regain 1 Wound. Raises take away +1 Wound per Raise. If all the wounds are Soaked it removes any Shaken condition
-  \item \textbf{Social Conflict} Social conflicts are broken down into three rounds of conversation, each focusing on a particular point. Each round, characters roleplaay the argument and make a contested Persuasion roll (+2 for good points, -2 for faux pas). Speakers gain a success for each success and raise. At the end of the third round, the character with the most successes wins the conflict. If knowledge is used, the character uses the lowest trait roll between their Knowledge and Persuasion.
-    \begin{redtable}{\linewidth}{@{}L{.25}@{}L{.75}@{}}
-      \textbf{Margin} & \textbf{Result}\\
-      Tie & Issue is unsettled and no action taken until new evidence can be presented\\
-      1-2 & Target is not convinced but decides it is better to be safe than sorry. Provides minimal action\\
-      3-4 & Target is reasonably convinced, but will require something in return for action\\
-      5+ & Target is utterly convinced, and will aide in whatever way they can\\
-    \end{redtable}
-  \item \textbf{Stealth} Guards are either inactive or active. Success on your trait roll will avoid inactive guards; Failure makes them active. Active guards make an opposed Notice check against the Stealth Roll; Failure means they spot you. Last square always requires an opposed check. You can move 5x Pace outside combat per Stealth Check. In groups, use lowest Pace. In combat, once check per round. Use the following modifiers:
-    \begin{redtable}{\linewidth}{@{}L{.25}@{}L{.75}@{}}
-      \textbf{State} & \textbf{Modifier}\\
-      Crawling & +2\\
-      Running & -2\\
-      Dim Light & +1\\
-      Darkness & +2\\
-      Pitch Black & +4\\
-      Light cover & +1\\
-      Medium cover & +2\\
-      Heavy cover & +4\\
-    \end{redtable}
-  \item \textbf{Unskilled:} If you are unskilled then your roll is a d4 with a –2 penalty
-  \item \textbf{Wild Die:} A d6 rolled along with normal die. Player chooses highest result (but Snakeyes is a critical fail). Can Ace and Raise on the Wild Die. You only have one wild die per action (even if you use multiple Trait die, such as for Autofire)
-  \item \textbf{Wounded:} All characters have 3 Wounds until they are Incapacitated (Extras have 1 Wound). Damage and Raises when Shaken makes 1 Wound each. Each wound is –1 to Pace and all Trait Tests. (\textit{May use Bennies to make a Soak Roll})
-\end{itemize}
+\label{sec:rules-concepts}
+
+\begin{genericsection}{Aces}
+If you roll the highest number on any die, you roll that die again and add it to total (and if you roll the highest again, then you keep rolling).
+\end{genericsection}
+
+\begin{genericsection}{Asphyxiation / Atmosphere}
+Organics cannot survive the Black without some form of pressurized suit. On your turn, if you have not atmosphere to breathe then you must make a Vigor check every turn. For every failure you receive a Wound as you suffer decompression.
+\end{genericsection}
+
+\begin{genericsection}{Bennies}
+You get 3 Bennies at start of the game (unless you have an Edge that changes that). Use them for re-rolls and other things (such as \textbf{Soaking} damage or removing \textbf{Shaken} status). You earn more bennies for doing outstanding things during the game.
+\end{genericsection}
+
+\begin{genericsection}{Bleeding Out}
+When you are Incapacitated (\textit{\hyperref[sec:rules-concepts-incapacitated]{see Incapacitated}}) and get the Bleeding Out status, you must make a Vigor check for every round until you are \textbf{Stabilized}. This happens before any cards are dealt. If other characters make some sort of Healing roll, the character stabilizes and no more rolls are needed. The result of your Bleeding Out Vigor check is as follows:
+\begin{redtable}{\linewidth}{@{}L{1}@{}}
+  \textbf{Success} \\
+  Roll again every round until Stabilized\\
+  \textbf{Raise} \\
+  You are now Stabilized and do not need to make any more rolls\\
+  \textbf{Failure} \\
+  Your character instantly dies from the blood loss\\
+\end{redtable}
+\end{genericsection}
+
+\begin{genericsection}{Cooperative rolls}
+One character will declare their action, and any able and willing companions (or systems, programs and AI) can aide the player. The character will add a +1 bonus to their results for every success and raise their companions achieved on their own (maximum bonus of +4, except for Strength). Companions must have the skill to help character in their task.
+\end{genericsection}
+
+\begin{genericsection}{Cover}
+Cover adds a penalty to all incoming attacks that target the victim. The penalty to apply depends on the type of cover, and are:
+\begin{redtable}{\linewidth}{@{}L{1}@{}}
+  \textbf{Light} \\
+  -1 to all attacks\\
+  \textbf{Medium} \\
+  -2 to all attacks\\
+  \textbf{Heavy} \\
+  -4 to all attacks\\
+\end{redtable}
+\end{genericsection}
+
+\begin{genericsection}{Darkness}
+Lighting affects all actions that require lighting. Apply the following penalties:
+\begin{redtable}{\linewidth}{@{}L{1}@{}}
+  \textbf{Dim} \\
+  -1 to all sight-based actions\\
+  \textbf{Dark} \\
+  -2 to sight-based actions, and targets are not visible beyond 2 squares\\
+  \textbf{Pitch Black} \\
+  -4 to all sight-based actions, and the target must be detected to be attacked\\
+\end{redtable}
+\end{genericsection}
+
+\begin{genericsection}{Dramatic Tasks}
+Some actions with deadly consequences and a time limit. You must complete 5 successful rolls to resolve the task. Most tasks come with a -2 penalty to represent the intense amount of pressure the character is under.
+\end{genericsection}
+
+\begin{genericsection}{Encumberance}
+Your character's load limit is 3 x their Strength die (in kilograms). Each multiple above that limit gives a -1 penalty to Agility and Strength (\textit{do not recalculate your load limit!}) and all related skills
+\end{genericsection}
+
+\begin{genericsection}{Fear}
+To overcome your Fears you must make a Spirit roll (some monsters add a penalty to the Spirit roll).
+\end{genericsection}
+
+\begin{genericsection}{Group Rolls}
+To quickly roll for a group of extras (such as henchmen), simply roll one Trait die and one Wild die. Take the highest of the two as the average for the whole group.
+\end{genericsection}
+
+\begin{genericsection}{Healing}
+The Healing skill can be used to treat any Wound suffered within the last hour and takes about 10 minutes. A success on a Healing check removes 1 Wound, and raises will removee 2. Further raises have no effect. The healer must apply the patient's Wound penalty as well as their own Wound penalty to the Healing check. Trying to heal your own wounds will effectively double your wound penalties. If you do not have suitable medical supplies you suffer another -2 penalty. After one hour, only \textbf{Natural Healing} can remove Wounds.
+\end{genericsection}
+
+\begin{genericsection}{Incapacitated}
+\label{sec:rules-concepts-incapacitated}
+After suffering 3 Wounds you must make a Vigor check:
+\begin{redtable}{\linewidth}{@{}L{1}@{}}
+  \textbf{1 or Less}\\
+  Your Character dies\\
+  \textbf{Fail}\\
+  You roll on Injury Table and effect is permanent. You are also \textbf{Bleeding Out}\\
+  \textbf{Success}\\
+  Roll on Injury Table. The injury is gone when healed\\
+  \textbf{Raise}\\
+  Roll on Injury Table. The injury is gone in 24 hours\\
+\end{redtable}
+\end{genericsection}
+
+\begin{genericsection}{Injury table}
+You must roll on the injury table when you are \textbf{Incapacitated}. Simply roll 2d6 and consult the table.
+\begin{redtable}{\linewidth}{@{}L{1}@{}}
+  \textbf{2 (Irreplaceable)}\\
+  The GM determines the worst possible outcome\\
+  \textbf{3-4 (Arm)}\\
+  Roll left or right arm randomly; it’s unusable like the One Arm Hindrance (but can be fixed with Cyberware)\\
+  \textbf{5-9 (Guts)}\\
+  Roll 1d6; 1-2 reduce Agility, 3-4 reduce Vigor, 5-6 reduce Strength (minimum d4)\\
+  \textbf{10 (Leg)}\\
+  Gain the Lame Hindrance (or the One Leg Hindrance). This can be fixed with Cyberware\\
+  \textbf{11-12 (Head)}\\
+  Roll 1d6; 1-2 you have a scar and Ugly Hindrance, 3-4 you have the One Eye Hindrance (or Blind), 5-6 reduce Smarts (minimum d4).
+\end{redtable}
+\end{genericsection}
+
+\begin{genericsection}{Initiative}
+Players get one card per round and act according to the deck order, which goes from the Ace to Deuce (in case of ties the suit order is Spade, Heart, Diamond, Club). If the player gets a Joker they can act whenever they want, and the Joker gives them a +2 bonus on all Tests and +2 to all Damage
+\end{genericsection}
+
+\begin{genericsection}{Movement} 
+Use the following rules to determine movement.
+\begin{redtable}{\linewidth}{@{}L{1}@{}}
+  \textbf{Crawling}\\
+  May crawl 2 squares per turn. This counts as being prone\\
+  \textbf{Crouching}\\
+  May move at half Pace. You may run while crouched. Ranged attacks againts you suffer a –1 penalty\\
+  \textbf{Going Prone}\\
+  You may fall prone at any time during your action. Getting up costs 2 units of movement\\
+  \textbf{Difficult Ground}\\
+  Difficult ground such as mud, steep hills, or snow, slows characters down. Count square of movement as double\\
+  \textbf{Jumping}\\
+  1 square horizontally from a dead stop; 2 squares with a “run and go.” A successful Strength roll grants one extra inch of distance\\
+  \textbf{Running}\\
+  You may run an additional 1d6 squares during your turn, but incur a -2 running penalty to all other actions\\
+\end{redtable}
+\end{genericsection}
+
+\begin{genericsection}{Natural Healing}
+If you have any Wounds, you must make a Vigor roll every 5 in-game days. You remove 1 Wound level (or Incapcitated status) with a success, or improve 2 steps with a Raise. A critical failure increases your Wound level by one. You subtract wound penalties from these rolls as usual. Medical attention means that someone with the Healing skill is actively checking the patient's wounds.
+\begin{redtable}{\linewidth}{@{}L{.75}@{}L{.25}@{}}
+  \textbf{Condition} & \textbf{Modifier}\\
+  Rough travelling & -2\\
+  No medical attention & -2\\
+  Poor environment & -2\\
+  Medical attention (pre-industrial) & -\\
+  Medical attention (industrial and beyond) & +1\\
+  Medical attention (robotics and beyond) & +2\\
+\end{redtable}
+\end{genericsection}
+
+\begin{genericsection}{Objects and Obstacles}
+Inanimate objects have a parry of 2, no additional damage from raises on attack roll (and no aces on damage). If an attack can’t do enough damage to destroy an object, it can’t be destroyed (in combat).
+\begin{redtable}{\linewidth}{@{}L{.30}@{}L{.30}@{}L{.40}@{}}
+  \textbf{Object} & \textbf{Toughness} & \textbf{Damage Type}\\
+  Light Door & 8 & Blunt, Cutting\\
+  Heavy Door & 10 & Blunt, Cutting\\
+  Lock & 8 & Blunt, Piercing\\
+  Handcuffs & 12 & Blunt, Piercing, Cutting\\
+  Knife, Sword & 10 & Blunt, Cutting\\
+  Rope & 4 & Cutting, Piercing\\
+  Shield & 10 & Blunt, Cutting\\
+\end{redtable}
+\end{genericsection}
+
+\begin{genericsection}{Raise}
+Every 4 points over the Target Number is a Raise and can give additional benefits to your roll
+\end{genericsection}
+
+\begin{genericsection}{Shaken}
+Characters are Shaken when they first take damage. On their next turn, make an immediate Spirit roll (\textit{or you may use Bennies to remove Shaken without a roll})
+\begin{redtable}{\linewidth}{@{}L{1}@{}}
+  Success\\
+  Not Shaken but may only do Free Actions\\
+  Raise\\
+  Not Shaken and may act normally\\
+  FaiL\\
+  Still Shaken, may only do Free Actions\\
+\end{redtable}
+\end{genericsection}
+
+\begin{genericsection}{Size}
+Most humanoids (except for the Ghoa and some Uplifted) start at the default size 0. Adjustments to this value directly affects toughness (add or subtract your size from your toughness). When attacking a creature 2 or more levels smaller than you will incur a -2 attack penalty; attacking a creature 4 or more levels larger than you will gain a +2 bonus; attacking a creature 8 or more levels larger than you will gain a +4 bonus.
+\begin{redtable}{\linewidth}{@{}L{.25}@{}L{.75}@{}}
+  \textbf{Size} & \textbf{Example}\\
+  -2 & Cat, large rat, small dog\\
+  -1 & Large dog, bobcat, small humanid\\
+  0 & Humanoid, Aliens\\
+  +1 & Bear Uplifted\\
+  +2 & Bull, Gorilla, Horse\\
+  +3 & Bear\\
+  +4 & Rhino, Great White Shark\\
+  +5 & Small Elephant\\
+  +6 & Elephant\\
+  +7 & T-Rex, Orca\\
+  +8 & Dragon\\
+  +9 & Blue Whale\\
+  +10 & Kraken, Leviathan\\
+\end{redtable}
+\end{genericsection}
+
+\begin{genericsection}{Soaking}
+Spend a Benny to make a Soak Roll (a Vigor check) to regain 1 Wound. Raises take away +1 Wound per Raise. If all the wounds are Soaked it removes any Shaken condition
+\end{genericsection}
+
+\begin{genericsection}{Social Conflict}
+Social conflicts are broken down into three rounds of conversation. Each round the characters will roleplay their arguments and make an opposed Persuasion check (+2 for good points, -2 for faux pas). Speakers gain points for each success and raise. At the end of the third round, the character with the most points wins the conflict. If knowledge is used, the character uses the lowest trait roll between their Knowledge and Persuasion.
+\begin{redtable}{\linewidth}{@{}L{.25}@{}L{.75}@{}}
+  \textbf{Margin} & \textbf{Result}\\
+  Tie & Issue is unsettled and no action taken until new evidence can be presented\\
+  1-2 & Target is not convinced but decides it is better to be safe than sorry. Provides minimal action\\
+  3-4 & Target is reasonably convinced, but will require something in return for action\\
+  5+ & Target is utterly convinced, and will aide in whatever way they can\\
+\end{redtable}
+\end{genericsection}
+
+\begin{genericsection}{Stealth}
+Guards are either inactive or active. A success on your Stealth check will mean that you avoid inactive guards; a Failure makes them active. Active guards will then make an opposed Notice check against your Stealth result; a guard's Success means that they spot you. The last square of movement around the guard will always require an opposed Stealth/Notice check. You can move 5x you Pace when outside combat per Stealth Check. In groups, use the lowest Pace. In combat, you must make one Stealth check per round. Use the following modifiers:
+\begin{redtable}{\linewidth}{@{}L{.25}@{}L{.75}@{}}
+  \textbf{State} & \textbf{Modifier}\\
+  Crawling & +2\\
+  Running & -2\\
+  Dim Light & +1\\
+  Darkness & +2\\
+  Pitch Black & +4\\
+  Light cover & +1\\
+  Medium cover & +2\\
+  Heavy cover & +4\\
+\end{redtable}
+\end{genericsection}
+
+\begin{genericsection}{Unskilled rolls}
+If you are unskilled then your roll is a d4 with a –2 penalty
+\end{genericsection}
+
+\begin{genericsection}{Wild Die}
+A d6 rolled along with normal die. Player chooses highest result (but Snakeyes is a critical fail). The Wild Die can Ace and Raise like normal dice. You only have one wild die per action (even if you use multiple Trait die, such as for Autofire)
+\end{genericsection}
+
+\begin{genericsection}{Wounded}
+Player characters have 3 Wounds, while NPCs/Extras only have 1 Wound. When they run out of Wounds they are Incapacitated. To get a Wound, you must take damage when you are Shaken. Each wound is a –1 penalty to Pace and all Trait Tests (including Healing rolls). \textit{You may use Bennies to make a Soak Roll, or to remove the Shaken status}
+\end{genericsection}
