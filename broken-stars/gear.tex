@@ -6,70 +6,132 @@
 \label{sec:gear}
 
 \begin{multicols}{2}
-\subsection{Tech-Levels}
-\label{sec:gear-tech}
-  
-Tech-Levels (TL) are a standard way to catergorise the differing manufacturing capabilities of a planet. To get more information please refer to the \textit{\hyperref[sec:sector-tech-levels]{Sector Tech Levels section}}
 
-When selling or buying gear on a planet that is of a lower Tech Level than the gear itself, double the price for each difference in level. For example, selling Basic Weave (TL: 4, \$100) on a Stone Age planet (TL: 0) is a difference of 4. Doubling the price three times gives us an approximate sale price of \$1600 Credits.
+The Black has a wealth of gear available for adventuring crews to purchase. A saavy crew-member would be able to play the interstellar market to buy low and sell high. And there is always the opportunity to visit low-tech worlds and sell the latest weaponry to the highest bidder...
 
-When selling or buying gear on a planet that is of a higher Tech Level than the gear itself, halve price for each difference in level. For instance, selling a Revolver (TL:2, \$300) on a Interstellar planet (TL: 4) is a difference of 2. Halving the price two times gives us an approximate sale price of \$75.
+\subsection{Rules \& Definitions}
+\label{sec:gear-rules}
 
-\subsection{Computers}
-\label{sec:gear-computers}
+\begin{genericsection}{Armour}
+Armour rating for gear is added to your character's Toughness when the covered location is hit. You only benefit from the armour with the highest armour rating (i.e. armour do not stack). Attacks are always directed at the torso unless otherwise stated.
+\end{genericsection}
 
-Computers are the life-blood of the Black (at least those with the Tech to make them). You can embed them into nearly anything, and they run almost everything. Computer Grades are a nice handy way of catergorizing the numerous devices you will likely encounter.
+\begin{genericsection}{Armour Piercing (AP)}
+An AP rating means the weapon ignores that many points of armour. Excess AP is simply lost.
+\end{genericsection}
 
-Each Grade provides the services of the previous grade (A Cortical Stack will at least provide a Basic service).
+\begin{genericsection}{Bipod}
+Machine guns and sniper rifles benefit from the use of a bipod. It takes one action to deploy a bipod, and once deployed it reduces the autofire penalty to -1. If you move, you negate this benefit and will need to reset the bipod.
+\end{genericsection}
 
+\begin{genericsection}{Computers}
+Computers are embedded into nearly every device out in the Black. Computer Grades are a nice handy way of catergorizing the numerous devices you will likely encounter. Each Grade provides the services of the previous grade.
+
+\input{broken-stars/tables/computer-grades}
+\end{genericsection}
+
+\begin{genericsection}{Cost}
+The base value for everything in the Black comes down to Credits (represented by the \$ symbol). All values shown here are for a Tech-Level 4 (TL4) planet. When shopping at a market with a different Tech-Level, apply the following rules (Trade Goods are handled differently):
 \begin{itemize}
-  \item Basic: Data Storage, Gaming, Communication, Translation at d6, Credit Storage, Identification
-  \item Grade I: +1 modifier on common knowledge rolls while connected to a planetwide network
-  \item Grade II: Can store up to 1 level of programs.
-  \item Grade III: Can store up to 2 levels of programs
-  \item Grade IV:  Can store up to 4 levels of programs
-  \item Grade V: Can store up to 5 levels of programs
+  \item For lower Tech Levels, double the price for each difference in level. For example, selling something worth \$100 on a Stone Age planet (TL0) is a difference of 4. Doubling the price three times gives us an approximate sale price of \$1600.
+
+  \item For higher Tech Levels than the gear itself, take 25\% for each difference in level (rounded down). For instance, selling something worth \$100 on a Pre-Surge planet (TL6) is a difference of 2. Taking 25\% off each time gives us an approximate sale price of \$56.
 \end{itemize}
+\end{genericsection}
 
-A computer is primarily used to run programs. Running a program uses up a computer's portable power reserves, and like most cyberware a computer will come with 10 "Charges". A program's level indicates the number of "Charges" it uses when executed (Basic and Grade I computer services do not consume a "Charge").
+\begin{genericsection}{Heavy Weapon (HW)}
+A weapon designated with HW can affect vehicles and other equipment with Heavy Armour.
+\end{genericsection}
 
-\begin{itemize}
-  \item Level 1 programs counts as d4 in a skill
-  \item Level 2 programs counts as d6 in a skill and can roll cooperatively with users that have the same skill at d8 minimum
-  \item Level 3 programs counts as d8 in a skill and can roll cooperatively with users that have the same skill at d8 minimum
-\end{itemize}
+\begin{genericsection}{High Explosive (HE)}
+A weapon designated with HE will use a burst template and follows the rules for Area Effect attacks (\textit{\hyperref[sec:rules-combat]{see Combat Rules}}).
+\end{genericsection}
 
+\begin{genericsection}{Minimum Strength (MS)}
+Using gear without meeting it's MS rating will incur a few penalties. A melee weapon's damage die is downgraded to your Strength die, and you do not gain any of the weapon's bonuses (but you do incur their penalties). Ranged weapons incur a -1 penalty to each attack roll for every step of difference between their Strength and the MS rating (it is ignored if the weapon is braced on a support or bipod).
+\end{genericsection}
+
+\begin{genericsection}{Missiles}
+To fire a missile, you are required to gain a lock (an opposed roll, with range modifiers). At short range, target has 1 round to evade, 2 at medium, and 3 at long.
+\end{genericsection}
+
+\begin{genericsection}{Power Armour}
+Power Armour support their own weight so are not included as part of encumberance. Light suits weigh about 50 kg, Medium Suits weigh 75 kg, and Heavy suits weigh 110 kg. All power suits have a 2.5 km communications unit built in. Power Armour lasts 1 week on a single charge, and requires 10 hours charging at a special facility to return to full power
+\end{genericsection}
+
+\begin{genericsection}{Programs}
+\label{sec:gear-programs}
+Running a program uses up a computer's (or cortical stack's) portable power reserves. A computer will come with a number of "Charges" related to it's Grade. A program's level indicates the number of "Charges" it uses when executed (Basic Grade computer devices cannot run programs).
+\end{genericsection}
+
+\begin{genericsection}{Rate of Fire (RoF)}
+The maximum number of shots that may be taken by this weapon per action. No rule can allow you to exceed the RoF
+\end{genericsection}
+
+\begin{genericsection}{Scope}
++2 to Shooting at Medium or longer distances as long as you do not move
+\end{genericsection}
+
+\begin{genericsection}{Snapfire}
+Gear with the snapfire property are inaccurate when shot from the hip. If you move at any time during the round, you take a -2 penalty
+\end{genericsection}
+
+\begin{genericsection}{Tech-Levels}
+Tech-Levels (TL) are the standard way to catergorise the different technological capabilities of a planet. 
+
+Please refer to the \textit{\hyperref[sec:sector-tech-levels]{Sector Tech Levels section}}
+\end{genericsection}
 
 \end{multicols}
 
 \subsection{Armour}
 
-\begin{powertable}{ @{} p{.15\textwidth} @{} p{.05\textwidth} @{} p{.10\textwidth} @{} p{.15\textwidth} @{} p{.25\textwidth} @{} p{.30\textwidth} @{} }
-  \textbf{Name} & \textbf{TL} & \textbf{Weight (kg)} & \textbf{Cost} & \textbf{Rules} & \textbf{Description}\\
-  Basic Weave   & 4 &  1 & 100 & Armour +1, Covers Arms, Legs, and Torso & Coats that contain a thin layer of armorweave. Protection is almost negligible and is not meant to protect from weapons but rough work environments. They come in many colors\\
-  Kevlar Vest   & 3 & 6 & 80 & Armour +2, Covers torso & Vest made out of kevlar\\
-  Combat Helmet & 4 & 1 & 150 & Armour +3, Covers Head & This helmet is standard police or military issue. It protects the user's head without impeding vision\\
-  Military Armour & 4 & 10 & Special & Armour +6, Covers entire body & Consist of a combination of padded areas and hard shell pieces that can protect the wearer from a multitude of different damage types\\
-  Military Armour, Heavy & 4 & 15 & Special & Armour +8, Covers entire body & Consist mainly of hard shell pieces that protect the wearer from many different damage types\\
-  Powered Armour & 5 & 0 & Special & Armour +10, Covers entire body & Special powered armour that is used by only the most elite troops. The helmets usually come with a full sensor and communications pack\\
-  Powered Armour, Battle & 5 & 0 & Special & Armour +12, Covers entire body & Special powered armour that is used by only the most elite troops. The helmets usually come with a full sensor, communications and targeting assistance pack\\
-  Powered Armour, Heavy & 5 & 0 & Special & Armour +14, Covers entire body & Special powered armour that is used by only the most elite troops. The helmets usually come with a full sensor, communications and targeting assistance pack\\
-\end{powertable}
+\begin{rpgtable}{monstertandark}{white}{@{}p{.15\linewidth}@{}p{.05\linewidth}@{}@{}p{.05\linewidth}@{}p{.05\linewidth}@{}p{.05\linewidth}@{}p{.35\linewidth}@{}p{.3\linewidth}}
+  \textbf{Name} & \textbf{TL} & \textbf{Wgt (kg)} & \textbf{Cost} & \textbf{Armour} & \textbf{Coverage} & \textbf{Tags}\\
+  Kevlar Vest   & 3 & 4 & 50 & +2 & Covers torso only & Protection from kinetic damage only\\
+  \multicolumn{7}{l}{A heavy vest made out of kevlar that protects the wearer from kinetic damage (such as from Slug guns)}\\
+  Basic Weave   & 4 &  1 & 100 & +1 & Covers Arms, Legs, and Torso & -\\
+  \multicolumn{7}{l}{\textit{Form fitting polymer coats that contain a thin layer of armorweave. Protection is almost negligible as it is meant to protect wearer from rough work environments. They come in many colors}}\\
+  Body armour   & 4 & 3 & 300 & +2 & Covers torso, legs and arms & -\\
+  \multicolumn{7}{l}{A thin protective suit that can be worn under clothing}\\
+  Merc armour   & 4 & 5 & 800 & +4 & Covers torso, legs and arms & Negates 2 AP from kinetic damage\\
+  \multicolumn{7}{l}{A protective jumpsuit suit woven with armourweave. Includes a harness, gloves and boots}\\
+  Combat armour & 4 & 5 & 1,000 & +6 & Covers torso, legs, arms and head & Negates 2 AP from kinetic damage\\
+  \multicolumn{7}{l}{A full-body protective jumpsuit suit woven with armourweave and hardened polymer. The helmet includes a basic communications unit with a 2.5 km radius}\\
+\end{rpgtable}
 
 \subsection{Weapons}
 
+\subsubsection{Slug Guns}
+
+These weapons are so named because they fire a projectile (either a pellet, bullet or slug) towards it's target and deals kinetic damage. These weapons are relatively simple to build and make, so can be found on most planets with some manufacturing capabilities. By far the most popular weapon-type of choice in the Black.
+
+\begin{rpgtable}{monstertandark}{white}{@{}p{.15\linewidth}@{}p{.05\linewidth}@{}p{.05\linewidth}@{}p{.05\linewidth}@{}p{.2\linewidth}@{}p{.1\linewidth}@{}p{.1\linewidth}@{}p{.1\linewidth}@{}p{.20\linewidth}@{}}
+  \textbf{Name} & \textbf{TL} & \textbf{Wgt (kg)} & \textbf{Cost} & \textbf{Range} & \textbf{Dmg} & \textbf{RoF} & \textbf{Shots} & \textbf{Tags} \\
+  Light Pistol    & 2 & 0.5   & 100   & 10/20/40 & 2d6-1  & 1 & 12 & Semi-Auto \\
+  \multicolumn{9}{l}{\textit{Small, lightweight pistol suitable for self-defence. 1 full ammo magazine weighs .25 kg and costs \$2 each}} \\
+  Pistol          & 2 & 1     &	200   & 12/24/48 & 2d6    & 1 & 20 & AP: 1, Semi-Auto \\
+  \multicolumn{9}{l}{\textit{Standard pistol. 1 full ammo magazine weighs .5 kg and costs \$4 each}} \\
+  Revolver        & 2 & 2     &	250   & 12/24/48 & 2d6+1  & 1 & 6 & AP: AP: 1, Revolver \\
+  \multicolumn{9}{l}{\textit{A favourite weapon among history buffs. A popular trick is to "fan the hammer". 6 bullets weighs .25 kg and costs \$2 for the bunch}} \\
+  Heavy Pistol    & 2 & 2     &	300   & 15/30/60 & 2d8    & 1 & 12 & AP: 2, Semi-Auto \\
+  \multicolumn{9}{l}{\textit{A heavy-hitting pistol used to ensure something stays down. 1 full ammo magazine weighs .5 kg and costs \$4 each}} \\
+  SMG             & 3 & 3     &	300   & 12/24/48 & 2d6    & 3 & 30 & AP: 1, Auto \\
+  \multicolumn{9}{l}{\textit{Small, portable automatic gun. 1 full ammo magazine weighs .5 kg and costs \$6 each}} \\
+  Shotgun         & 2 & 4     &	400   & 12/24/48 & 1-3d6    & 1 & 12 & Shotgun \\
+  \multicolumn{9}{l}{\textit{Powerful close quarters gun that fires shells that spreads out across an area. 1 full ammo magazine weighs .5 kg and costs \$6 each}} \\
+\end{rpgtable}
+
 \subsubsection{Guns}
 
-\begin{powertable}{ @{} p{.15\textwidth} @{} p{.05\textwidth} @{} p{.10\textwidth} @{} p{.15\textwidth} @{} p{.25\textwidth} @{} p{.30\textwidth} @{} }
+\begin{powertable}{ @{} p{.15\linewidth} @{} p{.05\linewidth} @{} p{.10\linewidth} @{} p{.15\linewidth} @{} p{.25\linewidth} @{} p{.30\linewidth} @{} }
   \textbf{Name} & \textbf{TL} & \textbf{Weight (kg)} & \textbf{Cost} & \textbf{Rules} & \textbf{Description}\\
-  Light Pistol    & 3 & 0.5   & 100   & Range: 10/20/40, Damage: 2d6, ROF: 1, Shots: 12, Semi-Auto &	Small, lightweight pistol. Magazine weighs .25 kg and costs 2 Credits\\
-  Pistol          & 3 & 1     &	200   & Range: 12/24/48, Damage: 2d6, ROF: 1, Shots: 24, AP: 1, Semi-Auto & Standard pistol. Magazine weighs .5 kg and costs 5 Credits\\
   Assault Rifle   & 3 & 5     & 500   &	Range: 24/48/96, Damage: 2d8, ROF: 3, Shots: 30, AP: 2, Auto, 3RB, Min Strength: d6	 & Standard assault rifle. Magazine weighs .5 kg and costs 6 Credits\\
   Machine Gun     & 3 &	15    &	600   & Range: 30/60/120, Damage: 2d8, ROF: 4, Shots: 200, AP: 3, Min Strength: d8, Auto, Snapfire & Large, powerful gun. Magazine weighs 3.5 kg and costs 35 Credits\\
-  Revolver	      & 2 &	4	    & 300   &	Range: 12/24/48, Damage: 2d8, ROF: 1, Shots: 6, AP: 2, Revolver& Powerful revolver pistol. 6 bullets weighs .25 kg and costs 2 Credits\\
+  
   Rifle	          & 3 &	5	    & 300	  & Range: 24/48/96, Damage: 2d8, ROF: 1, Shots: 15, AP: 2, Min. Strength: d6	& Standard rifle. Magazine weighs .3 kg and costs 3 Credits\\
-  Shotgun	        & 2 &	5	    & 500   &	Range: 12/24/48, Damage: 3d6/2d6/1d6, ROF: 1, Shots: 6, +2 Shooting	& Powerful close quarters gun that fires shells that spreads out across an area. Magazine weighs .5 kg and costs 6 Credits\\
-  SMG	            & 3 & 5	    & 300   &	Range: 12/24/48, Damage: 2d6, ROF: 3, Shots: 30, AP: 1, Auto & Small, portable automatic gun. Magazine weighs .5 kg and costs 6 Credits\\
+  Shotgun	        & 2 &	5	    & 500   &	Range: 12/24/48, Damage: 3d6/2d6/1d6, ROF: 1, Shots: 6, +2 Shooting	& \\
+  
   Sniper Rifle    & 3 &	5     &	600	  & Range: -/320/640, Damage: 2d10, ROF: 1, Shots: 10, AP: 4, Snapfire, Heavy Weapon & Long-range gun. Magazine weighs .25 kg and costs 6 Credits\\
   Gauss Gun       & 2 &	6	    & 800   &	Range: 48/96/192, Damage: 2d8+1, ROF: 1, Shots: 30, AP: 3, Semi-Auto, Min Strength: d8 & Military-grade gun that fires bullets using electromagnetic coils. Also known as a Coilgun and Mag Gun. Magazine weighs .5 kg and costs 6 Credits\\
   Plasma Gun	    & 5 &	6	    & 1000  & Range: 10/20/40, Damage: 3d6, ROF: 1, AP: 5, Shots: 30, Semi-Auto, Heavy Weapon	& Military-grade gun that superheats a hydrogen pellet until it reaches it's plasma state, and then accelerates the plasma to it's target by magnetic coils. The plasma pellet dissapates relatively quickly, but causes a lot of damage. Magazine weighs .25 kg and costs 12 Credits\\
@@ -79,7 +141,7 @@ A computer is primarily used to run programs. Running a program uses up a comput
 
 \subsubsection{Grenades}
 
-\begin{powertable}{ @{} p{.15\textwidth} @{} p{.05\textwidth} @{} p{.10\textwidth} @{} p{.15\textwidth} @{} p{.25\textwidth} @{} p{.30\textwidth} @{} }
+\begin{powertable}{ @{} p{.15\linewidth} @{} p{.05\linewidth} @{} p{.10\linewidth} @{} p{.15\linewidth} @{} p{.25\linewidth} @{} p{.30\linewidth} @{} }
   \textbf{Name} & \textbf{TL} & \textbf{Weight (kg)} & \textbf{Cost} & \textbf{Rules} & \textbf{Description}\\
   Grenade	        & 2 &	0.25  & 50	  & Range: 5/10/20, Damage: 3d6, Medium Burst	& Standard thrown grenade (can be launched from a modified weapon)\\
   Smoke Grenade		& 3 & 0.25  & 50    & Range: 5/10/20, Large Burst & Obscures Vision in Burst (-4)\\
@@ -88,7 +150,7 @@ A computer is primarily used to run programs. Running a program uses up a comput
 
 \subsubsection{Archaic}
 
-\begin{powertable}{ @{} p{.15\textwidth} @{} p{.05\textwidth} @{} p{.10\textwidth} @{} p{.15\textwidth} @{} p{.25\textwidth} @{} p{.30\textwidth} @{} }
+\begin{powertable}{ @{} p{.15\linewidth} @{} p{.05\linewidth} @{} p{.10\linewidth} @{} p{.15\linewidth} @{} p{.25\linewidth} @{} p{.30\linewidth} @{} }
   \textbf{Name} & \textbf{TL} & \textbf{Weight (kg)} & \textbf{Cost} & \textbf{Rules} & \textbf{Description}\\
   Crossbow	      & 1 &	5	    & 100   & Range: 15/30/60, Damage: 2d6, ROF: 1, AP: 1, Min Strength: d6, 1 action reload & Crossbows built on low tech worlds cannot affect modern armour\\
   Sword	          & 1 &	4     &	100	  & Damage: Str+d8 & Standard metal sword. If built on a high-tech world, add 1 AP for each tech-level above 4 (add additional cost)\\
@@ -98,7 +160,7 @@ A computer is primarily used to run programs. Running a program uses up a comput
 
 \subsection{Equipment}
 
-\begin{powertable}{ @{} p{.15\textwidth} @{} p{.05\textwidth} @{} p{.10\textwidth} @{} p{.15\textwidth} @{} p{.25\textwidth} @{} p{.30\textwidth} @{} }
+\begin{powertable}{ @{} p{.15\linewidth} @{} p{.05\linewidth} @{} p{.10\linewidth} @{} p{.15\linewidth} @{} p{.25\linewidth} @{} p{.30\linewidth} @{} }
   \textbf{Name} & \textbf{TL} & \textbf{Weight (kg)} & \textbf{Cost} & \textbf{Rules} & \textbf{Description}\\
   Boots	        & 2 & - & 100 & Provides warmth in cold climates, and sturdy footing for hiking & Sturdy footwear designed to keep outdoor use\\
   Breather	    & 3 & 1 & 50 &	Screens out toxins, chemicals, spores and other harmful materials. Cannot smell anything.	& Protection from noxious or toxic fumes in an otherwise breathable atmosphere. It also makes the native air smell sweeter.\\
