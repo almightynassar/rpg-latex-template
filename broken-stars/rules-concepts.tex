@@ -4,6 +4,15 @@
 \subsection{Game Concepts}
 \label{sec:rules-concepts}
 
+While all these rules will be helpful for you getting the most out of the game, there is only one process you need to remember:
+
+\begin{enumerate}
+  \item Game master will ask you to roll some dice for a skill, attribute, ability, or other trait. Find that trait on your character sheet and grab the listed dice
+  \item Roll that dice AND an extra die that is called the 'Wild die'. This die is a d6
+  \item Take the highest result of the two (including Aces), and apply any bonuses or penalties
+  \item Give the result to the Game Master, who will tell you if you succeed or fail. The most common target to beat is a 4
+\end{enumerate}
+
 \begin{genericsection}{Aces}
 If you roll the highest number on any die, you roll that die again and add it to total (and if you roll the highest again, then you keep rolling).
 \end{genericsection}
@@ -16,43 +25,24 @@ Organics cannot survive the Black without some form of pressurized suit. On your
 You get 3 Bennies at start of the game (unless you have an Edge that changes that). Use them for re-rolls and other things (such as \textbf{Soaking} damage or removing \textbf{Shaken} status). You earn more bennies for doing outstanding things during the game.
 \end{genericsection}
 
-\begin{genericsection}{Bleeding Out}
-When you are Incapacitated (\textit{\hyperref[sec:rules-concepts-incapacitated]{see Incapacitated}}) and get the Bleeding Out status, you must make a Vigor check for every round until you are \textbf{Stabilized}. This happens before any cards are dealt. If other characters make some sort of Healing roll, the character stabilizes and no more rolls are needed. The result of your Bleeding Out Vigor check is as follows:
-\begin{redtable}{\linewidth}{@{}L{1}@{}}
-  \textbf{Success} \\
-  Roll again every round until Stabilized\\
-  \textbf{Raise} \\
-  You are now Stabilized and do not need to make any more rolls\\
-  \textbf{Failure} \\
-  Your character instantly dies from the blood loss\\
-\end{redtable}
-\end{genericsection}
-
 \begin{genericsection}{Cooperative rolls}
 One character will declare their action, and any able and willing companions (or systems, programs and AI) can aide the player. The character will add a +1 bonus to their results for every success and raise their companions achieved on their own (maximum bonus of +4, except for Strength). Companions must have the skill to help character in their task.
 \end{genericsection}
 
-\begin{genericsection}{Cover}
-Cover adds a penalty to all incoming attacks that target the victim. The penalty to apply depends on the type of cover, and are:
-\begin{redtable}{\linewidth}{@{}L{1}@{}}
-  \textbf{Light} \\
-  -1 to all attacks\\
-  \textbf{Medium} \\
-  -2 to all attacks\\
-  \textbf{Heavy} \\
-  -4 to all attacks\\
-\end{redtable}
-\end{genericsection}
+\begin{genericsection}{Disease}
+There are a wide range of diseases you can experience while travelling the Black. They are broken down into different types below for easy reference. To treat a disease (unless stated otherwise), you need the required medicine. When the medicine is available, ailments vanish in 2d6 days minus half your Vigor dice (minimum one day). Incapacitation due to disease will result in death.
 
-\begin{genericsection}{Darkness}
-Lighting affects all actions that require lighting. Apply the following penalties:
+You can contract a disease through \textbf{Airbourne particles} (can hold breath for 2 plus Vigor die rounds, and half that if you were not prepared), \textbf{Touch} (must make a Vigor roll immediately upon being touched), and \textbf{Bloodstream Induction} (ingested, animal bite, or infected weapon. Usually caused by being Shaken during an attack).
+
 \begin{redtable}{\linewidth}{@{}L{1}@{}}
-  \textbf{Dim} \\
-  -1 to all sight-based actions\\
-  \textbf{Dark} \\
-  -2 to sight-based actions, and targets are not visible beyond 2 squares\\
-  \textbf{Pitch Black} \\
-  -4 to all sight-based actions, and the target must be detected to be attacked\\
+  \textbf{Long-Term Chronic; Majorly Debilitating}\\
+  You always suffer two levels of Fatigue due to coughing fits and frequent spasms. Another Fatigue level will cause Incapacitation but not death. At the start of the session you must roll a Vigor check; on a 1 or less you are going to pass away before the session ends.\\
+  \textbf{Long-Term Chronic; Minorly Debilitating}\\
+  Same as above but suffer one level of Fatigue instead of two.\\
+  \textbf{Short-Term; Debilitating}\\
+  When you contract the disease, you suffer one level of Fatigue and you are Shaken. You can recover from being Shaken, but the Fatigue level staus for 2d6 days while the sickness works itself out.\\
+  \textbf{Short-Term; Lethal}\\
+  Treat this as Letal Poison. If you survive, you suffer Fatigue that lasts 2d6 hours\\
 \end{redtable}
 \end{genericsection}
 
@@ -64,47 +54,65 @@ Some actions with deadly consequences and a time limit. You must complete 5 succ
 Your character's load limit is 3 x their Strength die (in kilograms). Each multiple above that limit gives a -1 penalty to Agility and Strength (\textit{do not recalculate your load limit!}) and all related skills
 \end{genericsection}
 
+\begin{genericsection}{Falling}
+  You suffer 1d6+1 damage per 3 meters (2 squares), up to 10d6+10. Landing in water reduces number of dice rolled by half (rounded down).
+\end{genericsection}
+
+\begin{genericsection}{Fatigue}
+Fatigue represents the stresses and weaknesses your character can suffer. It acts similarly to Wounds; once you are out of Fatigue points you become incapacitated. Every level of Fatigue is a -1 penalty to all rolls. Recovering Fatigue points is highly dependant on the source; hunger requires food, cold requires warmth, and so on. The character must resolve all sources of Fatigue to recover fully.
+
+Some fatigue sources include:
+\begin{redtable}{\linewidth}{@{}L{1}@{}}
+  \textbf{Cold}\\
+  Make a Vigor roll every four hours while in below freezing temperatures. -1 penalty for each -5 degrees below freezing (if wearing warm clothing). Add -2 penalty if not wearing appropriate clothing. Recovers 1 Fatigue every hour in normal temperatures.\\
+  \textbf{Drowning}\\
+  Make an Athletics check to avoid drowning. -2 penalty if holding something up at the same time. You roll every round while in rough water. When you are out of the water, you recover 1 Fatigue level per 5 mins. Death occurs half your Vigor die in rounds after Incapacitation.\\
+  \textbf{Heat}\\
+  Make a Vigor roll every four hours while in extremely hot temperatures. -1 penalty for each 5 degrees above 35 degrees Celsius (if have sufficient water). Add -2 penalty if you do not have water. Recovers 1 Fatigue every hour in normal temperatures.\\
+  \textbf{Hunger/Thirst}\\
+  Most organics require half a kilo of food and half a litre of water every 24 hours. If you have less food than that, you must make a Vigor roll for each 12 hour period. -2 penalty if you have had little to no food. Thirst is rolled every 6 hours. If you are incapacitated by Hunger, you die 3d6 hours later.\\
+  \textbf{Radiation}\\
+  You must make a Vigor roll every hour spent in low radioaction, and every minute in high radiation. Radiation Fatigue fades one level every 24 hours, or half that if you are able to scrub dust and other contaminants. On Incapacitated, you suffer a Long-Term Chronic; Minorly Debilitating disease (Radiation Sickness)\\
+  \textbf{Sleep}\\
+  You need a minimum of 6 hours of sleep every 24 hours. You make a Vigor roll at a culmulative -2 penalty every 12 hours you do not get the required sleep. Stimulants may add a +2 bonus to the roll. Incapacitated characters fall into sleep for 2d10 hours.
+\end{redtable}
+\end{genericsection}
+
 \begin{genericsection}{Fear}
-To overcome your Fears you must make a Spirit roll (some monsters add a penalty to the Spirit roll).
+To overcome your Fears you must make a Spirit roll (some monsters add a penalty to the Spirit roll). On a failure, you are Shaken and suffer a level of Fatigue for the rest of the encounter. You only need to roll a Fear check the first time you encounter the source (or experience the source again in new and uncomfortable ways).
+\end{genericsection}
+
+\begin{genericsection}{Fire}
+Anytime something flammable is hit by fire, roll a d6. On a 6 that object catches on fire. Particularly vulnerable items ignite on a 4-6. Volatile targets will catch on anything but a 1. If a person catches on fire, they need to roll every round; if they succeed again, the fire catches in intensity and causes the damage listed in the table below.
+
+Fire in confined areas create smoke, and every round you must make a Vigor roll (+2 bonus if using a wet rag to breath through). If failed, you gain a Fatigue level.
+
+\begin{redtable}{\linewidth}{@{}L{1}@{}}
+  \textbf{Burning Weapon}\\
+  +2 to damage\\
+  \textbf{Spot fire}\\
+  1d10\\
+  \textbf{Flamethrower}\\
+  2d10\\
+  \textbf{Lava}\\
+  3d10\\
+\end{redtable}
+\end{genericsection}
+
+\begin{genericsection}{Gravity}
+When you are experiencing high gravity, apply a -2 penalty to all Agility-based rolls, your pace and your jump. When you are experiencing low gravity, apply a +2 bonus to all Agility-based rols, your pace and your jump. In zero-g environments, a result of 1 on a physical trait die means you lose control and tumble (-2 to all Trait rolls). To stabilise yourself while you are tumbling, you must succeed on an Agility roll as a free action (only if you have a way to stabilise yourself).
 \end{genericsection}
 
 \begin{genericsection}{Group Rolls}
 To quickly roll for a group of extras (such as henchmen), simply roll one Trait die and one Wild die. Take the highest of the two as the average for the whole group.
 \end{genericsection}
 
+\begin{genericsection}{Hacking} 
+Hacking is a very complex task. It will generally require the Hacker to access a physical I/O port, which is best accessed if the Bot is incapacitated. Then the Hacker needs to open the I/O port (Hacker's Repair vs Bot's Toughness), and then break the software Firewalls (Hacker's Security opposed by the Bot's Spirit). Treat Hacking as if it was a \textbf{Dramatic Task}.
+\end{genericsection}
+
 \begin{genericsection}{Healing}
 The Healing skill can be used to treat any Wound suffered within the last hour and takes about 10 minutes. A success on a Healing check removes 1 Wound, and raises will removee 2. Further raises have no effect. The healer must apply the patient's Wound penalty as well as their own Wound penalty to the Healing check. Trying to heal your own wounds will effectively double your wound penalties. If you do not have suitable medical supplies you suffer another -2 penalty. After one hour, only \textbf{Natural Healing} can remove Wounds.
-\end{genericsection}
-
-\begin{genericsection}{Incapacitated}
-\label{sec:rules-concepts-incapacitated}
-After suffering 3 Wounds you must make a Vigor check:
-\begin{redtable}{\linewidth}{@{}L{1}@{}}
-  \textbf{1 or Less}\\
-  Your Character dies\\
-  \textbf{Fail}\\
-  You roll on Injury Table and effect is permanent. You are also \textbf{Bleeding Out}\\
-  \textbf{Success}\\
-  Roll on Injury Table. The injury is gone when healed\\
-  \textbf{Raise}\\
-  Roll on Injury Table. The injury is gone in 24 hours\\
-\end{redtable}
-\end{genericsection}
-
-\begin{genericsection}{Injury table}
-You must roll on the injury table when you are \textbf{Incapacitated}. Simply roll 2d6 and consult the table.
-\begin{redtable}{\linewidth}{@{}L{1}@{}}
-  \textbf{2 (Irreplaceable)}\\
-  The GM determines the worst possible outcome\\
-  \textbf{3-4 (Arm)}\\
-  Roll left or right arm randomly; it’s unusable like the One Arm Hindrance (but can be fixed with Cyberware)\\
-  \textbf{5-9 (Guts)}\\
-  Roll 1d6; 1-2 reduce Agility, 3-4 reduce Vigor, 5-6 reduce Strength (minimum d4)\\
-  \textbf{10 (Leg)}\\
-  Gain the Lame Hindrance (or the One Leg Hindrance). This can be fixed with Cyberware\\
-  \textbf{11-12 (Head)}\\
-  Roll 1d6; 1-2 you have a scar and Ugly Hindrance, 3-4 you have the One Eye Hindrance (or Blind), 5-6 reduce Smarts (minimum d4).
-\end{redtable}
 \end{genericsection}
 
 \begin{genericsection}{Initiative}
@@ -156,20 +164,23 @@ Inanimate objects have a parry of 2, no additional damage from raises on attack 
 \end{redtable}
 \end{genericsection}
 
-\begin{genericsection}{Raise}
-Every 4 points over the Target Number is a Raise and can give additional benefits to your roll
+\begin{genericsection}{Poison}
+If ingested, effects occur automatically. If Shaken or wounded by a poisoned weapon, you must make an immediate Vigor roll (some poisons may come with a modifier). To treat a poisoned character, the medic can try a healing roll minus the strength of the poison itself. You may only attempt once per incident (another character may have a try). Fatigue levels due to poison recover 1 level per 24 hours.
+
+\begin{redtable}{\linewidth}{@{}L{1}@{}}
+  \textbf{Lethal Poison}\\
+  Failure results in death in 2d6 rounds. Success results in 1 wound and Exhaustion\\
+  \textbf{Venomous Poison}\\
+  Failure results in death in 2d6 minutes. Success results in 1 round and Exhaustion\\
+  \textbf{Paralysis Poison}\\
+  Failure results in paralysis for 2d6 minutes, 2d6 rounds for success\\
+  \textbf{Knockout Poison}\\
+  Failure results in knocked out for 2d6 hours, 2d6 minutes for success\ 
+\end{redtable}
 \end{genericsection}
 
-\begin{genericsection}{Shaken}
-Characters are Shaken when they first take damage. On their next turn, make an immediate Spirit roll (\textit{or you may use Bennies to remove Shaken without a roll})
-\begin{redtable}{\linewidth}{@{}L{1}@{}}
-  Success\\
-  Not Shaken but may only do Free Actions\\
-  Raise\\
-  Not Shaken and may act normally\\
-  FaiL\\
-  Still Shaken, may only do Free Actions\\
-\end{redtable}
+\begin{genericsection}{Raise}
+Every 4 points over the Target Number is a Raise and can give additional benefits to your roll
 \end{genericsection}
 
 \begin{genericsection}{Size}
@@ -190,10 +201,6 @@ Most humanoids (except for the Ghoa and some Uplifted) start at the default size
   +9 & Blue Whale\\
   +10 & Kraken, Leviathan\\
 \end{redtable}
-\end{genericsection}
-
-\begin{genericsection}{Soaking}
-Spend a Benny to make a Soak Roll (a Vigor check) to regain 1 Wound. Raises take away +1 Wound per Raise. If all the wounds are Soaked it removes any Shaken condition
 \end{genericsection}
 
 \begin{genericsection}{Social Conflict}
@@ -228,8 +235,4 @@ If you are unskilled then your roll is a d4 with a –2 penalty
 
 \begin{genericsection}{Wild Die}
 A d6 rolled along with normal die. Player chooses highest result (but Snakeyes is a critical fail). The Wild Die can Ace and Raise like normal dice. You only have one wild die per action (even if you use multiple Trait die, such as for Autofire)
-\end{genericsection}
-
-\begin{genericsection}{Wounded}
-Player characters have 3 Wounds, while NPCs/Extras only have 1 Wound. When they run out of Wounds they are Incapacitated. To get a Wound, you must take damage when you are Shaken. Each wound is a –1 penalty to Pace and all Trait Tests (including Healing rolls). \textit{You may use Bennies to make a Soak Roll, or to remove the Shaken status}
 \end{genericsection}

@@ -4,81 +4,154 @@
 \subsection{Combat Actions}
 \label{sec:rules-combat}
 
-\begin{genericsection}{Actions}
-Every character can perform one movement and one non-movement action without penalty. Readying a weapon usually takes an entire round, but can be done faster (and incurs the multi-action penalty). When perform multiple actions, you take a -2 penalty for each action taken in that round on ALL actions. You cannot perform the exact same action twice in the same round
-\end{genericsection}
+During combat, every character can perform at least one movement and one non-movement action without penalty. When performing more than one non-movement action, you take a -2 penalty for each action taken in that round on ALL actions. You cannot perform the exact same action twice in the same round (for example, you need to attack with two different weapons to take the attack action twice).
+
+Readying a weapon usually takes an entire action, but can be done faster (and will incur the multi-action penalty). If you suspect something nasty around the corner, be sure to unholster your weapon.
 
 \begin{genericsection}{Aim}
-Do not move to gain +2 to shooting next round
+Do not move to gain +2 to shooting next round. You may choose to instead fire at Extreme Range (up to 4x the weapon’s Long Range), at a -8 penalty (-6 with a scope). This applies to personal as well as vehicular weapons.
+\end{genericsection}
+
+\begin{genericsection}{Aftermath}
+After combat finishes, you may be interested in seeing what happens to allies and enemies. Players make Vigor rolls for allies (the Game Master does the same for enemies). A success means that they are alive but \textit{Incapacitated}, and a raise means that wounds were only superficial (they may be able to move, but cannot fight or provide any other useful action).
 \end{genericsection}
 
 \begin{genericsection}{Area Effect Attacks}
-All targets in area suffer damage. Treat cover as armour. Missed attacks cause a deviation of 1d6 for thrown weapons, 1d10 for launched weapons; x1 for Short, x2 for Medium, x3 for Long
+All targets in the target area suffer damage. Treat cover as armour. Missed attacks cause a deviation of 1d6 for thrown weapons, 1d10 for launched weapons; x1 for Short Range, x2 for Medium Range, x3 for Long Range
 \end{genericsection}
 
 \begin{genericsection}{Autofire}
-Roll Shooting dice up to RoF (Rate of Fire), but with only 1 wild die. -2 penalty to all attacks, and each dice uses up one piece of ammunition. Two or more shots always incur the -2 autofire penalty (accounting for recoil, etc)
+Roll a number of Shooting dice up to your weapon's RoF (Rate of Fire), but with only 1 wild die. -2 penalty to all attacks, and each dice uses up one piece of ammunition. Two or more shots always incur the -2 autofire penalty (accounting for recoil, etc)
+\end{genericsection}
+
+\begin{genericsection}{Bleeding Out}
+When you are Incapacitated (\textit{\hyperref[sec:rules-concepts-incapacitated]{see Incapacitated}}) and get the Bleeding Out status, you must make a Vigor check for every round until you are \textbf{Stabilized}. This happens before any cards are dealt. If other characters make some sort of Healing roll, the character stabilizes and no more rolls are needed. The result of your Bleeding Out Vigor check is as follows:
+\begin{redtable}{\linewidth}{@{}L{1}@{}}
+  \textbf{Success} \\
+  Roll again every round until Stabilized\\
+  \textbf{Raise} \\
+  You are now Stabilized and do not need to make any more rolls\\
+  \textbf{Failure} \\
+  Your character instantly dies from the blood loss\\
+\end{redtable}
 \end{genericsection}
 
 \begin{genericsection}{Called Shots}
-Allow you to target unarmoured or weak points of the enemy.
-    \begin{redtable}{\linewidth}{@{}L{1}@{}}
-      Limb\\
-      -2 penalty, no extra damage but may be able to Disarm\\
-      Head\\
-      -4 penalty, +4 damage. (Target must have sensitive areas and the attacker knows where they are)\\
-      Small Target\\
-      -4 penalty. There may be additional benefits, but the default benefit is +4 damage\\
-      Tiny Target\\
-      -6 penalty. There may be additional benefits, but the default benefit is +4 damage\\
-    \end{redtable}
+Allows you to target unarmoured or weak points of the enemy.
+  \begin{redtable}{\linewidth}{@{}L{1}@{}}
+    \textbf{Limb}\\
+    -2 penalty, no extra damage but may be able to Disarm\\
+    \textbf{Head}\\
+    -4 penalty, +4 damage. (Target must have sensitive areas and the attacker knows where they are)\\
+    \textbf{Small Target}\\
+    -4 penalty. There may be additional benefits, but the default benefit is +4 damage\\
+    \textbf{Tiny Target}\\
+    -6 penalty. There may be additional benefits, but the default benefit is +4 damage\\
+  \end{redtable}
+\end{genericsection}
+
+\begin{genericsection}{Cover}
+Cover adds a penalty to all incoming attacks that target the victim. The penalty to apply depends on the type of cover, and are:
+\begin{redtable}{\linewidth}{@{}L{1}@{}}
+  \textbf{Light} \\
+  -1 to all attacks\\
+  \textbf{Medium} \\
+  -2 to all attacks\\
+  \textbf{Heavy} \\
+  -4 to all attacks\\
+\end{redtable}
+\end{genericsection}
+
+\begin{genericsection}{Darkness}
+Lighting affects all actions that require lighting. Apply the following penalties:
+\begin{redtable}{\linewidth}{@{}L{1}@{}}
+  \textbf{Dim} \\
+  -1 to all sight-based actions\\
+  \textbf{Dark} \\
+  -2 to sight-based actions, and targets are not visible beyond 2 squares\\
+  \textbf{Pitch Black} \\
+  -4 to all sight-based actions, and the target must be detected to be attacked\\
+\end{redtable}
 \end{genericsection}
 
 \begin{genericsection}{Defend}
-+2 Parry and no other action possible
++2 bonus to Parry, and you can perform no other actions this round
 \end{genericsection}
 
 \begin{genericsection}{Disarm}
--2 attack; defender makes a Strength roll vs the damage or drops their weapon
+-2 penalty to your attack. On a success, the defender makes a Strength roll vs the damage or they drop their weapon
 \end{genericsection}
 
 \begin{genericsection}{Double Tap/Three Round Burst}
-+1 attack and damage on a double tap; +2 attack and damage for a 3RB. Each shot uses a piece of ammunition
++1 bonus to your attack and damage rolls for a double tap using a semi-automatic weapon; +2 bonus to your attack and damage rolls for a 3RB. Each shot uses a piece of ammunition. This counts as Autofire, so the penalties still apply to the attack roll.
 \end{genericsection}
 
 \begin{genericsection}{Finishing Move}
-Helpless victim may be dispatched as an action
+A helpless or incapacitated victim may be dispatched as an action
 \end{genericsection}
 
 \begin{genericsection}{Ganging Up}
-+1 bonus to your Fighting for each additional adjacent attacker; maximum +4
++1 bonus to your Fighting for each additional adjacent attacker (maximum +4)
 \end{genericsection}
 
 \begin{genericsection}{Grappling}
-Fighting roll to grapple; raise causes Shaken. Opposed Strength/Agility Roll to break free
+Make a Fighting roll to grapple, and a raise causes the victim to be Shaken. The target must roll an opposed Strength or Agility Roll to break free
 \end{genericsection}
 
 \begin{genericsection}{Improvised weapon}
     \begin{redtable}{\linewidth}{@{}L{1}@{}}
-      Small\\
+      \textbf{Small}\\
       Range 3/6/12, Damage Str+d4, RoF 1, Min Str d4, –1 attack and Parry\\
-      Medium\\
+      \textbf{Medium}\\
       Range 2/4/8, Damage Str+d6, RoF 1, Min Str d6, –1 Attack and Parry\\
-      Large\\
+      \textbf{Large}\\
       Range 1/2/4, Damage Str+d8, Min Str d8, –1 attack and Parry\\
     \end{redtable}
 \end{genericsection}
 
+\begin{genericsection}{Incapacitated}
+\label{sec:rules-concepts-incapacitated}
+After suffering 3 Wounds you must make a Vigor check:
+\begin{redtable}{\linewidth}{@{}L{1}@{}}
+  \textbf{1 or Less}\\
+  Your Character dies\\
+  \textbf{Fail}\\
+  You roll on Injury Table and effect is permanent. You are also \textbf{Bleeding Out}\\
+  \textbf{Success}\\
+  Roll on Injury Table. The injury is gone when healed\\
+  \textbf{Raise}\\
+  Roll on Injury Table. The injury is gone in 24 hours\\
+\end{redtable}
+\end{genericsection}
+
+\begin{genericsection}{Injury table}
+You must roll on the injury table when you are \textbf{Incapacitated}. Simply roll 2d6 and consult the table.
+\begin{redtable}{\linewidth}{@{}L{1}@{}}
+  \textbf{2 (Irreplaceable)}\\
+  The GM determines the worst possible outcome\\
+  \textbf{3-4 (Arm)}\\
+  Roll left or right arm randomly; it’s unusable like the One Arm Hindrance (but can be fixed with Cyberware)\\
+  \textbf{5-9 (Guts)}\\
+  Roll 1d6; 1-2 reduce Agility, 3-4 reduce Vigor, 5-6 reduce Strength (minimum d4)\\
+  \textbf{10 (Leg)}\\
+  Gain the Lame Hindrance (or the One Leg Hindrance). This can be fixed with Cyberware\\
+  \textbf{11-12 (Head)}\\
+  Roll 1d6; 1-2 you have a scar and Ugly Hindrance, 3-4 you have the One Eye Hindrance (or Blind), 5-6 reduce Smarts (minimum d4).
+\end{redtable}
+\end{genericsection}
+
 \begin{genericsection}{Innocent Bystanders}
-If a shooting roll fails when firing into melee and the shooting die is a 1 (or a 2 with auto-fire or shotgun) a random character may be hit
+If a shooting roll fails when firing into melee and the shooting die is a 1 (or a 2 with auto-fire or shotgun) a random nearby character may be hit instead
 \end{genericsection}
 
 \begin{genericsection}{Non-Lethal Combat}
-Must use fists or blunt weapon (-1 to fighting to use flat side of bladed weapon). Roll damage normally. Incapacitated Extras are down for 1d6 hours. Wild Cards take wounds as normal including going to Incapacitation table
+Must use fists, rubber bullets or a blunt weapon (-1 to fighting to use flat side of bladed weapon). Roll damage normally. Incapacitated Extras are down for 1d6 hours. Wild Cards take wounds as normal including going to the Incapacitation table
 \end{genericsection}
 
 \begin{genericsection}{Obstacles}
-If attack has enough power to go through objects and obstacles, and would hit without the cover penalty, then the obstacle acts as Armor
+If you wish to hit a target behind cover or an obstacle, the attack must have enough power to go through objects and obstacles and would hit without the cover penalty. The target can still use the obstacle as Armor.
+
+Otherwise, your attack must beat the armour rating of an obstacle using your attack to destroy the obstacle.
     \begin{redtable}{\linewidth}{@{}L{.25}@{}L{.75}@{}}
       \textbf{Armour} & \textbf{Obstacle}\\
       +1 & Glass, leather\\
@@ -92,18 +165,16 @@ If attack has enough power to go through objects and obstacles, and would hit wi
 \end{genericsection}
 
 \begin{genericsection}{Prone}
-Offers Medium Cover against Ranged Attacks beyond 3 squares. -2 Fighting and Parry in close combat.
+Offers Medium Cover against Ranged Attacks beyond 3 squares. -2 penalty to Fighting and Parry while in close combat.
 \end{genericsection}
 
 \begin{genericsection}{Ranged Weapons in Close Combat}
-Target Number is opponent’s Parry; only pistol-sized or smaller weapons may be used
+Your ranged attack must beat the opponent’s Parry, and only pistol-sized or smaller weapons may be used
 \end{genericsection}
 
 \begin{genericsection}{Ranged Weapons modifiers}
-Use the following:
     \begin{redtable}{\linewidth}{@{}L{.25}@{}L{.75}@{}}
-      \textbf{Range}
-& \textbf{Modifier}\\
+      \textbf{Range} & \textbf{Modifier}\\
       Close & 0\\
       Medium & -2\\
       Long & -4\\
@@ -111,49 +182,69 @@ Use the following:
 \end{genericsection}
 
 \begin{genericsection}{Rapid Attack}
-Make up to 3 Fighting attacks at –4; or fire up to 6 shots from a semi-automatic weapon or revolver at –4 penalty to each die; -2 Parry
+Make up to 3 Fighting attacks at a –4 penalty; or fire up to 6 shots from a semi-automatic weapon or revolver at a –4 penalty to each die (this penalty already includes the Autofire penalty); this will give you a -2 Parry until your next turn
 \end{genericsection}
 
 \begin{genericsection}{Reloading}
-Reloading is an action. Running and reloading requires an Agility roll with a -2 running penalty
+Reloading is always an action. Running and reloading requires an Agility roll with a -2 running penalty
+\end{genericsection}
+
+\begin{genericsection}{Shaken}
+Characters are Shaken when they first take damage. On their next turn, make an immediate Spirit roll (\textit{or you may use Bennies to remove Shaken status without a roll})
+\begin{redtable}{\linewidth}{@{}L{1}@{}}
+  \textbf{Success}\\
+  Not Shaken but may only do Free Actions\\
+  \textbf{Raise}\\
+  Not Shaken and may act normally\\
+  \textbf{Fail}\\
+  Still Shaken, may only do Free Actions\\
+\end{redtable}
+\end{genericsection}
+
+\begin{genericsection}{Soaking}
+When you take damage, spend a Benny to make a Soak Roll (a Vigor check) to regain 1 Wound. Raises take away +1 Wound per Raise. If all the wounds are Soaked it removes any Shaken condition
 \end{genericsection}
 
 \begin{genericsection}{Suppressive Fire}
-Make attack roll with Autofire and range penalty. On success, targets under Medium Burst make Spirit roll or be Shaken (or are hit on 1). Uses 5x RoF in Ammo
+Make an attack roll with noraml Autofire and range penalties. On a success, targets under a Medium Burst must make a Spirit roll or become Shaken (or are hit on 1). This will uses 5x your weapon's RoF in Ammo
 \end{genericsection}
 
 \begin{genericsection}{Test of Wills}
-Intimidation (vs Spirit) and Taunt (vs Smarts) against a target, on a succcess you gain a +2 bonus to your next action against the Target (and Target is shaken on a raise)
+Intimidation (vs Spirit) and Taunt (vs Smarts) against a target. On a succcess you gain a +2 bonus to your next action against the Target (and Target is Shaken on a raise)
 \end{genericsection}
 
 \begin{genericsection}{The Drop}
-When you catch the opponent off-guard, you are considered to be On Hold (Initiative) and add +4 to attack and damage if you chose to attack
+When you catch the opponent off-guard, you are considered to be On Hold (Initiative) and add +4 bonus to attack and damage rolls
 \end{genericsection}
 
 \begin{genericsection}{Touch Attack}
-+2 to the Fighting roll
+When an ability or Edge asks you to make a Touch Attack, add a +2 bonus to the Fighting roll
 \end{genericsection}
 
 \begin{genericsection}{Trick}
-Opposed Agility or Smarts (depending on the type), on a success Target has -2 penalty to parry, and is Shaken and distracted on raise
+Opposed Agility or Smarts (depending on the type). On a success Target has -2 penalty to parry, and is Shaken and distracted on raise
 \end{genericsection}
 
 \begin{genericsection}{Two Weapons}
--2 attack; additional -2 to off hand if not Ambidextrous
+Using two or more weapons imposes the multi-action penalty of -2 to your attacks, and a additional -2 penalty to your off-hand weapon (unless you are Ambidextrous)
 \end{genericsection}
 
 \begin{genericsection}{Unarmed Defender}
-Armed attacker gains +2 on Fighting roll
+Armed attacker gains +2 on their Fighting roll
 \end{genericsection}
 
 \begin{genericsection}{Unstable Platform}
--2 Shooting from moving vehicle or animal
+-2 penalty to Shooting from a moving vehicle or animal
 \end{genericsection}
 
 \begin{genericsection}{Wild Attack}
-+2 Fighting; +2 damage; -2 Parry until next action
+You choose to go beserk. +2 bonus to Fighting, +2 bonus to damage, but -2 penalty to Parry until next action
 \end{genericsection}
 
 \begin{genericsection}{Withdrawing From Melee}
-Adjacent foes get 1 free attack at retreating hero
+Adjacent foes get 1 free attack at retreating heros
+\end{genericsection}
+
+\begin{genericsection}{Wounded}
+Player characters have 3 Wounds, while NPCs/Extras only have 1 Wound. When they run out of Wounds they are Incapacitated. To get a Wound, you must take damage when you are Shaken. Each wound is a –1 penalty to Pace and all Trait Tests (including Healing rolls). \textit{You may use Bennies to make a Soak Roll, or to remove the Shaken status}
 \end{genericsection}

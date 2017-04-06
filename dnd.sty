@@ -269,8 +269,9 @@
 
 % Generic section environment
 \newenvironment{genericsection}[1]{
-  \par\nobreak\vfil\penalty0\vfilneg
-  \vtop\bgroup
+  %\par\nobreak\vfil\penalty0\vfilneg
+  %\vtop\bgroup
+  \begin{minipage}{\linewidth}
   \color{titlered}\textbf{#1}\vspace{3pt}
   \titleline{\color{titlered}\titlerule[0.6pt]}
   \par\medskip
@@ -278,8 +279,9 @@
 }
 {
   \vspace{0.5em}
-  \par\xdef\tpd{\the\prevdepth}\egroup
-  \prevdepth=\tpd
+  %\par\xdef\tpd{\the\prevdepth}\egroup
+  %\prevdepth=\tpd
+  \end{minipage}
 }
 
 % Define Monster subsection header style
