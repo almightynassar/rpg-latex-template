@@ -7,8 +7,6 @@
 
 \begin{multicols}{2}
 
-The Black has a wealth of gear available for adventuring crews to purchase. A saavy crew-member would be able to play the interstellar market to buy low and sell high. And there is always the opportunity to visit low-tech worlds and sell the latest weaponry to the highest bidder...
-
 \subsection{Rules \& Definitions}
 \label{sec:gear-rules}
 
@@ -25,9 +23,7 @@ Machine guns and sniper rifles benefit from the use of a bipod. It takes one act
 \end{genericsection}
 
 \begin{genericsection}{Computers}
-Computers are embedded into nearly every device out in the Black. Computer Grades are a nice handy way of catergorizing the numerous devices you will likely encounter. Each Grade provides the services of the previous grade.
-
-\input{broken-stars/tables/computer-grades}
+Computers are embedded into nearly every device out in the Black. They provide Storage, Communication (can recieve and transmit signals in a 2.5 km radius), Identification, and gives a +1 modifier on when spending an action to perform any sort of knowledge roll.
 \end{genericsection}
 
 \begin{genericsection}{Cost}
@@ -57,11 +53,6 @@ To fire a missile, you are required to gain a lock (an opposed roll, with range 
 
 \begin{genericsection}{Power Armour}
 Power Armour support their own weight so are not included as part of encumberance. Light suits weigh about 50 kg, Medium Suits weigh 75 kg, and Heavy suits weigh 110 kg. All power suits have a 2.5 km communications unit built in. Power Armour lasts 1 week on a single charge, and requires 10 hours charging at a special facility to return to full power
-\end{genericsection}
-
-\begin{genericsection}{Programs}
-\label{sec:gear-programs}
-Running a program uses up a computer's (or cortical stack's) portable power reserves. A computer will come with a number of "Charges" related to it's Grade. A program's level indicates the number of "Charges" it uses when executed (Basic Grade computer devices cannot run programs).
 \end{genericsection}
 
 \begin{genericsection}{Rate of Fire (RoF)}
@@ -118,6 +109,10 @@ A lightweight, shiny, synthetic plastic designed to reflect energy damage away f
 If the user takes any sort of damage, roll a die per wound. An odd roll means that the plastic is damaged and can no longer offer protection.
 \end{genericsection}
 
+\begin{genericsection}{Space Suit}
+This suit can keep you alive for d6+1 days in space. Includes an oxygen and refuse recycling system and positional adjustment jets. Due to its great resilience it can even be used under water.
+\end{genericsection}
+
 \end{multicols}
 
 \begin{rpgtable}{monstertandark}{white}{p{.2\textwidth}p{.025\textwidth}p{.025\textwidth}p{.05\textwidth}p{.075\textwidth}p{.475\textwidth}}
@@ -138,6 +133,8 @@ If the user takes any sort of damage, roll a die per wound. An odd roll means th
   Shield (Polymer) & 4 & 3 & 300 & - & +2 Parry, +4 armour against ranged attacks\\
   SpecOps Helm & 4 & 1.5 & 160 & +4 & Covers head only. Negates 2 AP\\
   SpecOps Weave  & 4 & 5 & 800 & +4 & Covers torso, legs and arms. Negates 2 AP\\
+  Space Suit     & 4 & 5 & 100 & - & Covers entire body. On a wound, the suit ruptures and Asphyxiation sets in immediately\\
+  Space Suit (Combat) & 5 & 8 & 1000 & +4 & Covers entire body. Negates 2 AP\\
   Weave Helm (Open) & 4 & 1 & 30 & +2 & Covers head only. 50\% chance protection from targeted head attack\\
   Weave Helm (Closed) & 4 & 1.5 & 60 & +2 & Covers head only\\
 \end{rpgtable}
@@ -145,6 +142,10 @@ If the user takes any sort of damage, roll a die per wound. An odd roll means th
 \subsection{Guns}
 
 \begin{multicols}{2}
+
+\begin{genericsection}{EMP}
+EMP (Electro-Magnetic Pulse) weapons are designed to disable electronics with little to no damage so that they can be re-used. Affected electronics includes Bots, Cyberware, Spacecraft systems and Shells. They charge up and release a burst of EMP energy in a cone that reaches out for 9 squares, and is 3 squares at it's widest. Everything caught inside the cone takes the listed damage. Bots, Cyberware and Shells take normal damage (ignoring armour). Everyone else suffers half damage as their neural system is overloaded (including armour). Use cover rules as normal.
+\end{genericsection}
 
 \begin{genericsection}{Gauss}
 Military-grade weapon that accelerates pieces of material (bullets and slugs) using electromagnetic coils to deliver kinetic damage. Also known as a Coilgun or Mag Gun.
@@ -160,6 +161,11 @@ Military-grade weapon that superheats a hydrogen pellet until it reaches it's pl
 
 \begin{genericsection}{Slug}
 These weapons are so named because they fire a projectile (either a pellet, bullet or slug) towards it's target and deals kinetic damage. These weapons are relatively simple to build and make, so can be found on most planets with some manufacturing capabilities. By far the most popular weapon-type of choice in the Black.
+\end{genericsection}
+
+\begin{genericsection}{TDD}
+These Exotic weapons use TDD technology to bend space-time around the target. There are no projectiles or beams involved. Spending a round calibrating the weapon onto it's target means the weapon can ignore cover (and even "shoot" through walls). These weapons and it's ammunition are rare if they are produced at all\\
+When a target is hit, it suffers the listed damage. If it causes a wound, roll a hit location using the Injury Chart and allow the user to make a Vigor roll. A raise causes no additional result, but success means the limb is crippled until the wound is healed. Failure means the limb is completely disintegrated. Failed rolls to the head or torso cause death. If the target was inorganic matter, the attack disintegrates a 12 inch diameter, 4 inch thick disc of matter per attack.
 \end{genericsection}
 
 \end{multicols}
@@ -180,71 +186,73 @@ These weapons are so named because they fire a projectile (either a pellet, bull
   Gauss Rifle     & 4 & 6     & 1200  & 30/60/120 & 2d10+1 & 1 & 60 & Gauss & AP: 4, Min Strength: d6 & \$40@1 kg\\
   Gauss Gun       & 3 &	25    &	2000  & 50/100/200 & 2d12 & 3 & 200 & Gauss & AP: 5, HW, Min Strength: d8, Snapfire & \$200@5kg\\
   Plasma Pistol   & 4 & 2     &	600   & 12/24/48 & 2d10+2  & 1 & 8 & Plasma & HW & \$20@.5kg \\
-  Plasma Rifle    & 4 & 6     & 1500  &	24/48/96 & 3d10    & 1 & 12 & Plasma & HW & \$40@1 kg\\
+  Plasma Rifle    & 4 & 6     & 1500  &	24/48/96 & 3d10    & 1 & 12 & Plasma & HW & \$40@1kg\\
+  EMP Cannon	    & 4 &	6     &	700   & Cone     & 2d8     & 1 & 10 & EMP & HW, Min Strength: d6, Snapfire & \$10@1kg\\
+  Disintegrator   & 6 &	6	  & 10000 &	12/24/48 & 3d10    & 1 & 10 & TDD & AP: 5, HW & \$1000@1kg\\ 
 \end{rpgtable}
 
-\subsubsection{Guns}
+\subsection{Grenades}
 
-\begin{powertable}{ @{} p{.15\linewidth} @{} p{.05\linewidth} @{} p{.10\linewidth} @{} p{.15\linewidth} @{} p{.25\linewidth} @{} p{.30\linewidth} @{} }
-  \textbf{Name} & \textbf{TL} & \textbf{Weight (kg)} & \textbf{Cost} & \textbf{Rules} & \textbf{Description}\\
-  
-  TDD Gun	        & 6 &	6	    & 2000  &	Range: 12/24/48, Damage: 2d10, ROF: 1, AP: 5, Shots: 30, Semi-Auto, Heavy Weapon & Exotic gun that uses TDD technology to shoot particles at a target. Spending a round calibrating the weapon onto it's target means the weapon can ignore cover. Magazines are rare if they are produced at all and weighs .25 kg\\
-  EMP Cannon	    & 4 &	6     &	1000  & Range: Cone, Damage: 2d8, ROF: 1, Shots: 10, Min. Strength: d6, EMP, Snapfire	& Designed to take out electronics quickly including Bots, Cyberware and Shells. They charge up and release a burst of EMP energy towards their target. Bots, Cyberware and Shells take normal damage ignoring armour. Everyone else suffers half damage as their neural system is overloaded\\
-\end{powertable}
+All grenades affect a Medium burst area (4 square diameter), and are either thrown (Range: 5/10/20) or launched from a modified weapon (Range: 12/24/48).
 
-\subsubsection{Grenades}
+\begin{rpgtable}{monstertandark}{white}{p{.15\textwidth} p{.05\textwidth} p{.05\textwidth} p{.1\textwidth} p{.55\textwidth} }
+  \textbf{Name} & \textbf{TL} & \textbf{kg} & \textbf{Cost} & \textbf{Other}\\
+  Grenade	        & 2 &	0.25  & 50	  & Damage: 3d6\\
+  Smoke Grenade		& 3 & 0.25  & 50    & Targets suffer -2 penalty for d6+2 rounds. Flashbangs give a -4 penalty for d4 rounds\\
+  Stun Grenade    &	4 &	0.25  & 100   & Damage: 3d6, Grenade inflicts fatigue loss instead of wounds (non-lethal damage), and targets are instantly Shaken if they fail their Vigor check\\
+\end{rpgtable}
 
-\begin{powertable}{ @{} p{.15\linewidth} @{} p{.05\linewidth} @{} p{.10\linewidth} @{} p{.15\linewidth} @{} p{.25\linewidth} @{} p{.30\linewidth} @{} }
-  \textbf{Name} & \textbf{TL} & \textbf{Weight (kg)} & \textbf{Cost} & \textbf{Rules} & \textbf{Description}\\
-  Grenade	        & 2 &	0.25  & 50	  & Range: 5/10/20, Damage: 3d6, Medium Burst	& Standard thrown grenade (can be launched from a modified weapon)\\
-  Smoke Grenade		& 3 & 0.25  & 50    & Range: 5/10/20, Large Burst & Obscures Vision in Burst (-4)\\
-  Stun Grenade    &	Interstellar (4)  &	0.25  & 50    & Range: 5/10/20, Damage: 3d6, Medium Burst	& Grenade that stuns and not kill your opponent. Deals non-lethal damage and inflicts fatigue loss instead of wounds\\
-\end{powertable}
+\subsection{Misc. Weapons}
 
-\subsubsection{Archaic}
+\begin{multicols}{2}
 
-\begin{powertable}{ @{} p{.15\linewidth} @{} p{.05\linewidth} @{} p{.10\linewidth} @{} p{.15\linewidth} @{} p{.25\linewidth} @{} p{.30\linewidth} @{} }
-  \textbf{Name} & \textbf{TL} & \textbf{Weight (kg)} & \textbf{Cost} & \textbf{Rules} & \textbf{Description}\\
-  Crossbow	      & 1 &	5	    & 100   & Range: 15/30/60, Damage: 2d6, ROF: 1, AP: 1, Min Strength: d6, 1 action reload & Crossbows built on low tech worlds cannot affect modern armour\\
-  Sword	          & 1 &	4     &	100	  & Damage: Str+d8 & Standard metal sword. If built on a high-tech world, add 1 AP for each tech-level above 4 (add additional cost)\\
-  Knife	          & 1 &	0.5   &	50    & Damage: Str+d4 & Standard metal knife. If built on a high-tech world, add 1 AP for every 2 tech-level above 4 (add additional cost)\\
-  Baton	          & 0 &	0.5   &	25    & Damage: Str+d4 & Standard baton or club\\
-\end{powertable}
+\begin{genericsection}{Baton}
+\textbf{TL: 1, \$25, .5kg}
+A simple bludgeoning stick that deals Str+d4 damage
+\end{genericsection}
+
+\begin{genericsection}{Bow}
+\textbf{TL: 1, \$50, 2kg}
+A bow fires an arrow projectile at it's target using an archiac firing mechanism. The standard arrow has a cost of \$0.5 each. It also requires a minimum Strength of d8 to use.(NOTE: Arrows with different types of heads are available, such as explosive bolts. Use Grenades as a rough guide to what these bolts should cost and their effects).\\
+\textbf{Range:} 15/30/60\\
+\textbf{Damage:} 2d6
+\end{genericsection}
+
+\begin{genericsection}{Crossbow}
+\textbf{TL: 1, \$100, 5kg}
+A crossbow fires an arrow projectile at it's target using an archiac firing mechanism. When using a cross bow, it takes a full action to reload that cannot be sped up, and can only fire one bolt at a time (the standard bolt has an AP of 2, at a cost of \$0.5 each). It also requires a minimum Strength of d6 to use.(NOTE: Bolts with different types of heads are available, such as explosive bolts. Use Grenades as a rough guide to what these bolts should cost and their effects).\\
+\textbf{Range:} 15/30/60\\
+\textbf{Damage:} 2d6
+\end{genericsection}
+
+\begin{genericsection}{Molecular Blade}
+\textbf{TL: 4, +\$500}
+Swords and other edged weapons can be given a monofilament, “molecular,” or extremely thin edge, making them far sharper than usual. This gives the weapon an extra +2 damage and adds half its damage die type in AP (+2 AP for a d4, +4 AP for a d8, +5 for a d10). Add the Molecular blade template over the Sword template.
+\end{genericsection}
+
+\begin{genericsection}{Sword}
+\textbf{TL: 1, \$50, 4kg}
+While there are many types and varieties of swords available, most of them are functionally the same. They have a cutting edge that is used to inflict damage on an opponent. Use the sword as a template for other archaic melee weapons such as axes and polearms (add additional reach as required). If using a 2-handed version of the weaon, the weapon has an AP of 1 at the cost of -1 Parry.\\
+\textbf{Damage:} Strength +d8 (+d10 if 2-handed, +d4 if knife)
+\end{genericsection}
+
+\end{multicols}
 
 \subsection{General Equipment}
 
 \begin{multicols}{2}
 
-\subsubsection{Clothing}
+\subsubsection{Basics}
 
-\begin{genericsection}{Boots}
-\textbf{TL:2, \$10}\\
-Sturdy footwear designed for outdoor use (like hiking). Provides warmth in cold climates.
+\begin{genericsection}{Environmental Gear}
+\textbf{\$50}\\
+Choose an environment type. This gear will grants you a +1 bonus to Fatigue rolls due to environment conditions.
 \end{genericsection}
 
-\begin{genericsection}{Camoflage Poncho}
-\textbf{TL:5, \$1000, 2kg}\\
-Enemies further than 10 squares take a -4 penalty to their Notice checks, and all others take a -2 penalty. This poncho contains photosensitive cells that change the camouflage pattern depending on your surroundings
+\begin{genericsection}{Formal Clothing}
+\textbf{\$300}\\
+Fashion style varies depending on quality and material availability. Otherwise considered as classy clothing used for business or fancy events
 \end{genericsection}
-
-\subsubsection{Computers}
-
-\begin{genericsection}{3D Printer}
-\textbf{TL:4, \$500, 5kg}\\
-A printer that uses raw materials to create devices from predesigned blueprints. The printer can manufacture most common objects for the usual cost of the raw materials in about two minutes per kg. Can create items that are up to 25kg.
-\end{genericsection}
-
-\begin{genericsection}{Communications Server}
-\textbf{TL:4, \$1000, 3kg}\\
-A powerful base unit for providing communications without involving other equipment. Provides encrypted communications between devices within 30 km without the use of satellites.
-\end{genericsection}
-
-\begin{genericsection}{Communications Bug}
-\textbf{TL:3, \$250}\\
-Simple electronic device that can be installed into another device or hidden in a room. It will passively transmit all audio/visual information within a room, or intercept all digital communications transmitted through the target device. Notice target of 6 to detect the Bug (more expensive versions may increase this limit)
-\end{genericsection}
-
-\subsubsection{Food}
 
 \begin{genericsection}{Rations}
 \textbf{\$10}\\
@@ -256,47 +264,8 @@ Provides up to 5 meals. Preserved foods that are packaged to last at least a wee
 A simple cooked meal cooked by the locals. It varies depending on quality of the local available ingredients
 \end{genericsection}
 
-\subsubsection{Tools}
+\input{broken-stars/gear/tools}
 
-\begin{genericsection}{Adhesive Patches}
-\textbf{TL: 4, \$20}\\
-Small squares made of the same material as spacesuits, adhesive patches are a quick puncture repair kit. One patch is required for each breach.
-\end{genericsection}
-
-\begin{genericsection}{Cargo Loader}
-\textbf{TL: 4, \$200,000, 1000kg}\\
-Essentially power armor without the communications gear or protection, this powerful piece of hardware has a Strength of d12+6 and a Pace of 2. It has two arms with crude, blunt pincers to lift, carry, and load heavy cargo. The pincers are awkward if used for combat and act as an Improvised Weapon (–1 Fighting and Parry). They cause Str+d6 damage.
-\end{genericsection}
+\input{broken-stars/gear/trade}
 
 \end{multicols}
-
-\begin{powertable}{ @{} p{.15\linewidth} @{} p{.05\linewidth} @{} p{.10\linewidth} @{} p{.15\linewidth} @{} p{.25\linewidth} @{} p{.30\linewidth} @{} }
-  \textbf{Name} & \textbf{TL} & \textbf{Weight (kg)} & \textbf{Cost} & \textbf{Rules} & \textbf{Description}\\
-  Breather	    & 3 & 1 & 50 &	Screens out toxins, chemicals, spores and other harmful materials. Cannot smell anything.	& Protection from noxious or toxic fumes in an otherwise breathable atmosphere. It also makes the native air smell sweeter.\\
-  Climbing Gear	& 2 & 1.5  & 40 & +1 to Climbing rolls	& A pack containing rope, hooks, climbing spikes and everything else you will need (except protective gear)\\
-  
-  Computer & 3 & 5 & 500 per grade & See grade notes below table & Laptop, desktop, tablet, handheld or wrist device. Does not include (but can interface with) AR equipment\\
-  Data Stick & 4 & - & 50 & Mostly Secure Storage. GM may impose a reasonable limit & This quantum chip offers up to 100 Terrabytes of storage and the encryption/decryption calculating power of a small bionic brain\\
-
-  Field Kit & 3 & 10 & 1000 & Gives a +2 modifier to Survival rolls to resist fatigue from exposure or hunger. & Within this trunk is everything you need to set up a base camp. Tent, sleeping bags and a light source for four included. It also has a water recycler and rations for one week\\
-  Forged identity papers & - & - & 500 & Price will vary with quality and security measures bypassed & Allows you to assume a new identity\\
-  Formal Clothing & 2 & -1 & 300 & Varies depending on quality and material availability & Classy clothing used for business or fancy events\\
-  Hand-cuffs	& Ancient (1) &	0.5	& 20 & Strength target of 10	& Standard hand-cuffs\\
-  Hand Scanner & 5 & 2 & 500 & Access to the built in devices. Where appropriate adds +1 bonus to skill rolls & A hand scanner provides a suite of analytical capabilities. The scanner can analyze air, water and dirt contents, energy residues, weather patterns as well as plants and animals. It does have UV / IR Scanners, a movement detector and even an x-ray built in. It also stores data so it can be analyzed in a lab later\\d
-  Hypo, Adrenal & 5 & - & 100 & You ignore all wound penalties for d8 rounds. The wounds remain and you can still be incapacitated by suffering too many & Injecting this hypo will allow you to ignore any pain caused by wounds. However it does not heal, it simply dampens the pain for a period of time\\
-  Hypo, Immunization & 5 & - & 60 & The hypo gives you an immediate Vigor roll at +2 to resist disease or infection & This broad band antibiotic, vaccine and disinfectant attempts to push your immune system into overdrive. Short term it greatly increases the users resistance to infection and disease\\
-  Night Vision Goggles & 3 & 1.5 & 2500 & No penalities for any level of darkness & Actively adjusts visual information to allow user to see in the dark\\
-  Portable Light & 2 &	0.5	& 30 & Lantern mode: Large Burst, Torchlight: Cone & Rugged all-purpose, all-environ light source. Can be easily switched to lantern and flashlight mode. Can work underwater and in vacuum.\\
-  Programs & 3 & - & 500 per grade & See grade notes below table & A wide variety of skill programs is available. Some legal, some not. Programs on a Computer do not use a wild die. Each program uses up space as indicated by its grade. How the space is used is up to you. A grade III
-computer has 4 spaces for programs. This can be four at grade 1 or two at grade 1 and one at grade 2\\
-  
-  Secure-Cuffs	& 4 & 1 & 75 & Strength target of 10. For each failed attempt, increase Strength target by 1	& Advanaced hand-cuffs that uses the energy from escape attempts to close the cuffs more\\
-  Space Suit    & 4 & 7 & 1000 & The suit can keep you alive for d6+1 days in space. On a wound the suit ruptures and Asphyxiation sets in immediately & As you know space is an unforgiving place, but these reinforced polymer suits will keep you alive out there. Includes an
-oxygen and refuse recycling system and positional adjustment jets. Due to its great resilience it can even be used under water. Armored versions available on order\\
-  Trade goods & 3 & 1 & 10 & Prices are always in flux & The fruits of a civilization that might be valuable on other worlds. There is always the difficulty of finding local products that are actually worth a merchant’s journey\\
-  Trade metals & 3 & 1 & 15 & Prices are always in flux & Trade metals include gold, platinum, artificial gemstones, and other substances\\
-  Uni-Tools, Medical & 3 & 2 & 350 & When using this kit while healing you do not incur a –2 penalty for missing tools & This kit contains everything you need to take care of a variety of wounds or diseases\\
-  Uni-Tools, Repair & 3 & 2 & 250 & When using this kit the user does not incur a –2 penalty for missing tools & This compact package is about the size of a first aid kit but contains everything you need to repair, manipulate or modify electronic systems or mechanical devices\\
-  Uni-Tools, Security & 3 & 2 & 500 & When using this kit you do not incur a –2 penalty for missing tools. Illegal! & Need to hack or reprogram a security system? This kit will let you. Permit required!\\
-  Winter Gear   & Ancient (1) & 1 & 200 & Keeps you warm in cold climates (for a short period of time in frozen environments) & A clock or parka with jackets, jumpers and pants\\
-\end{powertable}
