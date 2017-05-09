@@ -1,0 +1,21 @@
+\documentclass[10pt,a4paper,twoside]{article}
+\usepackage[utf8]{inputenc}           % Use Unicode (non-english characters)
+\usepackage{dnd}                      % Custom components
+\usepackage{multicol}                 % Multicolumn pages
+\usepackage{palatino}                 % Closest built-in font I could find
+\usepackage{ulem}                     % Underline elements
+\usepackage[hidelinks]{hyperref}      % Clickable table of content links
+
+% Page Settings
+\emergencystretch 10pt                % allow some extra stretching
+\raggedcolumns                        % Set up ragged columns for multicols
+\setlength{\columnsep}{1cm}           % Column seperator
+\setlength{\parindent}{0em}           % Paragraph indent size
+\setlength{\parskip}{0.5em}           % Paragraph after gap
+\graphicspath{ {images/} }            % Image directory
+\emergencystretch 10pt                % allow some extra stretching
+
+% Start document
+\begin{document}
+  \include{broken-stars/sheet-characters}
+\end{document}
